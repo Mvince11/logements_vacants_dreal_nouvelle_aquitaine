@@ -211,12 +211,658 @@ document.addEventListener("DOMContentLoaded", function(){
 <section id="nombre-et-part-de-logements-vacants-de-plus-de-2-ans-entre-2020-et-2024" class="level3">
 <h3 class="anchored" data-anchor-id="nombre-et-part-de-logements-vacants-de-plus-de-2-ans-entre-2020-et-2024">2.1 Nombre et part de logements vacants de plus de 2 ans entre 2020 et 2024</h3>
 <p>Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de 1,11M à 1,15M (2025 + 20,7 % soit 1,35M à plus de 2 ans mais -35 % au total) La vacance structurelle a évolué deux fois moins vite en Nouvelle Aquitaine (10 points de moins 20,99 % contre 10,6%) qu’en France.</p>
-<p><a href="images/nbre_logements_vacants_lovac.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/nbre_logements_vacants_lovac.jpg" class="img-fluid"></a></p>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution Nouvelle-Aquitaine 2020–2024</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+    h4 { font-size: 1.15rem; font-weight: 500; margin-bottom: 1.5rem; text-align:center;}
+    .container { max-width: 900px; margin: 0 auto; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+    input[type="text"] { flex: 1; min-width: 160px; padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; }
+    select { padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; cursor: pointer; }
+    .table-wrap { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+    thead tr { background: #f1efe8; }
+    th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 13px; color: #5f5e5a; border-bottom: 0.5px solid #e0dfd8; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { color: #1a1a18; }
+    th .sort-icon { margin-left: 4px; opacity: 0.4; font-size: 11px; }
+    th.active .sort-icon { opacity: 1; }
+    td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; color: #1a1a18; }
+    tr:last-child td { border-bottom: none; }
+    tr.total-row td { font-weight: 500; background: #f1efe8; }
+    tr:hover:not(.total-row) td { background: #f9f9f7; }
+    .badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+    .badge.pos { background: #ddffdd; color: #1a5c1a; }
+    .badge.neg { background: #ffdddd; color: #7a1a1a; }
+    .bar-bg { width: 100%; height: 6px; background: #e0dfd8; border-radius: 4px; overflow: hidden; position: relative; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+    .metric { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+    .metric-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+    .metric-value { font-size: 20px; font-weight: 500; }
+    .metric-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+    th:nth-child(1) { width: 32%; }
+    th:nth-child(2), th:nth-child(3), th:nth-child(4) { width: 14%; }
+    th:nth-child(5) { width: 12%; }
+    th:nth-child(6) { width: 28%; }
+    @media (max-width: 600px) { th:nth-child(6), td:nth-child(6) { display: none; } }
+  </style>
+
+
+<div class="container">
+<h5 style="text-align:center;" class="anchored">Évolution du nombre de logements vacants de plus de 2 ans — Nouvelle-Aquitaine 2020–2024</h5>
+  <div class="metrics" id="metrics"></div>
+  <div class="controls">
+    <input type="text" placeholder="Rechercher un département…" id="search" oninput="render()">
+    <select id="sort-col" onchange="render()">
+      <option value="dep">Département</option>
+      <option value="2020">2020</option>
+      <option value="2024">2024</option>
+      <option value="ecart">Écart</option>
+      <option value="evo">Évolution</option>
+    </select>
+    <select id="sort-dir" onchange="render()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+  <div class="table-wrap">
+    
+<table class="caption-top" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" onclick="sortBy('dep')">Département <span id="icon-dep" class="sort-icon">↕</span></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy('2020')">2020 <span id="icon-2020" class="sort-icon">↕</span></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy('2024')">2024 <span id="icon-2024" class="sort-icon">↕</span></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy('ecart')">Écart <span id="icon-ecart" class="sort-icon">↕</span></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy('evo')">Évol. <span id="icon-evo" class="sort-icon">↕</span></th>
+<th data-quarto-table-cell-role="th" onclick="sortBy('evo')">Progression <span id="icon-bar" class="sort-icon">↕</span></th>
+</tr>
+</thead>
+<tbody id="tbody">
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<script>
+const raw = [
+  {dep:"Charente",              v2020:11681, v2024:10956},
+  {dep:"Charente-Maritime",     v2020:12882, v2024:14491},
+  {dep:"Corrèze",               v2020:9745,  v2024:11373},
+  {dep:"Creuse",                v2020:9439,  v2024:9401 },
+  {dep:"Dordogne",              v2020:13846, v2024:15702},
+  {dep:"Gironde",               v2020:19102, v2024:24268},
+  {dep:"Landes",                v2020:8393,  v2024:9574 },
+  {dep:"Lot-et-Garonne",        v2020:11003, v2024:12535},
+  {dep:"Pyrénées-Atlantiques",  v2020:12536, v2024:13701},
+  {dep:"Deux-Sèvres",           v2020:7952,  v2024:7894 },
+  {dep:"Vienne",                v2020:10560, v2024:11430},
+  {dep:"Haute-Vienne",          v2020:12906, v2024:13180},
+];
+const total = {dep:"Nouvelle-Aquitaine", v2020:140045, v2024:154505};
+
+const data = raw.map(r => ({
+  ...r,
+  ecart: r.v2024 - r.v2020,
+  evo: (r.v2024 - r.v2020) / r.v2020 * 100
+}));
+
+const maxAbs = Math.max(...data.map(r => Math.abs(r.evo)));
+
+let currentSort = 'dep', currentDir = 'asc';
+
+function fmt(n) { return n.toLocaleString('fr-FR'); }
+function fmtPct(n) { return (n >= 0 ? '+' : '') + n.toFixed(2) + '%'; }
+
+function sortBy(col) {
+  if (currentSort === col) currentDir = currentDir === 'asc' ? 'desc' : 'asc';
+  else { currentSort = col; currentDir = col === 'dep' ? 'asc' : 'desc'; }
+  document.getElementById('sort-col').value = col === 'bar' ? 'evo' : col;
+  document.getElementById('sort-dir').value = currentDir;
+  render();
+}
+
+function render() {
+  const q   = document.getElementById('search').value.toLowerCase();
+  const col = document.getElementById('sort-col').value;
+  const dir = document.getElementById('sort-dir').value;
+  currentSort = col; currentDir = dir;
+
+  ['dep','2020','2024','ecart','evo','bar'].forEach(k => {
+    const el = document.getElementById('icon-' + k);
+    if (!el) return;
+    const active = currentSort === k || (k === 'bar' && currentSort === 'evo');
+    el.textContent = active ? (dir === 'asc' ? '↑' : '↓') : '↕';
+    el.parentElement.classList.toggle('active', active);
+  });
+
+  let rows = data.filter(r => r.dep.toLowerCase().includes(q));
+  rows.sort((a, b) => {
+    if (col === 'dep') return dir === 'asc'
+      ? a.dep.localeCompare(b.dep, 'fr')
+      : b.dep.localeCompare(a.dep, 'fr');
+    const map = {'2020':'v2020','2024':'v2024','ecart':'ecart','evo':'evo'};
+    const key = map[col] || 'evo';
+    return dir === 'asc' ? a[key] - b[key] : b[key] - a[key];
+  });
+
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = rows.map(r => {
+    const pos = r.evo >= 0;
+    const pct = Math.abs(r.evo) / maxAbs * 100;
+    const barColor = pos ? '#2d8a4e' : '#c0392b';
+    const barStyle = pos
+      ? `margin-left:50%; width:${pct/2}%`
+      : `margin-left:${50 - pct/2}%; width:${pct/2}%`;
+    return `<tr>
+      <td style="font-weight:500">${r.dep}</td>
+      <td style="text-align:right">${fmt(r.v2020)}</td>
+      <td style="text-align:right">${fmt(r.v2024)}</td>
+      <td style="text-align:right;color:${pos?'#1a5c1a':'#7a1a1a'}">${pos?'+':''}${fmt(r.ecart)}</td>
+      <td style="text-align:right"><span class="badge ${pos?'pos':'neg'}">${fmtPct(r.evo)}</span></td>
+      <td>
+        <div class="bar-bg">
+          <div style="position:absolute;top:0;left:50%;width:0.5px;height:100%;background:#ccc;z-index:1"></div>
+          <div style="position:absolute;top:0;height:100%;border-radius:4px;background:${barColor};${barStyle}"></div>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  const totEcart = total.v2024 - total.v2020;
+  const totEvo   = totEcart / total.v2020 * 100;
+  const pos = totEvo >= 0;
+  tbody.innerHTML += `<tr class="total-row">
+    <td>Nouvelle-Aquitaine (total)</td>
+    <td style="text-align:right">${fmt(total.v2020)}</td>
+    <td style="text-align:right">${fmt(total.v2024)}</td>
+    <td style="text-align:right;color:${pos?'#1a5c1a':'#7a1a1a'}">${pos?'+':''}${fmt(totEcart)}</td>
+    <td style="text-align:right"><span class="badge ${pos?'pos':'neg'}">${fmtPct(totEvo)}</span></td>
+    <td></td>
+  </tr>`;
+
+  renderMetrics(rows);
+}
+
+function renderMetrics(rows) {
+  const best   = [...rows].sort((a,b) => b.evo - a.evo)[0];
+  const worst  = [...rows].sort((a,b) => a.evo - b.evo)[0];
+  const gains  = rows.filter(r => r.evo > 0).length;
+  const totEvo = ((total.v2024 - total.v2020) / total.v2020 * 100).toFixed(2);
+  document.getElementById('metrics').innerHTML = `
+    <div class="metric">
+      <div class="metric-label">Évolution totale</div>
+      <div class="metric-value">+${totEvo}%</div>
+      <div class="metric-sub">Nouvelle-Aquitaine</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Plus forte évolution</div>
+      <div class="metric-value" style="color:#1a5c1a">+${best?.evo.toFixed(2)}%</div>
+      <div class="metric-sub">${best?.dep}</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Plus faible évolution</div>
+      <div class="metric-value" style="color:#7a1a1a">${worst?.evo.toFixed(2)}%</div>
+      <div class="metric-sub">${worst?.dep}</div>
+    </div>
+    <div class="metric">
+      <div class="metric-label">Dép. en hausse</div>
+      <div class="metric-value">${gains} / ${rows.length}</div>
+      <div class="metric-sub">sur la sélection</div>
+    </div>
+  `;
+}
+
+render();
+</script>
+
+
+
 </section>
 <section id="evolution-de-la-part-départementale" class="level3">
 <h3 class="anchored" data-anchor-id="evolution-de-la-part-départementale">2.2 Evolution de la part départementale</h3>
-<p><a href="images/taux_logements_vacants_lovac.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/taux_logements_vacants_lovac.jpg" class="img-fluid"></a></p>
-<p><a href="images/repartition_logements_vacants_lovac.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/repartition_logements_vacants_lovac.jpg" class="img-fluid"></a></p>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution Nouvelle-Aquitaine 2020–2024</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+    h1 { font-size: 20px; font-weight: 500; margin-bottom: 1.5rem; }
+    .container2 { max-width: 900px; margin: 20px 0 auto; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+    input[type="text"] { flex: 1; min-width: 160px; padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; }
+    select { padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; cursor: pointer; }
+    .table-wrap { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+    thead tr { background: #f1efe8; }
+    th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 13px; color: #5f5e5a; border-bottom: 0.5px solid #e0dfd8; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { color: #1a1a18; }
+    td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; color: #1a1a18; }
+    tr:last-child td { border-bottom: none; }
+    tr.total-row td { font-weight: 500; background: #f1efe8; }
+    tr:hover:not(.total-row) td { background: #f9f9f7; }
+    .badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+    .badge.pos { background: #ddffdd; color: #1a5c1a; }
+    .badge.neg { background: #ffdddd; color: #7a1a1a; }
+    .bar-bg { width: 100%; height: 6px; background: #e0dfd8; border-radius: 4px; overflow: hidden; position: relative; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+    .metric { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+    .metric-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+    .metric-value { font-size: 20px; font-weight: 500; }
+    .metric-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+  </style>
+
+
+<div class="container2" style="margin: 20px 0 auto;">
+<h5 style="text-align:center;" class="anchored">Évolution du taux de logements vacants de plus de 2 ans — Nouvelle-Aquitaine 2020–2024</h5>
+  <div class="metrics2" id="metrics2"></div>
+  <div class="controls2">
+    <input type="text" placeholder="Rechercher un département…" id="search2" oninput="render2()">
+    <select id="sort-col2" onchange="render2()">
+      <option value="dep">Département</option>
+      <option value="v2020">2020</option>
+      <option value="v2024">2024</option>
+      <option value="ecart">Écart</option>
+    </select>
+    <select id="sort-dir2" onchange="render2()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+
+  <div class="table-wrap2">
+    
+<table class="table2 caption-top" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" onclick="sortBy2('dep')">Département</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy2('v2020')">2020</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy2('v2024')">2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy2('ecart')">Écart</th>
+</tr>
+</thead>
+<tbody id="tbody2">
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<style>
+  .container2 { max-width: 900px; margin: 0 auto; }
+  .controls2 { display: flex; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .table-wrap2 { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+  .table2 { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .table2 th, .table2 td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; }
+  .table2 th { background: #f1efe8; cursor: pointer; }
+  .table2 tr.total-row2 td { font-weight: 600; background: #f1efe8; }
+  .metrics2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+  .metric2 { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+  .metric2-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+  .metric2-value { font-size: 20px; font-weight: 500; }
+  .metric2-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+  .badge2 {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+  .badge2.pos { background: #ddffdd; color: #1a5c1a; }
+  .badge2.neg { background: #ffdddd; color: #7a1a1a; }
+
+</style>
+
+<script>
+const raw2 = [
+  {dep:"Charente",              v2020:5.70, v2024:5.20},
+  {dep:"Charente-Maritime",     v2020:2.90, v2024:3.00},
+  {dep:"Corrèze",               v2020:6.10, v2024:6.90},
+  {dep:"Creuse",                v2020:10.20, v2024:10.00},
+  {dep:"Dordogne",              v2020:5.10, v2024:5.60},
+  {dep:"Gironde",               v2020:2.10, v2024:2.50},
+  {dep:"Landes",                v2020:3.20, v2024:3.30},
+  {dep:"Lot-et-Garonne",        v2020:5.80, v2024:6.40},
+  {dep:"Pyrénées-Atlantiques",  v2020:3.00, v2024:3.10},
+  {dep:"Deux-Sèvres",           v2020:4.00, v2024:3.80},
+  {dep:"Vienne",                v2020:4.30, v2024:4.50},
+  {dep:"Haute-Vienne",          v2020:5.60, v2024:5.60},
+];
+
+const total2 = { dep:"Nouvelle-Aquitaine", v2020:3.90, v2024:4.00 };
+
+const data2 = raw2.map(r => ({
+  ...r,
+  ecart: r.v2024 - r.v2020,
+}));
+
+let currentSort2 = "dep";
+let currentDir2 = "asc";
+
+function sortBy2(col) {
+  if (currentSort2 === col) currentDir2 = currentDir2 === "asc" ? "desc" : "asc";
+  else { currentSort2 = col; currentDir2 = "asc"; }
+  document.getElementById("sort-col2").value = col;
+  document.getElementById("sort-dir2").value = currentDir2;
+  render2();
+}
+
+function render2() {
+  const q   = document.getElementById("search2").value.toLowerCase();
+  const col = document.getElementById("sort-col2").value;
+  const dir = document.getElementById("sort-dir2").value;
+
+  let rows = data2.filter(r => r.dep.toLowerCase().includes(q));
+
+  rows.sort((a,b) => {
+    if (col === "dep") return dir === "asc"
+      ? a.dep.localeCompare(b.dep, "fr")
+      : b.dep.localeCompare(a.dep, "fr");
+    return dir === "asc" ? a[col] - b[col] : b[col] - a[col];
+  });
+
+  const tbody = document.getElementById("tbody2");
+  tbody.innerHTML = rows.map(r => {
+    const color = r.ecart >= 0 ? "#1a5c1a" : "#7a1a1a";
+    const sign  = r.ecart >= 0 ? "+" : "";
+    return `
+      <tr>
+        <td>${r.dep}</td>
+        <td style="text-align:right">${r.v2020.toFixed(2)}%</td>
+        <td style="text-align:right">${r.v2024.toFixed(2)}%</td>
+        <td style="text-align:right"><span class="badge2 ${r.ecart>=0?'pos':'neg'}">${sign}${r.ecart.toFixed(2)}%</span></td>
+
+      </tr>
+    `;
+  }).join("");
+
+  // TOTAL
+  const totEcart = total2.v2024 - total2.v2020;
+  const pos = totEcart >= 0;
+
+  tbody.innerHTML += `
+    <tr class="total-row2">
+      <td>${total2.dep} (total)</td>
+      <td style="text-align:right">${total2.v2020.toFixed(2)}%</td>
+      <td style="text-align:right">${total2.v2024.toFixed(2)}%</td>
+      <td style="text-align:right; color:${pos ? '#1a5c1a' : '#7a1a1a'}">
+        ${pos ? '+' : ''}${totEcart.toFixed(2)}%
+      </td>
+    </tr>
+  `;
+
+  renderMetrics2(rows);
+}
+
+function renderMetrics2(rows) {
+  const best   = [...rows].sort((a,b) => b.ecart - a.ecart)[0];
+  const worst  = [...rows].sort((a,b) => a.ecart - b.ecart)[0];
+  const gains  = rows.filter(r => r.ecart > 0).length;
+
+  const totEcart = total2.v2024 - total2.v2020;
+  const totPos   = totEcart >= 0;
+
+  document.getElementById('metrics2').innerHTML = `
+    <div class="metric2">
+      <div class="metric2-label">Écart total</div>
+      <div class="metric2-value" style="color:${totPos ? '#1a5c1a' : '#7a1a1a'}">
+        ${totPos ? '+' : ''}${totEcart.toFixed(2)}%
+      </div>
+      <div class="metric2-sub">${total2.dep}</div>
+    </div>
+
+    <div class="metric2">
+      <div class="metric2-label">Plus forte hausse</div>
+      <div class="metric2-value" style="color:#1a5c1a">
+        +${best.ecart.toFixed(2)}%
+      </div>
+      <div class="metric2-sub">${best.dep}</div>
+    </div>
+
+    <div class="metric2">
+      <div class="metric2-label">Plus forte baisse</div>
+      <div class="metric2-value" style="color:#7a1a1a">
+        ${worst.ecart.toFixed(2)}%
+      </div>
+      <div class="metric2-sub">${worst.dep}</div>
+    </div>
+
+    <div class="metric2">
+      <div class="metric2-label">Départements en hausse</div>
+      <div class="metric2-value">${gains} / ${rows.length}</div>
+      <div class="metric2-sub">sur la sélection</div>
+    </div>
+  `;
+}
+
+render2();
+</script>
+
+
+
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution Nouvelle-Aquitaine 2020–2024</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+    input[type="text"] { flex: 1; min-width: 160px; padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; }
+    select { padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; cursor: pointer; }
+    .table-wrap { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+    thead tr { background: #f1efe8; }
+    th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 13px; color: #5f5e5a; border-bottom: 0.5px solid #e0dfd8; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { color: #1a1a18; }
+    td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; color: #1a1a18; }
+    tr:last-child td { border-bottom: none; }
+    tr.total-row td { font-weight: 500; background: #f1efe8; }
+    tr:hover:not(.total-row) td { background: #f9f9f7; }
+    .badge3 { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+    .badge3.pos { background: #ddffdd; color: #1a5c1a; }
+    .badge3.neg { background: #ffdddd; color: #7a1a1a; }
+    .bar-bg { width: 100%; height: 6px; background: #e0dfd8; border-radius: 4px; overflow: hidden; position: relative; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+    .metric { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+    .metric-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+    .metric-value { font-size: 20px; font-weight: 500; }
+    .metric-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+  </style>
+
+
+<div class="container3" style="margin: 40px 0 40px;">
+  <h5 style="text-align:center;" class="anchored">Répartition départementale du nombre de logements vacants de plus de 2 ans</h5>
+
+  <div class="metrics3" id="metrics3"></div>
+
+  <div class="controls3">
+    <input type="text" placeholder="Rechercher un département…" id="search3" oninput="render3()">
+    <select id="sort-col3" onchange="render3()">
+      <option value="dep">Département</option>
+      <option value="v2020">2020</option>
+      <option value="v2024">2024</option>
+      <option value="ecart">Écart</option>
+    </select>
+    <select id="sort-dir3" onchange="render3()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+
+  <div class="table-wrap3">
+    
+<table class="table3 caption-top" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" onclick="sortBy3('dep')">Département</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy3('v2020')">2020</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy3('v2024')">2024</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy3('ecart')">Écart</th>
+</tr>
+</thead>
+<tbody id="tbody3">
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<style>
+  .container3 { max-width: 900px; margin: 0 auto; }
+  .controls3 { display: flex; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .table-wrap3 { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+  .table3 { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .table3 th, .table3 td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; }
+  .table3 th { background: #f1efe8; cursor: pointer; }
+  .table3 tr.total-row3 td { font-weight: 600; background: #f1efe8; }
+  .table3 tr:hover:not(.total-row3) td { background: #f9f9f7; }
+  .metrics3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+  .metric3 { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+  .metric3-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+  .metric3-value { font-size: 20px; font-weight: 500; }
+  .metric3-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+</style>
+
+<script>
+// --- Données du tableau 3 ---
+const raw3 = [
+  {dep:"Charente",              v2020:8.34, v2024:7.08},
+  {dep:"Charente-Maritime",     v2020:9.20, v2024:9.40},
+  {dep:"Corrèze",               v2020:6.96, v2024:7.35},
+  {dep:"Creuse",                v2020:6.73, v2024:6.07},
+  {dep:"Dordogne",              v2020:9.89, v2024:10.14},
+  {dep:"Gironde",               v2020:13.64, v2024:15.71},
+  {dep:"Landes",                v2020:5.99, v2024:6.18},
+  {dep:"Lot-et-Garonne",        v2020:7.86, v2024:8.11},
+  {dep:"Pyrénées-Atlantiques",  v2020:8.95, v2024:8.86},
+  {dep:"Deux-Sèvres",           v2020:5.68, v2024:5.12},
+  {dep:"Vienne",                v2020:7.54, v2024:7.42},
+  {dep:"Haute-Vienne",          v2020:9.22, v2024:8.52},
+];
+
+const total3 = { dep:"Nouvelle-Aquitaine", v2020:100.00, v2024:100.00 };
+
+const data3 = raw3.map(r => ({
+  ...r,
+  ecart: r.v2024 - r.v2020,
+}));
+
+let currentSort3 = "dep";
+let currentDir3 = "asc";
+
+function sortBy3(col) {
+  if (currentSort3 === col) currentDir3 = currentDir3 === "asc" ? "desc" : "asc";
+  else { currentSort3 = col; currentDir3 = "asc"; }
+  document.getElementById("sort-col3").value = col;
+  document.getElementById("sort-dir3").value = currentDir3;
+  render3();
+}
+
+function render3() {
+  const q   = document.getElementById("search3").value.toLowerCase();
+  const col = document.getElementById("sort-col3").value;
+  const dir = document.getElementById("sort-dir3").value;
+
+  let rows = data3.filter(r => r.dep.toLowerCase().includes(q));
+
+  rows.sort((a,b) => {
+    if (col === "dep") return dir === "asc"
+      ? a.dep.localeCompare(b.dep, "fr")
+      : b.dep.localeCompare(a.dep, "fr");
+    return dir === "asc" ? a[col] - b[col] : b[col] - a[col];
+  });
+
+  const tbody = document.getElementById("tbody3");
+  tbody.innerHTML = rows.map(r => {
+    const color = r.ecart >= 0 ? "#1a5c1a" : "#7a1a1a";
+    const sign  = r.ecart >= 0 ? "+" : "";
+    return `
+      <tr>
+        <td>${r.dep}</td>
+        <td style="text-align:right">${r.v2020.toFixed(2)}%</td>
+        <td style="text-align:right">${r.v2024.toFixed(2)}%</td>
+        <td style="text-align:right"><span class="badge3 ${r.ecart>=0?'pos':'neg'}">${sign}${r.ecart.toFixed(2)}%</span></td>
+
+      </tr>
+    `;
+  }).join("");
+
+  // TOTAL
+  const totEcart = total3.v2024 - total3.v2020;
+  const pos = totEcart >= 0;
+
+  tbody.innerHTML += `
+    <tr class="total-row3">
+      <td>${total3.dep} (total)</td>
+      <td style="text-align:right">${total3.v2020.toFixed(2)}%</td>
+      <td style="text-align:right">${total3.v2024.toFixed(2)}%</td>
+      <td style="text-align:right; color:${pos ? '#1a5c1a' : '#7a1a1a'}">
+        ${pos ? '+' : ''}${totEcart.toFixed(2)}%
+      </td>
+    </tr>
+  `;
+
+  renderMetrics3(rows);
+}
+
+function renderMetrics3(rows) {
+  const best   = [...rows].sort((a,b) => b.ecart - a.ecart)[0];
+  const worst  = [...rows].sort((a,b) => a.ecart - b.ecart)[0];
+  const gains  = rows.filter(r => r.ecart > 0).length;
+
+  const totEcart = total3.v2024 - total3.v2020;
+  const totPos   = totEcart >= 0;
+
+  document.getElementById('metrics3').innerHTML = `
+    <div class="metric3">
+      <div class="metric3-label">Écart total</div>
+      <div class="metric3-value" style="color:${totPos ? '#1a5c1a' : '#7a1a1a'}">
+        ${totPos ? '+' : ''}${totEcart.toFixed(2)}%
+      </div>
+      <div class="metric3-sub">${total3.dep}</div>
+    </div>
+
+    <div class="metric3">
+      <div class="metric3-label">Plus forte hausse</div>
+      <div class="metric3-value" style="color:#1a5c1a">
+        +${best.ecart.toFixed(2)}%
+      </div>
+      <div class="metric3-sub">${best.dep}</div>
+    </div>
+
+    <div class="metric3">
+      <div class="metric3-label">Plus forte baisse</div>
+      <div class="metric3-value" style="color:#7a1a1a">
+        ${worst.ecart.toFixed(2)}%
+      </div>
+      <div class="metric3-sub">${worst.dep}</div>
+    </div>
+
+    <div class="metric3">
+      <div class="metric3-label">Départements en hausse</div>
+      <div class="metric3-value">${gains} / ${rows.length}</div>
+      <div class="metric3-sub">sur la sélection</div>
+    </div>
+  `;
+}
+
+render3();
+</script>
 <p>Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de 1,11M à 1,15M (2025 + 20,7 % plus de 2 ans mais -35 % au total)</p>
 <p>Méthodologie Contexte Évolution de la base de données LOVAC entre 2020 et 2025 avec l’arrivée de GMBI (Gérer Mon Bien Immobilier) depuis 2023.</p>
 <p>LOVAC Avant 2024 : Données DGFIP (Taxe d’habitation)</p>
@@ -233,13 +879,13 @@ document.addEventListener("DOMContentLoaded", function(){
 </section>
 <section id="localisation-de-la-vacance" class="level3">
 <h3 class="anchored" data-anchor-id="localisation-de-la-vacance">2.3 Localisation de la vacance</h3>
-<p><a href="images/logements_vacants_NA.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/logements_vacants_NA.png" class="img-fluid"></a></p>
+<p><a href="images/logements_vacants_NA.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/logements_vacants_NA.png" class="img-fluid"></a></p>
 </section>
 <section id="taux-de-vacance-départementale" class="level3">
 <h3 class="anchored" data-anchor-id="taux-de-vacance-départementale">2.4 Taux de vacance départementale</h3>
 <p>La vacance de logement est sensiblement différente d’un département à l’autre (de 2,5% en Gironde à 10% dans la Creuse) et s’établit en «&nbsp;dégradé&nbsp;» d’Ouest (Littoral) en Est et à l’intérieur (départements plus ruraux)</p>
 <div class="center">
-<p><a href="images/taux_vacance_dpt.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/taux_vacance_dpt.jpg" class="img-fluid"></a></p>
+<p><a href="images/taux_vacance_dpt.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/taux_vacance_dpt.jpg" class="img-fluid"></a></p>
 </div>
 </section>
 </section>
@@ -250,32 +896,32 @@ document.addEventListener("DOMContentLoaded", function(){
 <p>Des logements vacants anciens Assez logiquement, on constate que le parc de logements privés vacants depuis plus de 2 ans est principalement ancien. En effet, 33% de ce parc a été construit avant 1949 alors que le taux de logements anciens dans le parc régional est de 68%. Il semble donc que la vétusté et certainement le manque d’entretien soient à l’origine de la vacance sur un nombre important de logements.<br>
 Cette tendance est confirmée plus les logements sont récents, moins ils sont vacants proportionnellement (les logements construits après 1980 représentent 44% du par cet seulement 16% des logements vacants).</p>
 <div class="center">
-<p><a href="images/periode_construction.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/periode_construction.jpg" class="img-fluid"></a></p>
+<p><a href="images/periode_construction.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/periode_construction.jpg" class="img-fluid"></a></p>
 </div>
 </section>
 <section id="par-nature-de-logement" class="level3">
 <h3 class="anchored" data-anchor-id="par-nature-de-logement">3.2 Par nature de logement</h3>
 <p>Une majorité de maisons parmi les logements vacants Il semble que la nature du logement (maison ou appartement) n’influe pas sur la vacance. En effet, 72&nbsp;% des logements privés vacants depuis plus de 2 ans sont des maisons. La proportion de logements de type maisons sur la région est de 70&nbsp;%.</p>
 <div class="center">
-<p><a href="images/nature_logements.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/nature_logements.jpg" class="img-fluid"></a></p>
+<p><a href="images/nature_logements.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/nature_logements.jpg" class="img-fluid"></a></p>
 </div>
 </section>
 <section id="par-typologie-de-logements" class="level3">
 <h3 class="anchored" data-anchor-id="par-typologie-de-logements">3.3 Par typologie de logements</h3>
 <p>Une sur-représentation de petits logements parmi les logements vacants Les petits logements (de <strong>typologie <span style="cursor:pointer;" data-bs-toggle="tooltip" title="Dans cette étude, la typologie prise en compte est celle définie par les promoteurs immobiliers : le chiffre indiqué après le « T » correspond à la somme des salles à manger et des chambres présentes dans le logement.">T1 ou T2</span></strong>) représentent 40 % des logements vacants de plus de 2 ans alors qu’ils ne constituent que 22 % de l’ensemble des habitations de la région. On constate donc une sur-représentation des petits logements au détriment des plus grands (T5 et +) qui ont un taux de vacance de 16% alors qu’ils représentent 26% du parc régional.</p>
 <div class="center">
-<p><a href="images/typologie_logements.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/typologie_logements.jpg" class="img-fluid"></a></p>
+<p><a href="images/typologie_logements.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/typologie_logements.jpg" class="img-fluid"></a></p>
 </div>
 </section>
 <section id="par-qualité-du-bâti-la-qualité-du-bâti-des-logements-vacants" class="level3">
 <h3 class="anchored" data-anchor-id="par-qualité-du-bâti-la-qualité-du-bâti-des-logements-vacants">3.4 Par qualité du bâti : La qualité du bâti des logements vacants</h3>
 <p>A partir du classement <span style="cursor:pointer;" data-bs-toggle="tooltip" title="Le classement cadastral est un indicateur de la qualité globale du logement selon des critères relatifs au caractère architectural du bâtiment, à la qualité de sa construction, et à ses équipements. Établi pour l’ensemble des habitations, il sert de base de la valeur locative. Chaque local en France est classé dans une des huit catégories de référence : du 1 (habitation luxueuse) à 8 (logement délabré et insalubre)."><strong>cadastral</strong></span> , en considérant que les logements classés 6, 7 et 8 (retenus comme critère prépondérant dans la définition du parc potentiellement indigne) ne peuvent être remis sur le marché sans un minimum de réhabilitation, la répartition des logements du parc privé vacants depuis plus de 2 ans est la suivante :</p>
-<p><a href="images/tableau_categorie.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/tableau_categorie.jpg" class="img-fluid"></a></p>
+<p><a href="images/tableau_categorie.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/tableau_categorie.jpg" class="img-fluid"></a></p>
 <div class="center">
-<p><a href="images/qualite_bati.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="images/qualite_bati.jpg" class="img-fluid"></a></p>
+<p><a href="images/qualite_bati.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/qualite_bati.jpg" class="img-fluid"></a></p>
 </div>
 <p>Il peut ainsi être considéré que 28,3% des logements vacants de plus de 2 ans pourraient être remis sur le marché sans travaux (classement 3,4,5), voire prés des ¾ (Pyrénées-Atlantiques, Gironde, Landes, Charente-Maritime comportant plus de 80%,) en incluant le classement 6 des immeubles sans caractère et de qualité courante, avec peu de travaux .</p>
-<p><a href="images/taux_logements_en_bon_etat.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="images/taux_logements_en_bon_etat.jpg" class="img-fluid"></a></p>
+<p><a href="images/taux_logements_en_bon_etat.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/taux_logements_en_bon_etat.jpg" class="img-fluid"></a></p>
 <p>Territorialement, ce parc de logements vacants de plus de 2 ans ne nécessitant à priori pas de travaux lourds est présent sur l’ensemble de la région&nbsp;: A la lecture du tableau ci-dessus, il semble que plus d’un tiers du parc des logements vacants des Deux-Sèvres et des Pyrénées-Atlantiques puisse être remis sur le marché à moindre coût. A l’inverse, dans la Vienne ou la Creuse, le parc vacant semble globalement plus dégradé.</p>
 </section>
 <section id="par-localisation-dans-les-communes-la-localisation-des-logements-du-parc-privé-vacants-depuis-plus-de-2-ans" class="level3">
@@ -289,7 +935,7 @@ La méthodologie de la définition de ces trois zones est à retrouver en annexe
 </ul>
 <p>La méthodologie de la définition de ces trois zones est à retrouver en annexe du document.</p>
 <div class="center">
-<p><a href="images/localisation.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="images/localisation.jpg" class="img-fluid"></a></p>
+<p><a href="images/localisation.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="images/localisation.jpg" class="img-fluid"></a></p>
 </div>
 <p>A l’échelle régionale 51,7% des logements vacants sont situés en zone centre et 14,3% en zone péricentrale soit 66% du parc (les 2/3)</p>
 <p>A l’échelle régionale 51,7% des logements vacants sont situés en zone centre et 14,3% en zone péricentrale soit 66% du parc (les 2/3) est situé à moins de 1 km d’un centre d’intérêt.</p>
