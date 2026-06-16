@@ -790,9 +790,214 @@ Les fichiers LOVAC sont obtenus par croisement de plusieurs données fiscales :
 
 La vacance de logement est sensiblement différente d’un département à l’autre (de 2,5% en Gironde à 10% dans la Creuse) et s’établit en « dégradé » d’Ouest (Littoral) en Est et à l’intérieur (départements plus ruraux)
 
-::: center
-![](images/taux_vacance_dpt.jpg){.lightbox}
-:::
+
+```{=html}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Évolution Nouvelle-Aquitaine 2020–2024</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+    input[type="text"] { flex: 1; min-width: 160px; padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; }
+    select { padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; cursor: pointer; }
+    .table-wrap { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+    thead tr { background: #f1efe8; }
+    th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 13px; color: #5f5e5a; border-bottom: 0.5px solid #e0dfd8; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { color: #1a1a18; }
+    td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; color: #1a1a18; }
+    tr:last-child td { border-bottom: none; }
+    tr.total-row td { font-weight: 500; background: #f1efe8; }
+    tr:hover:not(.total-row) td { background: #f9f9f7; }
+    .badge3 { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+    .badge3.pos { background: #ddffdd; color: #1a5c1a; }
+    .badge3.neg { background: #ffdddd; color: #7a1a1a; }
+    .bar-bg { width: 100%; height: 6px; background: #e0dfd8; border-radius: 4px; overflow: hidden; position: relative; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+    .metric { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+    .metric-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+    .metric-value { font-size: 20px; font-weight: 500; }
+    .metric-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+  </style>
+</head>
+<body>
+
+<div class="container4">
+  <h5 style="text-align:center;">Logements vacants (+2 ans) — Nouvelle-Aquitaine</h5>
+
+  <div class="metrics4" id="metrics4"></div>
+
+  <div class="controls4">
+    <input type="text" placeholder="Rechercher un département…" id="search4" oninput="render4()" />
+    <select id="sort-col4" onchange="render4()">
+      <option value="dep">Département</option>
+      <option value="nb">Nb. vacants</option>
+      <option value="taux">Taux (%)</option>
+      <option value="part">Répartition (%)</option>
+    </select>
+    <select id="sort-dir4" onchange="render4()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+
+  <div class="table-wrap4">
+    <table class="table4">
+      <thead>
+        <tr>
+          <th onclick="sortBy4('dep')">Département</th>
+          <th onclick="sortBy4('nb')" style="text-align:right">Nb. vacants</th>
+          <th onclick="sortBy4('taux')" style="text-align:right">Taux</th>
+          <th onclick="sortBy4('part')" style="text-align:right">Répartition</th>
+          <th style="width:30%">Evolution</th>
+        </tr>
+      </thead>
+      <tbody id="tbody4"></tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  .container4 { max-width: 900px; margin:20px 0 40px;}
+  .controls4 { display: flex; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .table-wrap4 { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+  .table4 { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .table4 th, .table4 td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; }
+  .table4 th { background: #f1efe8; cursor: pointer; }
+  .table4 tr.total-row4 td { font-weight: 600; background: #f1efe8; }
+  .table4 tr:hover:not(.total-row4) td { background: #f9f9f7; }
+
+  .metrics4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+  .metric4 { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+  .metric4-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+  .metric4-value { font-size: 20px; font-weight: 500; }
+  .metric4-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+
+  .badge4 { padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+  .badge4.pos { background:#ddffdd; color:#1a5c1a; }
+  .badge4.neg { background:#ffdddd; color:#7a1a1a; }
+
+  .bar-bg4 { width:100%; height:6px; background:#e0dfd8; border-radius:4px; position:relative; overflow:hidden; }
+  .bar4 { height:100%; background:#2d8a4e; border-radius:4px; }
+</style>
+
+<script>
+// --- Données du tableau 4 ---
+const raw4 = [
+  {dep:"Charente", nb:10956, taux:5.20, part:7.09},
+  {dep:"Charente-Maritime", nb:14491, taux:3.00, part:9.38},
+  {dep:"Corrèze", nb:11373, taux:6.90, part:7.36},
+  {dep:"Creuse", nb:9401, taux:10.00, part:6.08},
+  {dep:"Dordogne", nb:15702, taux:5.60, part:10.16},
+  {dep:"Gironde", nb:24268, taux:2.50, part:15.71},
+  {dep:"Landes", nb:9574, taux:3.30, part:6.20},
+  {dep:"Lot-et-Garonne", nb:12535, taux:6.40, part:8.11},
+  {dep:"Pyrénées-Atlantiques", nb:13701, taux:3.90, part:8.86},
+  {dep:"Deux-Sèvres", nb:7894, taux:3.80, part:5.11},
+  {dep:"Vienne", nb:11430, taux:4.50, part:7.40},
+  {dep:"Haute-Vienne", nb:13180, taux:5.60, part:8.53},
+];
+
+const total4 = { dep:"Nouvelle-Aquitaine", nb:154505, taux:4.00, part:100.00 };
+
+let currentSort4 = "dep";
+let currentDir4 = "asc";
+
+function sortBy4(col) {
+  if (currentSort4 === col) currentDir4 = currentDir4 === "asc" ? "desc" : "asc";
+  else { currentSort4 = col; currentDir4 = "asc"; }
+  document.getElementById("sort-col4").value = col;
+  document.getElementById("sort-dir4").value = currentDir4;
+  render4();
+}
+
+function render4() {
+  const q   = document.getElementById("search4").value.toLowerCase();
+  const col = document.getElementById("sort-col4").value;
+  const dir = document.getElementById("sort-dir4").value;
+
+  let rows = raw4.filter(r => r.dep.toLowerCase().includes(q));
+
+  rows.sort((a,b) => {
+    if (col === "dep") return dir === "asc"
+      ? a.dep.localeCompare(b.dep, "fr")
+      : b.dep.localeCompare(a.dep, "fr");
+    return dir === "asc" ? a[col] - b[col] : b[col] - a[col];
+  });
+
+  const maxPart = Math.max(...rows.map(r => r.part));
+
+  const tbody = document.getElementById("tbody4");
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.dep}</td>
+      <td style="text-align:right">${r.nb.toLocaleString("fr-FR")}</td>
+      <td style="text-align:right">${r.taux.toFixed(2)}%</td>
+      <td style="text-align:right">
+        <span class="badge4 pos">${r.part.toFixed(2)}%</span>
+      </td>
+      <td>
+        <div class="bar-bg4">
+          <div class="bar4" style="width:${(r.part/maxPart)*100}%"></div>
+        </div>
+      </td>
+    </tr>
+  `).join("");
+
+  // TOTAL
+  tbody.innerHTML += `
+    <tr class="total-row4">
+      <td>${total4.dep}</td>
+      <td style="text-align:right">${total4.nb.toLocaleString("fr-FR")}</td>
+      <td style="text-align:right">${total4.taux.toFixed(2)}%</td>
+      <td style="text-align:right"><span class="badge4 pos">100.00%</span></td>
+      <td></td>
+    </tr>
+  `;
+
+  renderMetrics4(rows);
+}
+
+function renderMetrics4(rows) {
+  const maxVac = [...rows].sort((a,b)=>b.nb-a.nb)[0];
+  const maxTaux = [...rows].sort((a,b)=>b.taux-a.taux)[0];
+  const maxPart = [...rows].sort((a,b)=>b.part-a.part)[0];
+
+  document.getElementById("metrics4").innerHTML = `
+    <div class="metric4">
+      <div class="metric4-label">Total logements vacants</div>
+      <div class="metric4-value">${total4.nb.toLocaleString("fr-FR")}</div>
+      <div class="metric4-sub">${total4.dep}</div>
+    </div>
+
+    <div class="metric4">
+      <div class="metric4-label">Plus grand nombre</div>
+      <div class="metric4-value">${maxVac.nb.toLocaleString("fr-FR")}</div>
+      <div class="metric4-sub">${maxVac.dep}</div>
+    </div>
+
+    <div class="metric4">
+      <div class="metric4-label">Taux le plus élevé</div>
+      <div class="metric4-value">${maxTaux.taux.toFixed(2)}%</div>
+      <div class="metric4-sub">${maxTaux.dep}</div>
+    </div>
+
+    <div class="metric4">
+      <div class="metric4-label">Plus forte répartition</div>
+      <div class="metric4-value">${maxPart.part.toFixed(2)}%</div>
+      <div class="metric4-sub">${maxPart.dep}</div>
+    </div>
+  `;
+}
+
+render4();
+</script>
+```
+
 
 ## 3. Caractéristiques du parc vacant
 
