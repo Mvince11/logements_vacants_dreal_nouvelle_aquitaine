@@ -192,13 +192,17 @@ document.addEventListener("DOMContentLoaded", function(){
 </div>
 </div>
 </div>
-<pre><code>• (*) 1967 et 1974 pour les DOM
-• Les données proposées sont établies à périmètre géographique identique, dans la géographie en vigueur au 01/01/2025.
-• Sources : Insee, RP1967 au RP1999 dénombrements, RP2006 au RP2022 exploitations principales</code></pre>
+<ul>
+<li> (*) 1967 et 1974 pour les DOM</li>
+<li> Les données proposées sont établies à périmètre géographique identique, dans la géographie en vigueur au 01/01/2025.</li>
+<li> Sources : Insee, RP1967 au RP1999 dénombrements, RP2006 au RP2022 exploitations principales</li>
+</ul>
 <section id="catégories-de-logements" class="level4">
 <h4 class="anchored" data-anchor-id="catégories-de-logements">1.1.1 Catégories de logements</h4>
 <p><a href="images/categories_insee.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/categories_insee.jpg" class="img-fluid"></a></p>
-<pre><code>• Sources : Insee, RP2011, RP2016 et RP2022, exploitations principales, géographie au 01/01/2025 </code></pre>
+<ul>
+  <li> Sources : Insee, RP2011, RP2016 et RP2022, exploitations principales, géographie au 01/01/2025 </li>
+</ul>
 </section>
 </section>
 </section>
@@ -219,10 +223,12 @@ document.addEventListener("DOMContentLoaded", function(){
 <p>LOVAC 2024 : Données GMBI + correction DGFIP avec Taxe habitation (Incidence : Légère surévaluation des résidences secondaires et des logements vacants).</p>
 <p>LOVAC 2025 : Données brut GMBI (Diminution de 35% du parc recensé)→ Comparaison millésime 2020 et 2024. Et actualisation de l’état des lieux avec LOVAC 2025.</p>
 <p>Les fichiers LOVAC sont obtenus par croisement de plusieurs données fiscales :</p>
-<pre><code>    • à partir du fichier 1767bisCOM transmis par la DGFiP qui liste les locaux résidentiels (logements de dépendances) considérés vacants au 1er janvier de l’année,  
-    • des Fichiers fonciers produits par le Cerema à partir des données MAJIC et PCI, et qui permettent une localisation et description fines des locaux fiscaux et une identification des propriétaires,  
-    • des données DV3F (Demande de Valeur Foncières enrichies) qui apportent des informations sur les biens ayant fait l’objet d’une transaction onéreuse depuis 2010,  
-    • de la BAN (Base Adresse Nationale), référentiel produit par l'IGN et la Dinum, qui permet de « redresser » les adresses mentionnées.  </code></pre>
+<ul>
+  <li> à partir du fichier 1767bisCOM transmis par la DGFiP qui liste les locaux résidentiels (logements de dépendances) considérés vacants au 1er janvier de l’année,</li>  
+  <li> des Fichiers fonciers produits par le Cerema à partir des données MAJIC et PCI, et qui permettent une localisation et description fines des locaux fiscaux et une identification des propriétaires,</li>  
+  <li> des données DV3F (Demande de Valeur Foncières enrichies) qui apportent des informations sur les biens ayant fait l’objet d’une transaction onéreuse depuis 2010,</li>  
+  <li> de la BAN (Base Adresse Nationale), référentiel produit par l'IGN et la Dinum, qui permet de « redresser » les adresses mentionnées.</li>
+</ul>
 <p>À noter qu’entre la fin progressive de la taxe d’habitation et l’apparition du dispositif GMBI (Gérer Mon Bien Immobilier) destiné à recenser des informations sur l’occupation des locaux directement auprès des propriétaires, il est possible que les informations relatives à l’occupation des locaux diffèrent ou soient rectifiées au fil des millésimes.</p>
 </section>
 <section id="localisation-de-la-vacance" class="level3">
@@ -384,7 +390,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
