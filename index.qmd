@@ -1,0 +1,36 @@
+---
+title: "Etude sur la vacance de logements en Nouvelle-Aquitaine"
+subtitle: "Caractéristiques 2025"
+image: "images/image-accueil.jpg"
+lang: fr
+about:
+  template: trestles
+  image: "images/image-accueil.jpg"
+toc: true
+---
+
+::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+Cette étude fait suite à une étude réalisée par le Cerema pour le compte de la DREAL Nouvelle Aquitaine en 2020. L’analyse révélait le taux de logements vacants en 2019 au niveau régional, départemental, des principaux EPCI et l’évolution de ce taux de vacance entre 2015 et 2019.
+
+L’étude comportait également un important volet qualitatif sur les outils et politiques mises en œuvre autour de l’habitat et de l’offre de logements.
+
+La DREAL a voulu connaître la situation de la vacance régionale néo-Aquitaine en 2024, ses caractéristiques et son évolution depuis 2020. La tendance n’a pas été réalisable sur la base LOVAC du Ministère des Finances du fait d’une réforme majeure intervenue en 2023 (Mise en place d’une refonte de la base de calcul par la mise en place d’un outil « GMBI » Gestion de mon bien immobilier sur la déclaration des propriétaires fonciers).
+
+## Contexte et objet de l’étude
+
+État des lieux 2025 L’objectif de ce volet est de produire une photographie actualisée du parc vacant à l’échelle régionale et infrarégionale, en conservant les mêmes indicateurs que l’étude initiale :
+
+❖ nombre et part de logements vacants depuis plus de 2 ans,\
+❖ durée de vacance,\
+❖ typologie du parc (type de logement, année de construction)\
+❖ localisation (à définir en lien avec le maître d’ouvrage)\
+❖ qualité du bâti
+
+Les résultats seront agrégés aux niveaux géographiques suivants:
+
+❖ région Nouvelle-Aquitaine\
+❖ départements,\
+❖ EPCI\
+❖ Villes centre des EPCI\
+❖ Quartiers des principales villes de la région
+:::

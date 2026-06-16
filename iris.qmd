@@ -1,0 +1,284 @@
+---
+title: ""
+format: html
+editor: visual
+lang: fr
+lightbox: true
+toc: true
+---
+
+## 4.3 Par Iris
+
+IRIS signifie "Îlots Regroupés pour l'Information Statistique" et correspond à la plus petite unité statistique officielle permettant d’analyser un quartier ou un micro-territoire en France.
+
+### 4.3.1 Définition et origine
+
+L’IRIS est un découpage géographique élaboré par l’INSEE pour affiner l’analyse statistique infra-communale.
+
+### 4.3.2 Population et taille
+
+Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, et peut être plus petit ou plus étendu en zone rurale. Il constitue une partition du territoire communal, notamment pour les communes de plus de 10 000 habitants et une grande partie de celles entre 5 000 et 10 000 habitants.
+
+## Charente
+
+::: {.callout-tip collapse="true" icon="false"}
+### Angoulême
+
+![](images/charente/angouleme.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Cognac
+
+![](images/charente/cognac.png){.lightbox}
+:::
+
+## Charente-Maritime
+
+::: {.callout-tip collapse="true" icon="false"}
+### La Rochelle
+
+![](images/charente-maritime/la_rochelle.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Rochefort
+
+![](images/charente-maritime/rochefort.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Royan
+
+![](images/charente-maritime/royan.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saintes
+
+![](images/charente-maritime/saintes.png){.lightbox}
+:::
+
+## Corrèze
+
+::: {.callout-tip collapse="true" icon="false"}
+### Tulle
+
+![](images/correze/tulle.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Brive-la-Gaillarde
+
+![](images/correze/brive.png){.lightbox}
+:::
+
+## Creuse
+
+::: {.callout-tip collapse="true" icon="false"}
+### Guêret
+
+![](images/creuse/gueret.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### La Souterraine
+
+![](images/creuse/la_souterraine.png){.lightbox}
+:::
+
+## Dordogne
+
+::: {.callout-tip collapse="true" icon="false"}
+### Périgueux
+
+![](images/dordogne/perigueux.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Bergerac
+
+![](images/dordogne/bergerac.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Sarlat-la-Canédat
+
+![](images/dordogne/sarlat.png){.lightbox}
+:::
+
+## Gironde
+
+::: {.callout-tip collapse="true" icon="false"}
+### Bordeaux
+
+![](images/gironde/bordeaux.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Libourne
+
+![](images/gironde/libourne.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Bègles
+
+![](images/gironde/begles.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Le Bouscat
+
+![](images/gironde/le_bouscat.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Cenon
+
+![](images/gironde/cenon.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Gradignan
+
+![](images/gironde/gradignan.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Lormont
+
+![](images/gironde/lormont.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Mérignac
+
+![](images/gironde/merignac.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Pessac
+
+![](images/gironde/pessac.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-Médard-en-Jalles
+
+![](images/gironde/saint_medard.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Talence
+
+![](images/gironde/talence.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Villenave-d'Ornon
+
+![](images/gironde/villenave.png){.lightbox}
+:::
+
+## Landes
+
+::: {.callout-tip collapse="true" icon="false"}
+### Mont-de-Marsan
+
+![](images/landes/mont_de_marsan.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Dax
+
+![](images/landes/dax.png){.lightbox}
+:::
+
+## Lot-et-Garonne
+
+::: {.callout-tip collapse="true" icon="false"}
+### Agen
+
+![](images/lot_et_garonne/agen.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Marmande
+
+![](images/lot_et_garonne/marmande.png){.lightbox}
+:::
+
+## Pyrénées Atlantiques
+
+::: {.callout-tip collapse="true" icon="false"}
+### Pau
+
+![](images/pyrenees_atlantiques/pau.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Anglet
+
+![](images/pyrenees_atlantiques/anglet.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Bayonne
+
+![](images/pyrenees_atlantiques/bayonne.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Biarritz
+
+![](images/pyrenees_atlantiques/biarritz.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Oloron-Sainte-Marie
+
+![](images/pyrenees_atlantiques/oloron.png){.lightbox}
+:::
+
+## Deux Sèvres
+
+::: {.callout-tip collapse="true" icon="false"}
+### Niort
+
+![](images/deux-sevres/niort.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Parthenay
+
+![](images/deux-sevres/parthenay.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Bressuire
+
+![](images/deux-sevres/bressuire.png){.lightbox}
+:::
+
+## Vienne
+
+::: {.callout-tip collapse="true" icon="false"}
+### Poitiers
+
+![](images/vienne/poitiers.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Châtellerault
+
+![](images/vienne/chatellerault.png){.lightbox}
+:::
+
+## Haute-Vienne
+
+::: {.callout-tip collapse="true" icon="false"}
+### Limoges
+
+![](images/haute_vienne/limoges.png){.lightbox}
+:::
