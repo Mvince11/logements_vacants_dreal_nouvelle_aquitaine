@@ -91,10 +91,9 @@ ggplot(df, aes(x = annee)) +
 
 #### 1.1.1 Catégories de logements
 
-<div>
-  <img src="images/categories_insee.jpg " style="display:block; margin-left:auto; margin-right: auto;">
-</div>
-
+::: {}
+<img src="images/categories_insee.jpg " style="display:block; margin-left:auto; margin-right: auto;"/>
+:::
 
 ```{=html}
 <ul>
@@ -171,14 +170,14 @@ Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de
   <div class="table-wrap">
     <table>
   <thead>
-    <tr>
-      <th onclick="sortBy('dep')">Département <span class="sort-icon" id="icon-dep">↕</span></th>
-      <th onclick="sortBy('2020')" style="text-align:right">2020 <span class="sort-icon" id="icon-2020">↕</span></th>
-      <th onclick="sortBy('2024')" style="text-align:right">2024 <span class="sort-icon" id="icon-2024">↕</span></th>
-      <th onclick="sortBy('ecart')" style="text-align:right">Écart <span class="sort-icon" id="icon-ecart">↕</span></th>
-      <th onclick="sortBy('evo')" style="text-align:right">Évol. <span class="sort-icon" id="icon-evo">↕</span></th>
-      <th onclick="sortBy('evo')">Progression <span class="sort-icon" id="icon-bar">↕</span></th>
-    </tr>
+<tr>
+  <th onclick="sortBy('dep')">Département <span class="sort-icon" id="icon-dep">↕</span></th>
+  <th onclick="sortBy('2020')" style="text-align:right">2020 <span class="sort-icon" id="icon-2020">↕</span></th>
+  <th onclick="sortBy('2024')" style="text-align:right">2024 <span class="sort-icon" id="icon-2024">↕</span></th>
+  <th onclick="sortBy('ecart')" style="text-align:right">Écart <span class="sort-icon" id="icon-ecart">↕</span></th>
+  <th onclick="sortBy('evo')" style="text-align:right">Évol. <span class="sort-icon" id="icon-evo">↕</span></th>
+  <th onclick="sortBy('evo')">Progression <span class="sort-icon" id="icon-bar">↕</span></th>
+</tr>
   </thead>
   <tbody id="tbody"></tbody>
 </table>
@@ -378,12 +377,12 @@ render();
   <div class="table-wrap2">
     <table class="table2">
   <thead>
-    <tr>
-      <th onclick="sortBy2('dep')">Département</th>
-      <th onclick="sortBy2('v2020')" style="text-align:right">2020</th>
-      <th onclick="sortBy2('v2024')" style="text-align:right">2024</th>
-      <th onclick="sortBy2('ecart')" style="text-align:right">Écart</th>
-    </tr>
+<tr>
+  <th onclick="sortBy2('dep')">Département</th>
+  <th onclick="sortBy2('v2020')" style="text-align:right">2020</th>
+  <th onclick="sortBy2('v2024')" style="text-align:right">2024</th>
+  <th onclick="sortBy2('ecart')" style="text-align:right">Écart</th>
+</tr>
   </thead>
   <tbody id="tbody2"></tbody>
 </table>
@@ -602,12 +601,12 @@ render2();
   <div class="table-wrap3">
     <table class="table3">
   <thead>
-    <tr>
-      <th onclick="sortBy3('dep')">Département</th>
-      <th onclick="sortBy3('v2020')" style="text-align:right">2020</th>
-      <th onclick="sortBy3('v2024')" style="text-align:right">2024</th>
-      <th onclick="sortBy3('ecart')" style="text-align:right">Écart</th>
-    </tr>
+<tr>
+  <th onclick="sortBy3('dep')">Département</th>
+  <th onclick="sortBy3('v2020')" style="text-align:right">2020</th>
+  <th onclick="sortBy3('v2024')" style="text-align:right">2024</th>
+  <th onclick="sortBy3('ecart')" style="text-align:right">Écart</th>
+</tr>
   </thead>
   <tbody id="tbody3"></tbody>
 </table>
@@ -845,13 +844,13 @@ La vacance de logement est sensiblement différente d’un département à l’a
   <div class="table-wrap4">
     <table class="table4">
   <thead>
-    <tr>
-      <th onclick="sortBy4('dep')">Département</th>
-      <th onclick="sortBy4('nb')" style="text-align:right">Nb. vacants</th>
-      <th onclick="sortBy4('taux')" style="text-align:right">Taux</th>
-      <th onclick="sortBy4('part')" style="text-align:right">Répartition</th>
-      <th style="width:30%">Evolution</th>
-    </tr>
+<tr>
+  <th onclick="sortBy4('dep')">Département</th>
+  <th onclick="sortBy4('nb')" style="text-align:right">Nb. vacants</th>
+  <th onclick="sortBy4('taux')" style="text-align:right">Taux</th>
+  <th onclick="sortBy4('part')" style="text-align:right">Répartition</th>
+  <th style="width:30%">Evolution</th>
+</tr>
   </thead>
   <tbody id="tbody4"></tbody>
 </table>
@@ -1026,11 +1025,9 @@ Une sur-représentation de petits logements parmi les logements vacants Les peti
 
 A partir du classement [**cadastral**]{style="cursor:pointer;" data-bs-toggle="tooltip" title="Le classement cadastral est un indicateur de la qualité globale du logement selon des critères relatifs au caractère architectural du bâtiment, à la qualité de sa construction, et à ses équipements. Établi pour l’ensemble des habitations, il sert de base de la valeur locative. Chaque local en France est classé dans une des huit catégories de référence : du 1 (habitation luxueuse) à 8 (logement délabré et insalubre)."} , en considérant que les logements classés 6, 7 et 8 (retenus comme critère prépondérant dans la définition du parc potentiellement indigne) ne peuvent être remis sur le marché sans un minimum de réhabilitation, la répartition des logements du parc privé vacants depuis plus de 2 ans est la suivante :
 
-
-<div>
-  <img src="images/tableau_categorie.jpg " style="display:block; margin-left:auto; margin-right: auto; border-radius: inherit;">
-</div>
-
+::: {}
+<img src="images/tableau_categorie.jpg " style="display:block; margin-left:auto; margin-right: auto; border-radius: inherit;"/>
+:::
 
 ```{=html}
 <div class="container5" style="margin:20px 0 40px;">
@@ -1061,27 +1058,27 @@ A partir du classement [**cadastral**]{style="cursor:pointer;" data-bs-toggle="t
 
   <div class="table-wrap5">
     <table class="table5">
-      <thead>
-        <tr>
-          <th rowspan="2" onclick="sortBy5('dep')">Département</th>
-          <th colspan="2" style="text-align:center;">3</th>
-          <th colspan="2" style="text-align:center;">4</th>
-          <th colspan="2" style="text-align:center;">5</th>
-          <th colspan="2" style="text-align:center;">6</th>
-          <th colspan="2" style="text-align:center;">7</th>
-          <th colspan="2" style="text-align:center;">8</th>
-        </tr>
-        <tr>
-          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
-          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
-          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
-          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
-          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
-          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
-        </tr>
-      </thead>
-      <tbody id="tbody5"></tbody>
-    </table>
+  <thead>
+    <tr>
+      <th rowspan="2" onclick="sortBy5('dep')">Département</th>
+      <th colspan="2" style="text-align:center;">3</th>
+      <th colspan="2" style="text-align:center;">4</th>
+      <th colspan="2" style="text-align:center;">5</th>
+      <th colspan="2" style="text-align:center;">6</th>
+      <th colspan="2" style="text-align:center;">7</th>
+      <th colspan="2" style="text-align:center;">8</th>
+    </tr>
+    <tr>
+      <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+      <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+      <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+      <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+      <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+      <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+    </tr>
+  </thead>
+  <tbody id="tbody5"></tbody>
+</table>
   </div>
 </div>
 
@@ -1192,16 +1189,13 @@ function render5() {
 
 render5();
 </script>
-
 ```
-
 
 Il peut ainsi être considéré que 28,3% des logements vacants de plus de 2 ans pourraient être remis sur le marché sans travaux (classement 3,4,5), voire prés des ¾ (Pyrénées-Atlantiques, Gironde, Landes, Charente-Maritime comportant plus de 80%,) en incluant le classement 6 des immeubles sans caractère et de qualité courante, avec peu de travaux .
 
-<div>
-  <img src="images/taux_logements_en_bon_etat.jpg" style="display:block; margin-left:auto; margin-right: auto;">
-</div>
-
+::: {}
+<img src="images/taux_logements_en_bon_etat.jpg" style="display:block; margin-left:auto; margin-right: auto;"/>
+:::
 
 Territorialement, ce parc de logements vacants de plus de 2 ans ne nécessitant à priori pas de travaux lourds est présent sur l’ensemble de la région : A la lecture du tableau ci-dessus, il semble que plus d’un tiers du parc des logements vacants des Deux-Sèvres et des Pyrénées-Atlantiques puisse être remis sur le marché à moindre coût. A l’inverse, dans la Vienne ou la Creuse, le parc vacant semble globalement plus dégradé.
 
@@ -1243,21 +1237,21 @@ La méthodologie de la définition de ces trois zones est à retrouver en annexe
 
   <div class="table-wrap6">
     <table class="table6">
-      <thead>
-        <tr>
-          <th rowspan="2" onclick="sortBy6('dep')">Département</th>
-          <th colspan="2">Classe 1<br><small>Zone Centre</small></th>
-          <th colspan="2">Classe 2<br><small>Zone Péri-centre</small></th>
-          <th colspan="2">Classe 3<br><small>Hors agglomération</small></th>
-        </tr>
-        <tr>
-          <th style="text-align:center;">Nb</th><th>%</th>
-          <th>Nb</th><th>%</th>
-          <th>Nb</th><th>%</th>
-        </tr>
-      </thead>
-      <tbody id="tbody6"></tbody>
-    </table>
+  <thead>
+    <tr>
+      <th rowspan="2" onclick="sortBy6('dep')">Département</th>
+      <th colspan="2">Classe 1<br><small>Zone Centre</small></th>
+      <th colspan="2">Classe 2<br><small>Zone Péri-centre</small></th>
+      <th colspan="2">Classe 3<br><small>Hors agglomération</small></th>
+    </tr>
+    <tr>
+      <th style="text-align:center;">Nb</th><th>%</th>
+      <th>Nb</th><th>%</th>
+      <th>Nb</th><th>%</th>
+    </tr>
+  </thead>
+  <tbody id="tbody6"></tbody>
+</table>
   </div>
 </div>
 
@@ -1354,9 +1348,7 @@ function render6() {
 
 render6();
 </script>
-
 ```
-
 
 A l’échelle régionale 51,7% des logements vacants sont situés en zone centre et 14,3% en zone péricentrale soit 66% du parc (les 2/3)
 

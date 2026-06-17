@@ -1,7 +1,7 @@
 ---
 title: "le CEREMA"
 image: "images/logos/logo_cerema_br.jpg"
-date: 2024-09-11
+date: 2026-06-17
 lang: fr
 about:
   template: trestles
