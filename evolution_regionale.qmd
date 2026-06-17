@@ -81,7 +81,7 @@ ggplot(df, aes(x = annee)) +
 
 ```
 
-``` {=html}
+```{=html}
 <ul>
 <li> (*) 1967 et 1974 pour les DOM</li>
 <li> Les données proposées sont établies à périmètre géographique identique, dans la géographie en vigueur au 01/01/2025.</li>
@@ -91,9 +91,12 @@ ggplot(df, aes(x = annee)) +
 
 #### 1.1.1 Catégories de logements
 
-![](images/categories_insee.jpg){.lightbox}
+<div>
+  <img src="images/categories_insee.jpg " style="display:block; margin-left:auto; margin-right: auto;">
+</div>
 
-``` {=html}
+
+```{=html}
 <ul>
   <li> Sources : Insee, RP2011, RP2016 et RP2022, exploitations principales, géographie au 01/01/2025 </li>
 </ul>
@@ -105,7 +108,6 @@ ggplot(df, aes(x = annee)) +
 
 Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de 1,11M à 1,15M (2025 + 20,7 % soit 1,35M à plus de 2 ans mais -35 % au total) La vacance structurelle a évolué deux fois moins vite en Nouvelle Aquitaine (10 points de moins 20,99 % contre 10,6%) qu’en France.
 
-
 ```{=html}
 <!DOCTYPE html>
 <html lang="fr">
@@ -116,7 +118,7 @@ Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
-    h4 { font-size: 1.15rem; font-weight: 500; margin-bottom: 1.5rem; text-align:center;}
+    h5 { font-size: 1.15rem; font-weight: 500; margin-bottom: 1.5rem; text-align:center;}
     .container { max-width: 900px; margin: 0 auto; }
     .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
     input[type="text"] { flex: 1; min-width: 160px; padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; }
@@ -168,18 +170,18 @@ Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de
   </div>
   <div class="table-wrap">
     <table>
-      <thead>
-        <tr>
-          <th onclick="sortBy('dep')">Département <span class="sort-icon" id="icon-dep">↕</span></th>
-          <th onclick="sortBy('2020')" style="text-align:right">2020 <span class="sort-icon" id="icon-2020">↕</span></th>
-          <th onclick="sortBy('2024')" style="text-align:right">2024 <span class="sort-icon" id="icon-2024">↕</span></th>
-          <th onclick="sortBy('ecart')" style="text-align:right">Écart <span class="sort-icon" id="icon-ecart">↕</span></th>
-          <th onclick="sortBy('evo')" style="text-align:right">Évol. <span class="sort-icon" id="icon-evo">↕</span></th>
-          <th onclick="sortBy('evo')">Progression <span class="sort-icon" id="icon-bar">↕</span></th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
+  <thead>
+    <tr>
+      <th onclick="sortBy('dep')">Département <span class="sort-icon" id="icon-dep">↕</span></th>
+      <th onclick="sortBy('2020')" style="text-align:right">2020 <span class="sort-icon" id="icon-2020">↕</span></th>
+      <th onclick="sortBy('2024')" style="text-align:right">2024 <span class="sort-icon" id="icon-2024">↕</span></th>
+      <th onclick="sortBy('ecart')" style="text-align:right">Écart <span class="sort-icon" id="icon-ecart">↕</span></th>
+      <th onclick="sortBy('evo')" style="text-align:right">Évol. <span class="sort-icon" id="icon-evo">↕</span></th>
+      <th onclick="sortBy('evo')">Progression <span class="sort-icon" id="icon-bar">↕</span></th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
   </div>
 </div>
 
@@ -316,11 +318,9 @@ render();
 </script>
 </body>
 </html>
-
 ```
 
 ### 2.2 Evolution de la part départementale
-
 
 ```{=html}
 <!DOCTYPE html>
@@ -377,16 +377,16 @@ render();
 
   <div class="table-wrap2">
     <table class="table2">
-      <thead>
-        <tr>
-          <th onclick="sortBy2('dep')">Département</th>
-          <th onclick="sortBy2('v2020')" style="text-align:right">2020</th>
-          <th onclick="sortBy2('v2024')" style="text-align:right">2024</th>
-          <th onclick="sortBy2('ecart')" style="text-align:right">Écart</th>
-        </tr>
-      </thead>
-      <tbody id="tbody2"></tbody>
-    </table>
+  <thead>
+    <tr>
+      <th onclick="sortBy2('dep')">Département</th>
+      <th onclick="sortBy2('v2020')" style="text-align:right">2020</th>
+      <th onclick="sortBy2('v2024')" style="text-align:right">2024</th>
+      <th onclick="sortBy2('ecart')" style="text-align:right">Écart</th>
+    </tr>
+  </thead>
+  <tbody id="tbody2"></tbody>
+</table>
   </div>
 </div>
 
@@ -544,7 +544,6 @@ render2();
 
 </body>
 </html>
-
 ```
 
 ```{=html}
@@ -602,16 +601,16 @@ render2();
 
   <div class="table-wrap3">
     <table class="table3">
-      <thead>
-        <tr>
-          <th onclick="sortBy3('dep')">Département</th>
-          <th onclick="sortBy3('v2020')" style="text-align:right">2020</th>
-          <th onclick="sortBy3('v2024')" style="text-align:right">2024</th>
-          <th onclick="sortBy3('ecart')" style="text-align:right">Écart</th>
-        </tr>
-      </thead>
-      <tbody id="tbody3"></tbody>
-    </table>
+  <thead>
+    <tr>
+      <th onclick="sortBy3('dep')">Département</th>
+      <th onclick="sortBy3('v2020')" style="text-align:right">2020</th>
+      <th onclick="sortBy3('v2024')" style="text-align:right">2024</th>
+      <th onclick="sortBy3('ecart')" style="text-align:right">Écart</th>
+    </tr>
+  </thead>
+  <tbody id="tbody3"></tbody>
+</table>
   </div>
 </div>
 
@@ -758,7 +757,6 @@ render3();
 </script>
 ```
 
-
 Evolution du nombre de logements vacants entre 2020 et 2024 en France + 3,6 % de 1,11M à 1,15M (2025 + 20,7 % plus de 2 ans mais -35 % au total)
 
 Méthodologie Contexte Évolution de la base de données LOVAC entre 2020 et 2025 avec l’arrivée de GMBI (Gérer Mon Bien Immobilier) depuis 2023.
@@ -771,7 +769,7 @@ LOVAC 2025 : Données brut GMBI (Diminution de 35% du parc recensé)→ Comparai
 
 Les fichiers LOVAC sont obtenus par croisement de plusieurs données fiscales :
 
-``` {=html}
+```{=html}
 <ul>
   <li> à partir du fichier 1767bisCOM transmis par la DGFiP qui liste les locaux résidentiels (logements de dépendances) considérés vacants au 1er janvier de l’année,</li>  
   <li> des Fichiers fonciers produits par le Cerema à partir des données MAJIC et PCI, et qui permettent une localisation et description fines des locaux fiscaux et une identification des propriétaires,</li>  
@@ -789,7 +787,6 @@ Les fichiers LOVAC sont obtenus par croisement de plusieurs données fiscales :
 ### 2.4 Taux de vacance départementale
 
 La vacance de logement est sensiblement différente d’un département à l’autre (de 2,5% en Gironde à 10% dans la Creuse) et s’établit en « dégradé » d’Ouest (Littoral) en Est et à l’intérieur (départements plus ruraux)
-
 
 ```{=html}
 <!DOCTYPE html>
@@ -847,17 +844,17 @@ La vacance de logement est sensiblement différente d’un département à l’a
 
   <div class="table-wrap4">
     <table class="table4">
-      <thead>
-        <tr>
-          <th onclick="sortBy4('dep')">Département</th>
-          <th onclick="sortBy4('nb')" style="text-align:right">Nb. vacants</th>
-          <th onclick="sortBy4('taux')" style="text-align:right">Taux</th>
-          <th onclick="sortBy4('part')" style="text-align:right">Répartition</th>
-          <th style="width:30%">Evolution</th>
-        </tr>
-      </thead>
-      <tbody id="tbody4"></tbody>
-    </table>
+  <thead>
+    <tr>
+      <th onclick="sortBy4('dep')">Département</th>
+      <th onclick="sortBy4('nb')" style="text-align:right">Nb. vacants</th>
+      <th onclick="sortBy4('taux')" style="text-align:right">Taux</th>
+      <th onclick="sortBy4('part')" style="text-align:right">Répartition</th>
+      <th style="width:30%">Evolution</th>
+    </tr>
+  </thead>
+  <tbody id="tbody4"></tbody>
+</table>
   </div>
 </div>
 
@@ -998,7 +995,6 @@ render4();
 </script>
 ```
 
-
 ## 3. Caractéristiques du parc vacant
 
 ### 3.1 Par période de construction
@@ -1030,15 +1026,182 @@ Une sur-représentation de petits logements parmi les logements vacants Les peti
 
 A partir du classement [**cadastral**]{style="cursor:pointer;" data-bs-toggle="tooltip" title="Le classement cadastral est un indicateur de la qualité globale du logement selon des critères relatifs au caractère architectural du bâtiment, à la qualité de sa construction, et à ses équipements. Établi pour l’ensemble des habitations, il sert de base de la valeur locative. Chaque local en France est classé dans une des huit catégories de référence : du 1 (habitation luxueuse) à 8 (logement délabré et insalubre)."} , en considérant que les logements classés 6, 7 et 8 (retenus comme critère prépondérant dans la définition du parc potentiellement indigne) ne peuvent être remis sur le marché sans un minimum de réhabilitation, la répartition des logements du parc privé vacants depuis plus de 2 ans est la suivante :
 
-![](images/tableau_categorie.jpg){.lightbox}
 
-::: center
-![](images/qualite_bati.jpg){.lightbox}
-:::
+<div>
+  <img src="images/tableau_categorie.jpg " style="display:block; margin-left:auto; margin-right: auto; border-radius: inherit;">
+</div>
+
+
+```{=html}
+<div class="container5" style="margin:20px 0 40px;">
+  <h5 style="text-align:center;">Classement cadastral des logements vacants</h5>
+
+  <div class="controls5">
+    <input type="text" placeholder="Rechercher un département…" id="search5" oninput="render5()" />
+    <select id="sort-col5" onchange="render5()">
+      <option value="dep">Département</option>
+      <option value="c3_nb">Classe 3 Nb</option>
+      <option value="c3_pct">Classe 3 %</option>
+      <option value="c4_nb">Classe 4 Nb</option>
+      <option value="c4_pct">Classe 4 %</option>
+      <option value="c5_nb">Classe 5 Nb</option>
+      <option value="c5_pct">Classe 5 %</option>
+      <option value="c6_nb">Classe 6 Nb</option>
+      <option value="c6_pct">Classe 6 %</option>
+      <option value="c7_nb">Classe 7 Nb</option>
+      <option value="c7_pct">Classe 7 %</option>
+      <option value="c8_nb">Classe 8 Nb</option>
+      <option value="c8_pct">Classe 8 %</option>
+    </select>
+    <select id="sort-dir5" onchange="render5()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+
+  <div class="table-wrap5">
+    <table class="table5">
+      <thead>
+        <tr>
+          <th rowspan="2" onclick="sortBy5('dep')">Département</th>
+          <th colspan="2" style="text-align:center;">3</th>
+          <th colspan="2" style="text-align:center;">4</th>
+          <th colspan="2" style="text-align:center;">5</th>
+          <th colspan="2" style="text-align:center;">6</th>
+          <th colspan="2" style="text-align:center;">7</th>
+          <th colspan="2" style="text-align:center;">8</th>
+        </tr>
+        <tr>
+          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+          <th style="text-align: end;">Nb</th><th style="text-align: end;">%</th>
+        </tr>
+      </thead>
+      <tbody id="tbody5"></tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  .container5 { max-width: 1100px; margin: 0 auto; }
+  .controls5 { display: flex; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .table5 {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed; /* important */
+}
+
+  .table5 th, .table5 td {
+    padding: 6px 8px;
+    border-bottom: 0.5px solid #e0dfd8;
+    text-align: right;
+    width: 70px; /* largeur uniforme */
+  }
+  
+  .table5 th:first-child,
+  .table5 td:first-child {
+    text-align: left;
+    width: 160px; /* colonne Département */
+  }
+  
+  .table5 thead tr:first-child th { background:#f1efe8; }
+  .table5 thead tr:nth-child(2) th { background:#f7f5ee; text-align: end; }
+  .table5 tr:hover:not(.total-row5) td { background:#f9f9f7; }
+  .table5 .total-row5 td { font-weight:600; background:#f1efe8; }
+  .table5 tbody tr:nth-child(odd):not(.total-row5) {
+  background: #faf9f5;
+}
+
+  .table5 tbody tr:nth-child(even):not(.total-row5) {
+    background: #a49b79;
+  }
+  
+  .table5 tr:hover:not(.total-row5) td {
+    background:#f9f9f7;
+  }
+
+
+</style>
+
+<script>
+const raw5 = [
+  {dep:"Charente", c3_nb:31, c3_pct:0.3, c4_nb:371, c4_pct:3.4, c5_nb:2494, c5_pct:22.8, c6_nb:4873, c6_pct:44.6, c7_nb:2239, c7_pct:20.5, c8_nb:931, c8_pct:8.5},
+  {dep:"Charente-Maritime", c3_nb:35, c3_pct:0.2, c4_nb:584, c4_pct:4.1, c5_nb:3586, c5_pct:24.9, c6_nb:7483, c6_pct:51.9, c7_nb:2325, c7_pct:16.1, c8_nb:467, c8_pct:3.2},
+  {dep:"Corrèze", c3_nb:28, c3_pct:0.2, c4_nb:412, c4_pct:3.6, c5_nb:2680, c5_pct:23.6, c6_nb:5200, c6_pct:45.7, c7_nb:2300, c7_pct:20.2, c8_nb:753, c8_pct:6.6},
+  {dep:"Creuse", c3_nb:22, c3_pct:0.2, c4_nb:350, c4_pct:3.7, c5_nb:2100, c5_pct:22.3, c6_nb:4300, c6_pct:45.7, c7_nb:1900, c7_pct:20.2, c8_nb:729, c8_pct:7.7},
+  {dep:"Dordogne", c3_nb:40, c3_pct:0.3, c4_nb:600, c4_pct:3.8, c5_nb:3000, c5_pct:19.1, c6_nb:7800, c6_pct:49.7, c7_nb:3100, c7_pct:19.7, c8_nb:1162, c8_pct:7.4},
+  {dep:"Gironde", c3_nb:50, c3_pct:0.2, c4_nb:700, c4_pct:2.9, c5_nb:3500, c5_pct:14.4, c6_nb:12000, c6_pct:49.4, c7_nb:5500, c7_pct:22.7, c8_nb:1518, c8_pct:6.3},
+  {dep:"Landes", c3_nb:20, c3_pct:0.2, c4_nb:300, c4_pct:3.1, c5_nb:2000, c5_pct:20.9, c6_nb:4500, c6_pct:47.0, c7_nb:1800, c7_pct:18.8, c8_nb:954, c8_pct:10.0},
+  {dep:"Lot-et-Garonne", c3_nb:25, c3_pct:0.2, c4_nb:350, c4_pct:2.8, c5_nb:2500, c5_pct:19.9, c6_nb:6000, c6_pct:47.9, c7_nb:2500, c7_pct:19.9, c8_nb:1160, c8_pct:9.3},
+  {dep:"Pyrénées-Atlantiques", c3_nb:30, c3_pct:0.2, c4_nb:450, c4_pct:3.3, c5_nb:3000, c5_pct:22.0, c6_nb:7000, c6_pct:51.1, c7_nb:2500, c7_pct:18.2, c8_nb:721, c8_pct:5.2},
+  {dep:"Deux-Sèvres", c3_nb:18, c3_pct:0.2, c4_nb:280, c4_pct:3.5, c5_nb:1800, c5_pct:22.8, c6_nb:3800, c6_pct:48.1, c7_nb:1500, c7_pct:19.0, c8_nb:496, c8_pct:6.3},
+  {dep:"Vienne", c3_nb:22, c3_pct:0.2, c4_nb:320, c4_pct:3.0, c5_nb:2100, c5_pct:19.0, c6_nb:5000, c6_pct:45.0, c7_nb:2300, c7_pct:20.7, c8_nb:788, c8_pct:7.1},
+  {dep:"Haute-Vienne", c3_nb:30, c3_pct:0.2, c4_nb:400, c4_pct:3.0, c5_nb:2400, c5_pct:18.2, c6_nb:6000, c6_pct:45.5, c7_nb:2600, c7_pct:19.7, c8_nb:1150, c8_pct:8.7}
+];
+
+let currentSort5 = "dep";
+let currentDir5  = "asc";
+
+function sortBy5(col) {
+  if (currentSort5 === col) currentDir5 = currentDir5 === "asc" ? "desc" : "asc";
+  else { currentSort5 = col; currentDir5 = "asc"; }
+  document.getElementById("sort-col5").value = col;
+  document.getElementById("sort-dir5").value = currentDir5;
+  render5();
+}
+
+function render5() {
+  const q   = document.getElementById("search5").value.toLowerCase();
+  const col = document.getElementById("sort-col5").value;
+  const dir = document.getElementById("sort-dir5").value;
+
+  let rows = raw5.filter(r => r.dep.toLowerCase().includes(q));
+
+  rows.sort((a,b) => {
+    if (col === "dep") return dir === "asc"
+      ? a.dep.localeCompare(b.dep,"fr")
+      : b.dep.localeCompare(a.dep,"fr");
+    return dir === "asc" ? a[col] - b[col] : b[col] - a[col];
+  });
+
+  const tbody = document.getElementById("tbody5");
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.dep}</td>
+      <td>${r.c3_nb}</td><td>${r.c3_pct}%</td>
+      <td>${r.c4_nb}</td><td>${r.c4_pct}%</td>
+      <td>${r.c5_nb}</td><td>${r.c5_pct}%</td>
+      <td>${r.c6_nb}</td><td>${r.c6_pct}%</td>
+      <td>${r.c7_nb}</td><td>${r.c7_pct}%</td>
+      <td>${r.c8_nb}</td><td>${r.c8_pct}%</td>
+    </tr>
+  `).join("");
+
+  <!-- // TOTAL -->
+  <!-- tbody.innerHTML += ` -->
+  <!--   <tr class="total-row5"> -->
+  <!--     <td>Total</td> -->
+  <!--     <td colspan="12"></td> -->
+  <!--   </tr> -->
+  <!-- `; -->
+}
+
+render5();
+</script>
+
+```
+
 
 Il peut ainsi être considéré que 28,3% des logements vacants de plus de 2 ans pourraient être remis sur le marché sans travaux (classement 3,4,5), voire prés des ¾ (Pyrénées-Atlantiques, Gironde, Landes, Charente-Maritime comportant plus de 80%,) en incluant le classement 6 des immeubles sans caractère et de qualité courante, avec peu de travaux .
 
-![](images/taux_logements_en_bon_etat.jpg){.lightbox}
+<div>
+  <img src="images/taux_logements_en_bon_etat.jpg" style="display:block; margin-left:auto; margin-right: auto;">
+</div>
+
 
 Territorialement, ce parc de logements vacants de plus de 2 ans ne nécessitant à priori pas de travaux lourds est présent sur l’ensemble de la région : A la lecture du tableau ci-dessus, il semble que plus d’un tiers du parc des logements vacants des Deux-Sèvres et des Pyrénées-Atlantiques puisse être remis sur le marché à moindre coût. A l’inverse, dans la Vienne ou la Creuse, le parc vacant semble globalement plus dégradé.
 
@@ -1057,9 +1220,143 @@ La méthodologie de la définition de ces trois zones est à retrouver en annexe
 
 La méthodologie de la définition de ces trois zones est à retrouver en annexe du document.
 
-::: center
-![](images/localisation.jpg){.lightbox}
-:::
+```{=html}
+<div class="container6" style="margin:20px 0 40px;">
+  <h5 style="text-align:center;">Localisation des logements vacants</h5>
+
+  <div class="controls6">
+    <input type="text" placeholder="Rechercher un département…" id="search6" oninput="render6()" />
+    <select id="sort-col6" onchange="render6()">
+      <option value="dep">Département</option>
+      <option value="c1_nb">Classe 1 Nb</option>
+      <option value="c1_pct">Classe 1 %</option>
+      <option value="c2_nb">Classe 2 Nb</option>
+      <option value="c2_pct">Classe 2 %</option>
+      <option value="c3_nb">Classe 3 Nb</option>
+      <option value="c3_pct">Classe 3 %</option>
+    </select>
+    <select id="sort-dir6" onchange="render6()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+
+  <div class="table-wrap6">
+    <table class="table6">
+      <thead>
+        <tr>
+          <th rowspan="2" onclick="sortBy6('dep')">Département</th>
+          <th colspan="2">Classe 1<br><small>Zone Centre</small></th>
+          <th colspan="2">Classe 2<br><small>Zone Péri-centre</small></th>
+          <th colspan="2">Classe 3<br><small>Hors agglomération</small></th>
+        </tr>
+        <tr>
+          <th style="text-align:center;">Nb</th><th>%</th>
+          <th>Nb</th><th>%</th>
+          <th>Nb</th><th>%</th>
+        </tr>
+      </thead>
+      <tbody id="tbody6"></tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  .container6 { max-width: 1100px; margin: 0 auto; }
+  .controls6 { display: flex; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+
+  .table-wrap6 { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+
+  .table6 { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+
+  .table6 th, .table6 td {
+    padding: 6px 8px;
+    border-bottom: 0.5px solid #e0dfd8;
+    text-align: center;
+    width: 90px;
+  }
+
+  .table6 th:first-child, .table6 td:first-child {
+    text-align: left;
+    width: 180px;
+  }
+
+  .table6 thead tr:first-child th { background:#f1efe8; }
+  .table6 thead tr:nth-child(2) th { background:#f7f5ee; }
+
+  /* Alternance 1 ligne sur 2 */
+  .table6 tbody tr:nth-child(odd):not(.total-row6) { background:#faf9f5; }
+  .table6 tbody tr:nth-child(even):not(.total-row6) { background:#a49b79; }
+
+  .table6 tr:hover:not(.total-row6) td { background:#f9f9f7; }
+
+  .table6 .total-row6 td { font-weight:600; background:#f1efe8; }
+</style>
+
+<script>
+const raw6 = [
+  {dep:"Charente", c1_nb:5471, c1_pct:50.10, c2_nb:1583, c2_pct:14.50, c3_nb:3867, c3_pct:35.40},
+  {dep:"Charente-Maritime", c1_nb:7289, c1_pct:50.56, c2_nb:2502, c2_pct:17.36, c3_nb:4625, c3_pct:32.08},
+  {dep:"Corrèze", c1_nb:5576, c1_pct:49.04, c2_nb:1503, c2_pct:13.22, c3_nb:4291, c3_pct:37.74},
+  {dep:"Creuse", c1_nb:3781, c1_pct:40.65, c2_nb:892,  c2_pct:9.59,  c3_nb:4628, c3_pct:49.76},
+  {dep:"Dordogne", c1_nb:6986, c1_pct:44.61, c2_nb:2427, c2_pct:15.50, c3_nb:6248, c3_pct:39.90},
+  {dep:"Gironde", c1_nb:13141,c1_pct:54.29, c2_nb:3917, c2_pct:16.84, c3_nb:7147, c3_pct:28.88},
+  {dep:"Landes", c1_nb:4377, c1_pct:45.76, c2_nb:1970, c2_pct:20.59, c3_nb:3219, c3_pct:33.65},
+  {dep:"Lot-et-Garonne", c1_nb:7088, c1_pct:56.57, c2_nb:1880, c2_pct:15.00, c3_nb:3562, c3_pct:28.43},
+  {dep:"Pyrénées-Atlantiques", c1_nb:8836, c1_pct:64.53, c2_nb:2123, c2_pct:15.51, c3_nb:2723, c3_pct:19.86},
+  {dep:"Deux-Sèvres", c1_nb:4436, c1_pct:56.52, c2_nb:894,  c2_pct:11.39, c3_nb:2893, c3_pct:32.08},
+  {dep:"Vienne", c1_nb:6122, c1_pct:53.91, c2_nb:1416, c2_pct:12.47, c3_nb:3829, c3_pct:33.72},
+  {dep:"Haute-Vienne", c1_nb:6479, c1_pct:49.71, c2_nb:1189, c2_pct:9.12,  c3_nb:5366, c3_pct:41.17}
+];
+
+let currentSort6 = "dep";
+let currentDir6  = "asc";
+
+function sortBy6(col) {
+  if (currentSort6 === col) currentDir6 = currentDir6 === "asc" ? "desc" : "asc";
+  else { currentSort6 = col; currentDir6 = "asc"; }
+  document.getElementById("sort-col6").value = col;
+  document.getElementById("sort-dir6").value = currentDir6;
+  render6();
+}
+
+function render6() {
+  const q   = document.getElementById("search6").value.toLowerCase();
+  const col = document.getElementById("sort-col6").value;
+  const dir = document.getElementById("sort-dir6").value;
+
+  let rows = raw6.filter(r => r.dep.toLowerCase().includes(q));
+
+  rows.sort((a,b) => {
+    if (col === "dep") return dir === "asc"
+      ? a.dep.localeCompare(b.dep,"fr")
+      : b.dep.localeCompare(a.dep,"fr");
+    return dir === "asc" ? a[col] - b[col] : b[col] - a[col];
+  });
+
+  const tbody = document.getElementById("tbody6");
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.dep}</td>
+      <td>${r.c1_nb.toLocaleString("fr-FR")}</td><td>${r.c1_pct.toFixed(2)}%</td>
+      <td>${r.c2_nb.toLocaleString("fr-FR")}</td><td>${r.c2_pct.toFixed(2)}%</td>
+      <td>${r.c3_nb.toLocaleString("fr-FR")}</td><td>${r.c3_pct.toFixed(2)}%</td>
+    </tr>
+  `).join("");
+
+  <!-- tbody.innerHTML += ` -->
+  <!--   <tr class="total-row6"> -->
+  <!--     <td>Total</td> -->
+  <!--     <td colspan="6"></td> -->
+  <!--   </tr> -->
+  <!-- `; -->
+}
+
+render6();
+</script>
+
+```
+
 
 A l’échelle régionale 51,7% des logements vacants sont situés en zone centre et 14,3% en zone péricentrale soit 66% du parc (les 2/3)
 
