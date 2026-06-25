@@ -1,0 +1,44 @@
+---
+title: ""
+lang: fr
+lightbox: true
+---
+
+## Matrice 2024
+
+::: {.callout-warning collapse="true" icon="false"}
+# Matrice complète à télécharger
+
+[Matrice complète](Data/Matrice complète lgts vacants 2024 (vincent.boulin@cerema.fr).xlsx){target="_blank"}\
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+# Matrice à la commune à télécharger
+
+[Matrice à la commune](Data/Communes.xlsx){target="_blank"}\
+:::
+
+
+::: {.callout-warning collapse="true" icon="false"}
+# Matrice à l'EPCI à télécharger
+
+[Matrice à l'EPCI](Data/EPCI.xlsx){target="_blank"}\
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+# Matrice ACV à télécharger
+
+[Matrice ACV](Data/ACV.xlsx){target="_blank"}\
+:::
+
+::: {.callout-warning collapse="true" icon="false"}
+# Matrice PVD à télécharger
+
+[Matrice PVD](Data/PVD.xlsx){target="_blank"}\
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+# Matrice à l'IRIS à télécharger
+
+[Matrice IRIS](Data/IRIS.xlsx){target="_blank"}\
+:::

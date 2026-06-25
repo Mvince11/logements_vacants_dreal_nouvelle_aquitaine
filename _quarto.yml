@@ -7,6 +7,7 @@ website:
   navbar:
     logo: "images/logos/Panorama.png"
     logo-alt: "Dreal-NA-Logements-vacants"
+    collapse-below: xxl
     left:
       - href: index.qmd
         icon: house
@@ -24,6 +25,10 @@ website:
             text: Communes
           - href: iris.qmd
             text: IRIS
+            
+      - icon: file-earmark-text
+        href: documents.qmd
+        text: Documents à télécharger
 
       - text: Qui Sommes nous ?
         href: presentation_cerema.qmd
