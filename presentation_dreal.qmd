@@ -1,0 +1,18 @@
+---
+title: "La DREAL Nouvelle-Aquitaine"
+image: "images/logos/logo_cerema_br.jpg"
+date: 2026-06-17
+lang: fr
+about:
+  template: trestles
+  image: "images/logos/DREAL_2023.jpg"
+  links:
+    - icon: link
+      href: https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/
+    - icon: linkedin
+      href: https://fr.linkedin.com/company/cerema
+    - icon: twitter-x 
+      href: https://x.com/ceremacom
+    - icon: youtube
+      href: https://www.youtube.com/@cerema3139
+---

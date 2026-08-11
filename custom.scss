@@ -135,11 +135,36 @@ $grid-body-width: 1000px !default;
 /*-- scss:rules --*/
 
 .navbar-logo {
-  max-height: 80px;
+  max-height: 100px;
 }
 
-.navbar .navbar-collapse{
-  margin-left: 20vh;
+.navbar .navbar-brand-container {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
+}
+
+.navbar .navbar-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100;
+}
+
+
+.me-auto{
+  margin-right: inherit !important;
+}
+
+/* Le menu prend toute la largeur */
+.navbar-collapse {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.navbar .navbar-container > .navbar-brand-container{
+ margin-right: auto !important;
+ margin-left: auto !important;
 }
 
 h1 {
@@ -212,8 +237,6 @@ div.quarto-about-trestles .about-entity{
     text-align: center;
 }
 
-
-
   
 /*-- OJS --*/
 .observablehq td, .observablehq th {
@@ -227,4 +250,70 @@ div.quarto-about-trestles .about-entity{
 
 .callout-tip header{
   color: green !important;
+}
+
+@media (max-width:1400px){
+  .me-auto{
+    margin-right: initial !important;
+  }
+}
+
+/* Menu centré uniquement en desktop */
+@media (min-width: 1400px) {
+  .navbar .navbar-collapse {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* --- Toggler toujours en haut à droite --- */
+.navbar-toggler {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 2000;
+}
+
+/* --- Comportement spécifique sous 1400px --- */
+@media (max-width: 1400px) {
+
+  /* Le bloc logos + textes passe en colonne */
+  .brand-block {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Le texte passe sous les logos */
+  .brand-text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+  }
+
+  /* IMPORTANT : laisser Bootstrap gérer le collapse */
+  .navbar .navbar-collapse {
+    display: none; /* caché par défaut */
+  }
+
+  .navbar .navbar-collapse.show {
+    display: block; /* affiché quand toggler est activé */
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1025px){
+  .navbar-logo{
+    display: block !important;
+    margin-bottom: 20px;
+  }
+  
+  .dreal_texte{
+    margin-top: 5px;
+  }
 }

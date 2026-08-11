@@ -9,7 +9,7 @@ lightbox: true
 ::: {.callout-warning collapse="true" icon="false"}
 # Matrice complète à télécharger
 
-[Matrice complète](Data/Matrice complète lgts vacants 2024 (vincent.boulin@cerema.fr).xlsx){target="_blank"}\
+[Matrice complète](Data/Matrice%20complète%20lgts%20vacants%202024%20(vincent.boulin@cerema.fr).xlsx){target="_blank"}\
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
@@ -17,7 +17,6 @@ lightbox: true
 
 [Matrice à la commune](Data/Communes.xlsx){target="_blank"}\
 :::
-
 
 ::: {.callout-warning collapse="true" icon="false"}
 # Matrice à l'EPCI à télécharger

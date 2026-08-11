@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.38">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,10 +34,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-b663525e4b92bb903b2199e2d401bf36.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-995a5fbf656485e3ebf97af1755c2861.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-48e6fd8318c6fdd5ddee0bf7e82de265.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,6 +65,52 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Recherche"
   }
 }</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const brand = document.querySelector(".navbar-brand");
+
+  if (brand) {
+
+    brand.innerHTML = `
+
+      <div style="display:flex; align-items:center;" class="navbar-logo">
+
+        <div style="gap: 16px; display:flex;">
+
+        <a href="https://www.cerema.fr/fr">
+
+          <img src="images/logos/logo_cerema.png" style="height:80px;">
+
+        </a>
+
+        <a href="https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/">
+
+          <img src="images/logos/DREAL_2023.jpg" style="height:80px;">
+
+        </a>
+
+       </div>
+
+          <div style="display:flex;flex-direction: column;line-height: 1.1;" class="dreal_texte">
+
+            <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
+
+            <span style="font-size:14px; font-weight:400;">Direction régionale de l'environnement, de l'aménagement et du logement</span>
+
+          </div>  
+
+      </div>
+
+    `;
+
+  }
+
+});
+
+</script>
+
 
 
 </head>
@@ -119,11 +165,23 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text">Documents à télécharger</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./presentation_cerema.html"> <i class="bi bi-people-fill" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-qui-sommes-nous-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people-fill" role="img">
 </i> 
-<span class="menu-text">Qui Sommes nous ?</span></a>
+ <span class="menu-text">Qui Sommes nous ?</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-qui-sommes-nous-">    
+        <li>
+    <a class="dropdown-item" href="./presentation_dreal.html">
+ <span class="dropdown-text">DREAL Nouvelle-Aquitaine</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./presentation_cerema.html">
+ <span class="dropdown-text">Cerema</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">

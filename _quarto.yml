@@ -31,8 +31,12 @@ website:
         text: Documents à télécharger
 
       - text: Qui Sommes nous ?
-        href: presentation_cerema.qmd
         icon: people-fill
+        menu:
+          - href: presentation_dreal.qmd
+            text: DREAL Nouvelle-Aquitaine
+          - href: presentation_cerema.qmd
+            text: Cerema
       
   page-footer:
     left: "Site créé avec [Quarto](https://quarto.org/)"
@@ -52,6 +56,9 @@ format:
     toc-title: Contenu
     toc-location: left
     toc-depth: 3
+    html-embed: true
+    include-in-header: assets/header.html
+    navbar-html: true
 
 editor: visual
 
