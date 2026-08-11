@@ -1,18 +1,42 @@
 ---
 title: "La DREAL Nouvelle-Aquitaine"
 image: "images/logos/logo_cerema_br.jpg"
-date: 2026-06-17
+date: 2026-08-11
 lang: fr
 about:
   template: trestles
   image: "images/logos/DREAL_2023.jpg"
+  image-width: 14em 
   links:
     - icon: link
       href: https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/
+    - icon: facebook
+      href: https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.nouvelle-aquitaine.developpement-durable.gouv.fr%2F&t=DREAL Nouvelle-Aquitaine  
     - icon: linkedin
-      href: https://fr.linkedin.com/company/cerema
+      href: https://www.linkedin.com/login/?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Fmini%3Dtrue%26url%3Dhttps%253A%252F%252Fwww.nouvelle-aquitaine.developpement-durable.gouv.fr%252F%26title%3DDREAL%2520Nouvelle-Aquitaine
     - icon: twitter-x 
-      href: https://x.com/ceremacom
-    - icon: youtube
-      href: https://www.youtube.com/@cerema3139
+      href: https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fshare%3Ftext%3DDREAL%2520Nouvelle-Aquitaine%26url%3Dhttps%253A%252F%252Fwww.nouvelle-aquitaine.developpement-durable.gouv.fr%252F&mode=login
 ---
+
+La [Direction régionale de l’Environnement, de l’Aménagement et du Logement (DREAL) Nouvelle-Aquitaine](https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/) est un service régional
+de l’État créé le 1er janvier 2016 dans le cadre de la réforme de l’administration territoriale.  
+
+La DREAL met en œuvre sous l’autorité du préfet de région et des préfets de département les politiques du ministère de
+l’Aménagement du territoire et de la Décentralisation et du ministère de la Transition écologique, de la Biodiversité, de la Forêt, de la Mer et de la Pêche.  
+
+Les 750 agents de la DREAL Nouvelle-Aquitaine promeuvent une approche transversale du développement durable en région. Elle
+vise à concilier la préservation de notre environnement avec les enjeux économiques de nos territoires.  
+
+Les domaines d’intervention de la DREAL couvrent l’aménagement du territoire, les déplacements, l’habitat et le logement, la maîtrise des risques naturels et technologiques, ainsi que la préservation des ressources naturelles.  
+
+Par son rôle d’ensemblier, de prescripteur et de conseil, la DREAL Nouvelle-Aquitaine accompagne dans leurs projets ses partenaires publics et privés pour assurer un développement équilibré, respectueux des territoires. Elle participe au défi de la transition énergétique et écologique de notre société.
+
+La région Nouvelle-Aquitaine regroupe 12 départements et près de 6 millions d’habitants. Elle est la plus vaste région de France.  
+
+Elle compte 25 grandes aires urbaines parmi lesquelles Bordeaux métropole, Bayonne, Limoges, Poitiers, Pau et La Rochelle, ainsi que onze grands pôles de compétitivité.  
+
+La croissance de sa population, particulièrement marquée sur le littoral, en fait un des espaces les plus attractifs du territoire français : la nouvelle région devance ainsi l’Île-de-France et Provence-Alpes-Côte-d’Azur en termes de dynamisme démographique.  
+
+La Nouvelle-Aquitaine est la première région française en recherche et innovation et la première région agricole d’Europe en chiffre d’affaires. Elle est également la première en termes d’emplois touristiques et la cinquième pour la création d’entreprises. Au total, la Nouvelle-Aquitaine est la troisième région française pour la production de richesses.
+Valoriser les atouts de cette nouvelle région et la richesse de son patrimoine est au cœur de l’action de la DREAL Nouvelle-Aquitaine.
+

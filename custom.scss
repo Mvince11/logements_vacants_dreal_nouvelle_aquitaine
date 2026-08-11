@@ -149,8 +149,15 @@ $grid-body-width: 1000px !default;
   flex-direction: column !important;
   align-items: center !important;
   width: 100;
+  position: relative;
 }
 
+#quarto-search {
+  position: absolute;
+  right: 80px;   /* espace pour le toggler */
+  top: 10px;     /* même hauteur que les logos */
+  z-index: 2000;
+}
 
 .me-auto{
   margin-right: inherit !important;
@@ -165,6 +172,35 @@ $grid-body-width: 1000px !default;
 .navbar .navbar-container > .navbar-brand-container{
  margin-right: auto !important;
  margin-left: auto !important;
+}
+
+/* On cible les liens de la navbar */
+.navbar-nav .nav-item {
+  position: relative; /* nécessaire pour positionner le ::after */
+}
+
+/* État initial : pas de soulignement visible */
+.navbar-nav .nav-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $orangeCerema; /* couleur du soulignement */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* Au survol ou si actif : on étend la barre */
+.navbar-nav .nav-item:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-nav .nav-item:hover::after {
+  width: 100%;
 }
 
 h1 {
@@ -252,6 +288,7 @@ div.quarto-about-trestles .about-entity{
   color: green !important;
 }
 
+
 @media (max-width:1400px){
   .me-auto{
     margin-right: initial !important;
@@ -273,7 +310,7 @@ div.quarto-about-trestles .about-entity{
   position: absolute;
   right: 20px;
   top: 10px;
-  z-index: 2000;
+  z-index: 2001;
 }
 
 /* --- Comportement spécifique sous 1400px --- */
@@ -302,7 +339,21 @@ div.quarto-about-trestles .about-entity{
 
   .navbar .navbar-collapse.show {
     display: block; /* affiché quand toggler est activé */
-    width: 100%;
+    width: auto;
+    text-align: center;
+  }
+
+.navbar-nav .nav-item {
+    width: auto; /* ne pas étirer */
+  }
+
+  .navbar-nav .nav-link {
+    width: auto; /* ne pas étirer */
+    text-align: center;
+    display: inline-block; /* essentiel */
+  }
+  
+  .navbar-expand-xxl .navbar-nav .dropdown-menu{
     text-align: center;
   }
 }
@@ -315,5 +366,30 @@ div.quarto-about-trestles .about-entity{
   
   .dreal_texte{
     margin-top: 5px;
+  }
+}
+
+/* Texte normal au-dessus de 630px */
+.brand-subtitle {
+  white-space: normal;
+}
+
+/* Sous 630px : couper le texte en deux lignes */
+@media (max-width: 632px) {
+  .brand-subtitle {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  /* Forcer une coupure à un endroit précis */
+  .brand-subtitle::after {
+    content: "";
+    display: block;
+    margin-top: 4px;
+  }
+  
+   .navbar-logo{
+    margin-bottom: 35px;
   }
 }
