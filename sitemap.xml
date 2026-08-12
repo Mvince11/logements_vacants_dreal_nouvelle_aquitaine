@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/presentation_cerema.html</loc>
-    <lastmod>2026-06-17T14:28:28.020Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/index.html</loc>
-    <lastmod>2026-06-17T05:46:02.213Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/epci.html</loc>
-    <lastmod>2026-06-17T05:46:01.896Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/communes.html</loc>
-    <lastmod>2026-06-17T05:46:01.896Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/documents.html</loc>
-    <lastmod>2026-06-25T07:39:00.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/evolution_regionale.html</loc>
-    <lastmod>2026-06-17T14:16:27.250Z</lastmod>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/presentation_dreal.html</loc>
+    <lastmod>2026-08-11T15:23:07.454Z</lastmod>
   </url>
   <url>
     <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/iris.html</loc>
-    <lastmod>2026-06-24T14:40:03.294Z</lastmod>
+    <lastmod>2026-08-12T08:02:30.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/evolution_regionale.html</loc>
+    <lastmod>2026-08-11T07:25:27.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/documents.html</loc>
+    <lastmod>2026-08-11T07:27:08.418Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/communes.html</loc>
+    <lastmod>2026-08-11T07:25:57.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/epci.html</loc>
+    <lastmod>2026-08-11T07:25:27.093Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/index.html</loc>
+    <lastmod>2026-08-11T07:33:21.686Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Mvince11.github.io/logements_vacants_dreal_nouvelle_aquitaine/presentation_cerema.html</loc>
+    <lastmod>2026-08-11T12:22:35.148Z</lastmod>
   </url>
 </urlset>
