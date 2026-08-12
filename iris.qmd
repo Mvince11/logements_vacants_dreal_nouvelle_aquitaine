@@ -28,6 +28,12 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
+### Barbezieux-Saint-Hilaire
+
+![](images/charente/barbezieux.png)
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
 ### Cognac
 
 ![](images/charente/cognac.png){.lightbox}
@@ -59,6 +65,30 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 ![](images/charente-maritime/saintes.png){.lightbox}
 :::
 
+::: {.callout-tip collapse="true" icon="false"}
+### Saujon
+
+![](images/charente-maritime/saujon.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-Jean-d'Angély
+
+![](images/charente-maritime/st_jean_angely.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-Pierre-d'Oléron
+
+![](images/charente-maritime/st_pierre_oleron.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Surgères
+
+![](images/charente-maritime/surgeres.png){.lightbox}
+:::
+
 ## Corrèze
 
 ::: {.callout-tip collapse="true" icon="false"}
@@ -73,7 +103,20 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 ![](images/correze/brive.png){.lightbox}
 :::
 
+::: {.callout-tip collapse="true" icon="false"}
+### Ussel
+
+![](images/correze/ussel.png){.lightbox}
+:::
+
 ## Creuse
+
+::: {.callout-tip collapse="true" icon="false"}
+### Aubusson
+
+![](images/creuse/aubusson.png){.lightbox}
+
+:::
 
 ::: {.callout-tip collapse="true" icon="false"}
 ### Guêret
@@ -102,9 +145,21 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
-### Sarlat-la-Canédat
+### Montpon-Ménestérol
+
+![](images/dordogne/montpon.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Sarlat-la-Canéda
 
 ![](images/dordogne/sarlat.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Terrasson-Lavilledieu
+
+![](images/dordogne/terrasson.png){.lightbox}
 :::
 
 ## Gironde
@@ -140,9 +195,21 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
+### Coutras
+
+![](images/gironde/coutras.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
 ### Gradignan
 
 ![](images/gironde/gradignan.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Langon
+
+![](images/gironde/langon.png){.lightbox}
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
@@ -158,9 +225,21 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
+### Pauillac
+
+![](images/gironde/pauillac.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
 ### Pessac
 
 ![](images/gironde/pessac.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-André-de-Cubzac
+
+![](images/gironde/st_andre_cubzac.png){.lightbox}
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
@@ -184,6 +263,12 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 ## Landes
 
 ::: {.callout-tip collapse="true" icon="false"}
+### Aire-sur-l'Adour
+
+![](images/landes/aire_adour.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
 ### Mont-de-Marsan
 
 ![](images/landes/mont_de_marsan.png){.lightbox}
@@ -204,9 +289,27 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
+### Fumel
+
+![](images/lot_et_garonne/fumel.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
 ### Marmande
 
 ![](images/lot_et_garonne/marmande.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Tonneins
+
+![](images/lot_et_garonne/tonneins.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Villeneuve-sur-Lot
+
+![](images/lot_et_garonne/villenuve_sur_lot.png){.lightbox}
 :::
 
 ## Pyrénées Atlantiques
@@ -236,9 +339,39 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 :::
 
 ::: {.callout-tip collapse="true" icon="false"}
+### Hasparren
+
+![](images/pyrenees_atlantiques/hasparren.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### hendaye
+
+![](images/pyrenees_atlantiques/hendaye.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Mauléon
+
+![](images/pyrenees_atlantiques/mauleon.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Mourenx
+
+![](images/pyrenees_atlantiques/mourenx.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
 ### Oloron-Sainte-Marie
 
 ![](images/pyrenees_atlantiques/oloron.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Orthez
+
+![](images/pyrenees_atlantiques/orthez.png){.lightbox}
 :::
 
 ## Deux Sèvres
@@ -261,6 +394,18 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 ![](images/deux-sevres/bressuire.png){.lightbox}
 :::
 
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-Maixent-l'Ecole
+
+![](images/deux-sevres/st_maixent.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Thouars
+
+![](images/deux-sevres/thouars.png){.lightbox}
+:::
+
 ## Vienne
 
 ::: {.callout-tip collapse="true" icon="false"}
@@ -275,10 +420,46 @@ Un IRIS regroupe généralement entre 1 800 et 5 000 habitants en zone urbaine, 
 ![](images/vienne/chatellerault.png){.lightbox}
 :::
 
+::: {.callout-tip collapse="true" icon="false"}
+### Chauvigny
+
+![](images/vienne/chauvigny.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Loudun
+
+![](images/vienne/loudun.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Montmorillon
+
+![](images/vienne/montmorillon.png){.lightbox}
+:::
+
 ## Haute-Vienne
 
 ::: {.callout-tip collapse="true" icon="false"}
 ### Limoges
 
 ![](images/haute_vienne/limoges.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Bellac
+
+![](images/haute_vienne/bellac.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-Junien
+
+![](images/haute_vienne/st_junien.png){.lightbox}
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+### Saint-Yrieix-la-Perche
+
+![](images/haute_vienne/st_yrieix.png){.lightbox}
 :::

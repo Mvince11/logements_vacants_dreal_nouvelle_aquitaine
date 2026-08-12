@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  favicon: images/favicon.ico
   #title: "CAPB_web"
   back-to-top-navigation: true
   navbar:
@@ -15,9 +16,11 @@ website:
         
       - text: Exploitation
         href: evolution_regionale.qmd
+        icon: pencil
           
 
       - text: Cartographie des logements vacants
+        icon: map
         menu:
           - href: epci.qmd
             text: EPCI
