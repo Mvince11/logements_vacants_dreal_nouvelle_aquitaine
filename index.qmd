@@ -28,9 +28,9 @@ La DREAL a voulu connaître la situation de la vacance régionale néo-Aquitaine
 
 Les résultats seront agrégés aux niveaux géographiques suivants:
 
-❖ région Nouvelle-Aquitaine\
-❖ départements,\
+❖ Région Nouvelle-Aquitaine\
+❖ Départements,\
 ❖ EPCI\
-❖ Villes centre des EPCI\
-❖ Quartiers des principales villes de la région
+❖ Communes\
+❖ Quartiers des principales villes de la région (IRIS)
 :::

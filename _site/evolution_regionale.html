@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         <a href="https://www.cerema.fr/fr">
 
-          <img src="images/logos/logo_cerema.png" style="height:80px;">
+          <img src="images/logos/logo_cerema.png" style="height:74px;">
 
         </a>
 
@@ -1368,7 +1368,9 @@ render5();
 <h3 class="anchored" data-anchor-id="par-localisation-dans-les-communes-la-localisation-des-logements-du-parc-privé-vacants-depuis-plus-de-2-ans">3.5 Par localisation dans les communes&nbsp;: La localisation des logements du parc privé vacants depuis plus de 2 ans</h3>
 <p>Afin de définir les actions à mener par les services de l’État et les collectivités sur les logements vacants de longue durée pour les remettre sur le marché locatif, il a été défini trois zones dans lesquelles pouvait se trouver un logement privé vacant&nbsp;:</p>
 <ul>
-  <li>une zone centre, dans <span style="cursor:pointer; font-weight:bold;" data-bs-toggle="tooltip" title="Enveloppe urbaine : zone constituée par un bâti continu, dont la définition précise est à retrouver en annexe du document.">l’enveloppe urbaine</span> du territoire et à moins de 500 m d’un <span style="cursor:pointer; font-weight:bold;" data-bs-toggle="tooltip" title="Les points d’intérêt retenus sont les mairies, les lieux de cultes et les écoles primaires et maternelles."> point d’intérêt</span></li>
+  <li>une zone centre, dans <span style="cursor:pointer; font-weight:bold;" data-bs-toggle="tooltip" title="Enveloppe urbaine : zone constituée par un bâti continu. Elle est définie à partir de la BD TOPO 2025. Les couches utilisées sont: Bâtiments, Aérodromes, Cimetières, Construction surfacique, Poste de transformation, Réservoir, Terrains de sport et  Zones d'activitées et d'intérêts (sans les enceintes militaires et les champs de tir). La règle de dilatation 40 m autour de chaque bâtiment puis de contraction 25 m sur les ensembles créés a été appliquée.
+Il a été décidé de ne pas combler les trous créés dans l’enveloppe urbaine (sans intérêt dans le cadre de cette étude car, de par sa définition, aucun logement vacant ne s’y trouve).
+Par contre, il a été décidé la suppression des éléments isolés de moins de 2 ha afin de créer une enveloppe urbaine la plus homogène possible.">l’enveloppe urbaine</span> du territoire et à moins de 500 m d’un <span style="cursor:pointer; font-weight:bold;" data-bs-toggle="tooltip" title="Les points d’intérêt retenus sont les mairies, les lieux de cultes et les écoles primaires et maternelles."> point d’intérêt</span></li>
   <li>une zone péri-centre, dans l’enveloppe urbaine du territoire et comprise entre 500 m et 1000 m d’un point d’intérêt ;</li>
   <li>une zone hors agglomération, extérieure aux deux zones précédentes.
 La méthodologie de la définition de ces trois zones est à retrouver en annexe du document.</li>
@@ -1624,7 +1626,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
