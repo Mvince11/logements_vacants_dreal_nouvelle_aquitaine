@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Etude sur la vacance de logements en Nouvelle-Aquitaine</title>
+<title>La vacance dans le logement en Nouvelle-Aquitaine</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,11 +34,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-b663525e4b92bb903b2199e2d401bf36.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2e0eb873b2a66c41ffdc12b4316c2215.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6fbeded6f3ebf79cb24723fcc5290fa2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -116,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -196,48 +197,245 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenu</h2>
+   
+  <ul>
+  <li><a href="#contexte-et-objet-de-létude" id="toc-contexte-et-objet-de-létude" class="nav-link active" data-scroll-target="#contexte-et-objet-de-létude">1. Contexte et objet de l’étude</a></li>
+  <li><a href="#lévolution-de-la-vacance-globale-des-logements" id="toc-lévolution-de-la-vacance-globale-des-logements" class="nav-link" data-scroll-target="#lévolution-de-la-vacance-globale-des-logements">2. L’évolution de la vacance globale des logements</a>
+  <ul class="collapse">
+  <li><a href="#précautions-méthodologiques" id="toc-précautions-méthodologiques" class="nav-link" data-scroll-target="#précautions-méthodologiques">2.1 Précautions méthodologiques</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/image-accueil.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Etude sur la vacance de logements en Nouvelle-Aquitaine</h1>
-<p class="subtitle lead">Caractéristiques 2025</p>
+<h1 class="title">La vacance dans le logement en Nouvelle-Aquitaine</h1>
+<p class="subtitle lead">Analyse quantitative et statistique</p>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
-<p>Cette étude fait suite à une étude réalisée par le Cerema pour le compte de la DREAL Nouvelle Aquitaine en 2020. L’analyse révélait le taux de logements vacants en 2019 au niveau régional, départemental, des principaux EPCI et l’évolution de ce taux de vacance entre 2015 et 2019.</p>
-<p>L’étude comportait également un important volet qualitatif sur les outils et politiques mises en œuvre autour de l’habitat et de l’offre de logements.</p>
-<p>La DREAL a voulu connaître la situation de la vacance régionale néo-Aquitaine en 2024, ses caractéristiques et son évolution depuis 2020. La tendance n’a pas été réalisable sur la base LOVAC du Ministère des Finances du fait d’une réforme majeure intervenue en 2023 (Mise en place d’une refonte de la base de calcul par la mise en place d’un outil « GMBI » Gestion de mon bien immobilier sur la déclaration des propriétaires fonciers).</p>
+
+
+<style>
+  p {
+  text-align: inherit !important;
+  }
+
+.img-stack {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* largeur max du bloc */
+    margin: auto;
+    height: 294px;
+  }
+
+  .img-stack img {
+    position: absolute;
+  }
+
+  /* Image du dessus */
+  .img-top {
+    z-index: 2;
+    width: 60%;
+    top: -56px;
+    right: 15px;
+  }
+
+  /* Image du dessous */
+  .img-bottom {
+    z-index: 1;
+    width: 40%;
+    top: -27px;
+    right: 315px;
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .img-stack {
+      height: 208px;
+    }
+    .img-top {
+      width: 65%;
+      right: 5%;
+      top: -40px;
+    }
+    .img-bottom {
+      width: 45%;
+      right: 35%;
+      top: -20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .img-stack {
+      height: 200px;
+    }
+    .img-top {
+      width: 70%;
+      right: 0;
+      top: -20px;
+    }
+    .img-bottom {
+      width: 50%;
+      right: 25%;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .img-stack {
+      height: 180px;
+    }
+    .img-top {
+      width: 75%;
+      right: 0;
+      top: 0;
+    }
+    .img-bottom {
+      width: 55%;
+      right: 20%;
+      top: 20px;
+    }
+  }
+  
+  .triple-overlap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre le groupe */
+    align-items: center;
+    text-align: center;
+  }
+
+  .triple-overlap img {
+    width: 36%; /* taille des images */
+  }
+
+  /* Image de gauche */
+  .img-left {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Image du milieu (au-dessus) */
+  .img-middle {
+    position: relative;
+    z-index: 3; /* passe au-dessus */
+    margin: 0 -6%; /* chevauchement horizontal */
+    margin-top: -4%; /* chevauchement vertical */
+  }
+
+  /* Image de droite */
+  .img-right {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .triple-overlap img {
+      width: 35%;
+    }
+    .img-middle {
+      margin: 0 -8%;
+      margin-top: -6%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .triple-overlap img {
+      width: 45%;
+    }
+    .img-middle {
+      margin: 0 -10%;
+      margin-top: -8%;
+    }
+  }
+</style>
+<p style="display:flex; justify-content:center !important;">
+<img src="images/image-accueil.jpg" class="no-figure img-fluid" style="width:62%;">
+</p>
 <section id="contexte-et-objet-de-létude" class="level2">
-<h2 data-anchor-id="contexte-et-objet-de-létude">Contexte et objet de l’étude</h2>
-<p>État des lieux 2025 L’objectif de ce volet est de produire une photographie actualisée du parc vacant à l’échelle régionale et infrarégionale, en conservant les mêmes indicateurs que l’étude initiale :</p>
-<p>❖ nombre et part de logements vacants depuis plus de 2 ans,<br>
+<h2 class="anchored" data-anchor-id="contexte-et-objet-de-létude">1. Contexte et objet de l’étude</h2>
+<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
+<p>La vacance est un enjeu majeur du logement aujourd’hui largement pris en compte dans les politiques locales pour la production de logements, mais une vacance structurelle, longue (2 ans et plus) persiste souvent sur les territoires : elle n’est pas négligeable. Cette vacance est conséquente sur les villes moyennes hors littoral, les petites villes et dans la ruralité.</p>
+<p>Dans un contexte général de nécessité de produire des logements dans l’existant afin de garantir une meilleure gestion économe du foncier, la résorption de la vacance s’impose ainsi toujours comme un enjeu majeur.</p>
+<p>La présente <strong>étude élaborée conjointement entre le Cerema et la DREAL Nouvelle Aquitaine</strong> a vocation à présenter un état des lieux de la vacance sur la région Nouvelle-Aquitaine sur la base <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Voir annexes"><strong>LOVAC</strong></span> actualisée du Ministère des Finances, suite aux évolutions de cette dernière (mise en place d’une refonte du calcul avec l’outil «GMBI» Gestion de mon bien immobilier d’après la déclaration des propriétaires fonciers et évolution des méthodes de recensement). L’étude présente la situation régionale, les tendances générales et les évolutions de la vacance de longue durée ces dernières années puis une analyse fine et territorialisée de la vacance avec des documents complémentaires (non joints dans le présent document) :</p>
+<div style="padding-left: 25px;">
+<p>• <strong>Une matrice (document type calc/excel) détaillant</strong> les chiffres LOVAC de la vacance selon les caractéristiques des logements (<span style="cursor:pointer; color:#42429f;" data-bs-toggle="tooltip" title="Etablissement public de coopération intercommunale"><strong>EPCI</strong></span> et niveau communal) :</p>
+</div>
+<div style="border: 1px solid; padding-left: 5px;">
+<p><strong>Les caractéristiques des logements vacants présentés dans la matrice : </strong><br>
+❖ nombre et part de logements vacants depuis plus de 2 ans,<br>
 ❖ durée de vacance,<br>
 ❖ typologie du parc (type de logement, année de construction)<br>
 ❖ localisation (à définir en lien avec le maître d’ouvrage)<br>
-❖ qualité du bâti</p>
-<p>Les résultats seront agrégés aux niveaux géographiques suivants:</p>
-<p>❖ Région Nouvelle-Aquitaine<br>
-❖ Départements,<br>
-❖ EPCI<br>
-❖ Communes<br>
-❖ Quartiers des principales villes de la région (IRIS)</p>
+❖ qualité du bâti<br>
+❖ …</p>
+</div>
+<div class="img-stack">
+<p><img src="images/tableau1_accueil.png" class="lightbox img-top"> <img src="images/tableau2_accueil.png" class="lightbox img-bottom"></p>
+</div>
+<div style="padding-left: 25px;">
+<p>• <strong>Une cartographie de la vacance pour 70 villes, à l’échelle des <span style="cursor:pointer; color:#42429f;" data-bs-toggle="tooltip" title="liste des communes cartographiées dans la rubrique «Cartographie des logements vacants : IRIS» ">quartiers</span></strong></p>
+</div>
+<div class="triple-overlap">
+<p><img src="images/cartographie_vacance2.jpg" class="img-left"> <img src="images/cartographie_vacance3.jpg" class="img-middle"> <img src="images/cartographie_vacance1.jpg" class="img-right"></p>
+</div>
+<div style="padding-left: 25px;">
+<p>• <strong>Deux documents annexes : un premier</strong> qui propose une liste la plus exhaustive possible des outils et leviers existants pour lutter contre la vacance (repérage, outils opérationnels, coercitifs, financiers, procédures, outils programmatiques…). Un second document annexe présentant un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?). Ces deux derniers documents ne sont disponibles que pour les services de l’État.</p>
+</div>
+<div style="border:1px solid; padding:5px;">
+<p style="text-align:center !important; color:#a87d2f; font-weight:bold;">
+Une étude qui cible la vacance de longue durée, dite structurelle : définitions
+</p>
+<p>
+</p><p>La <strong>vacance structurelle</strong> correspond à une inoccupation qui se prolonge en raison d’obstacles à l’occupation ou à la remise sur le marché du logement. Ces obstacles peuvent tenir au bien lui-même — dégradation, travaux importants, caractéristiques inadaptées à la demande —, au contexte immobilier local — demande insuffisante notamment — ou à la situation du propriétaire : succession bloquée, difficultés financières, réticence à louer ou maintien volontaire du bien hors du marché. <strong>Elle ne résulte donc pas seulement de la rotation ordinaire des occupants.</strong> La notion de vacance strucurelle se rapproche de la notion de vacance de longue durée (plus de deux ans) qui est une catégorie définie par la <strong>durée d’inoccupation</strong>, plutôt que directement par ses causes. Dans LOVAC, le seuil de <strong>plus de deux ans</strong> est retenu pour repérer les logements du parc privé présumés relever de la vacance structurelle, notamment pour orienter les actions de remise sur le marché.</p>
+<p><strong>Ce seuil constitue une convention de repérage, pas une frontière absolue</strong> : un logement vacant depuis moins de deux ans peut déjà présenter des blocages structurels ; inversement, dépasser deux ans ne suffit pas à déterminer la cause de la vacance. Il est à noter que, dans les fichiers fiscaux, la vacance de plus de deux ans correspond à un logement identifié comme vacant <strong>à au moins trois 1er janvier consécutifs.</strong> Cette observation ne garantit pas l’absence de toute occupation entre ces dates dans LOVAC.</p>
+La <strong>vacance frictionnelle</strong>, ou <strong>vacance de rotation</strong>, correspond à l’inoccupation temporaire d’un logement entre deux occupants : départ d’un ménage, recherche d’un nouveau locataire ou acquéreur, vente, délai d’installation et éventuelle remise en état. Généralement de courte durée — quelques jours à quelques mois —, elle accompagne le fonctionnement du marché et la mobilité résidentielle. Elle ne traduit pas nécessairement une difficulté durable à remettre le logement en occupation.
+<p></p>
+</div>
+<div class="triple-overlap" style="margin-top:10px;">
+<p><img src="images/vacance_structurelle1.jpg" style="width:30%;"> <img src="images/vacance_structurelle2.jpg" style="width:30%;"> <img src="images/vacance_structurelle3.jpg" style="width:30%;"></p>
+</div>
+</div>
 </section>
+<section id="lévolution-de-la-vacance-globale-des-logements" class="level2">
+<h2 class="anchored" data-anchor-id="lévolution-de-la-vacance-globale-des-logements">2. L’évolution de la vacance globale des logements</h2>
+<section id="précautions-méthodologiques" class="level3">
+<h3 class="anchored" data-anchor-id="précautions-méthodologiques">2.1 Précautions méthodologiques</h3>
+<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
+<p>Deux sources complémentaires sont mobilisées dans cette étude : les données du recensement de la population de l’Insee pour analyser l’évolution de la vacance totale, et les données <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Voir annexes"><strong>LOVAC</strong></span> pour caractériser la vacance du parc privé à un millésime donné. Des travaux locaux peuvent compléter cette approche, notamment par le croisement de sources et la vérification des situations sur le terrain. Le recensement INSEE ne renseigne toutefois pas la durée d’inoccupation : il ne permet donc pas, à lui seul, de distinguer la vacance de rotation des situations durablement bloquées.</p>
+<p><strong>Les comparaisons brutes entre les millésimes LOVAC traversant les ruptures de série ne sont pas pertinentes pour mesurer l’évolution de la <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Les données LOVAC mettent en évidence l’ampleur de la vacance de longue durée dans le parc privé : le millésime 2024 identifie environ 1,15 million de logements vacants depuis plus de deux ans à l’échelle nationale, et le millésime 2025 environ 1,35 million. Ces dénombrements ne peuvent toutefois pas être interprétés directement comme une augmentation réelle de la vacance, en raison des ruptures de série liées au passage à GMBI puis aux modifications de traitement intervenues en 2025. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales. Les données permettent de caractériser un stock important de logements identifiés comme durablement vacants, mais leur comparaison brute ne permet pas d’en établir l’évolution (ni avec des millésimes antérieurs, 2023, 2022, 2021, 2020) pour des raisons de ruptures de méthode également.">vacance</span></strong>. Le passage aux déclarations d’occupation GMBI à partir du millésime 2024, puis les modifications de sélection des logements intervenues en 2025, affectent leur comparabilité. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales.</p>
+<p><strong>Le recensement constitue ainsi la principale référence commune retenue ici pour l’analyse des tendances.</strong> Ses résultats doivent néanmoins être interprétés en tenant compte des évolutions de la <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="En particulier, le protocole « boîte aux lettres », généralisé en 2022, a un effet sur la répartition entre résidences principales et logements vacants, progressivement intégré aux résultats. Les variations récentes ne peuvent donc pas être attribuées intégralement à des évolutions du marché du logement."><strong>collecte</strong></span>.</p>
 </div>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main></div>
-</div>
- <!-- /main -->
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -258,6 +456,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -321,7 +526,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

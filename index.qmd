@@ -1,36 +1,235 @@
 ---
-title: "Etude sur la vacance de logements en Nouvelle-Aquitaine"
-subtitle: "Caractéristiques 2025"
-image: "images/image-accueil.jpg"
+title: "La vacance dans le logement en Nouvelle-Aquitaine"
+subtitle: "Analyse quantitative et statistique"
 lang: fr
-about:
-  template: trestles
-  image: "images/image-accueil.jpg"
+format:
+  html:
+    fig-align: center
+editor: visual
 toc: true
 ---
 
+```{=html}
+<style>
+  p {
+  text-align: inherit !important;
+  }
+
+.img-stack {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* largeur max du bloc */
+    margin: auto;
+    height: 294px;
+  }
+
+  .img-stack img {
+    position: absolute;
+  }
+
+  /* Image du dessus */
+  .img-top {
+    z-index: 2;
+    width: 60%;
+    top: -56px;
+    right: 15px;
+  }
+
+  /* Image du dessous */
+  .img-bottom {
+    z-index: 1;
+    width: 40%;
+    top: -27px;
+    right: 315px;
+  }
+
+  /* --- Responsive --- */
+  @media (max-width: 768px) {
+    .img-stack {
+      height: 208px;
+    }
+    .img-top {
+      width: 65%;
+      right: 5%;
+      top: -40px;
+    }
+    .img-bottom {
+      width: 45%;
+      right: 35%;
+      top: -20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .img-stack {
+      height: 200px;
+    }
+    .img-top {
+      width: 70%;
+      right: 0;
+      top: -20px;
+    }
+    .img-bottom {
+      width: 50%;
+      right: 25%;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .img-stack {
+      height: 180px;
+    }
+    .img-top {
+      width: 75%;
+      right: 0;
+      top: 0;
+    }
+    .img-bottom {
+      width: 55%;
+      right: 20%;
+      top: 20px;
+    }
+  }
+  
+  .triple-overlap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre le groupe */
+    align-items: center;
+    text-align: center;
+  }
+
+  .triple-overlap img {
+    width: 36%; /* taille des images */
+  }
+
+  /* Image de gauche */
+  .img-left {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Image du milieu (au-dessus) */
+  .img-middle {
+    position: relative;
+    z-index: 3; /* passe au-dessus */
+    margin: 0 -6%; /* chevauchement horizontal */
+    margin-top: -4%; /* chevauchement vertical */
+  }
+
+  /* Image de droite */
+  .img-right {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .triple-overlap img {
+      width: 35%;
+    }
+    .img-middle {
+      margin: 0 -8%;
+      margin-top: -6%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .triple-overlap img {
+      width: 45%;
+    }
+    .img-middle {
+      margin: 0 -10%;
+      margin-top: -8%;
+    }
+  }
+</style>
+```
+
+
+<p style="display:flex; justify-content:center !important;">
+  ![](images/image-accueil.jpg){.no-figure style="width:62%;"}
+</p>
+
+## 1. Contexte et objet de l’étude
 ::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-Cette étude fait suite à une étude réalisée par le Cerema pour le compte de la DREAL Nouvelle Aquitaine en 2020. L’analyse révélait le taux de logements vacants en 2019 au niveau régional, départemental, des principaux EPCI et l’évolution de ce taux de vacance entre 2015 et 2019.
+La vacance est un enjeu majeur du logement aujourd’hui largement pris en compte dans les politiques locales pour la production de logements, mais une vacance structurelle, longue (2 ans et plus) persiste souvent sur les territoires : elle n’est pas négligeable. Cette vacance est conséquente sur les villes moyennes hors littoral, les petites villes et dans la ruralité.
 
-L’étude comportait également un important volet qualitatif sur les outils et politiques mises en œuvre autour de l’habitat et de l’offre de logements.
+Dans un contexte général de nécessité de produire des logements dans l’existant afin de garantir une meilleure gestion économe du foncier, la résorption de la vacance s’impose ainsi toujours comme un enjeu majeur.
 
-La DREAL a voulu connaître la situation de la vacance régionale néo-Aquitaine en 2024, ses caractéristiques et son évolution depuis 2020. La tendance n’a pas été réalisable sur la base LOVAC du Ministère des Finances du fait d’une réforme majeure intervenue en 2023 (Mise en place d’une refonte de la base de calcul par la mise en place d’un outil « GMBI » Gestion de mon bien immobilier sur la déclaration des propriétaires fonciers).
+La présente **étude élaborée conjointement entre le Cerema et la DREAL Nouvelle Aquitaine** a vocation à présenter un état des lieux de la vacance sur la région Nouvelle-Aquitaine sur la base [**LOVAC**]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Voir annexes"} actualisée du Ministère des Finances, suite aux évolutions de cette dernière (mise en place d’une refonte du calcul avec l’outil «GMBI» Gestion de mon bien immobilier d’après la déclaration des propriétaires fonciers et évolution des méthodes de recensement).
+L’étude présente la situation régionale, les tendances générales et les évolutions de la vacance de longue durée ces dernières années puis une analyse fine et territorialisée de la vacance avec des documents complémentaires (non joints dans le présent document) :
 
-## Contexte et objet de l’étude
+<div style="padding-left: 25px;">
+• **Une matrice (document type calc/excel) détaillant** les chiffres LOVAC de la vacance selon les caractéristiques des logements ([**EPCI**]{style="cursor:pointer; color:#42429f;" data-bs-toggle="tooltip" title="Etablissement public de coopération intercommunale"} et niveau communal) :
+</div>
 
-État des lieux 2025 L’objectif de ce volet est de produire une photographie actualisée du parc vacant à l’échelle régionale et infrarégionale, en conservant les mêmes indicateurs que l’étude initiale :
-
+<div style="border: 1px solid; padding-left: 5px;">
+**Les caractéristiques des logements vacants présentés dans la matrice : **   
 ❖ nombre et part de logements vacants depuis plus de 2 ans,\
 ❖ durée de vacance,\
 ❖ typologie du parc (type de logement, année de construction)\
 ❖ localisation (à définir en lien avec le maître d’ouvrage)\
-❖ qualité du bâti
+❖ qualité du bâti\
+❖ ...
+</div>
 
-Les résultats seront agrégés aux niveaux géographiques suivants:
+<div class="img-stack">
+  <img src="images/tableau1_accueil.png" class="lightbox img-top">
+  <img src="images/tableau2_accueil.png" class="lightbox img-bottom">
+</div>
 
-❖ Région Nouvelle-Aquitaine\
-❖ Départements,\
-❖ EPCI\
-❖ Communes\
-❖ Quartiers des principales villes de la région (IRIS)
+
+<div style="padding-left: 25px;">
+• **Une cartographie de la vacance pour 70 villes, à l’échelle des [quartiers]{style="cursor:pointer; color:#42429f;" data-bs-toggle="tooltip" title="liste des communes cartographiées dans la rubrique «Cartographie des logements vacants : IRIS» "}**
+</div>
+
+<div class="triple-overlap">
+  <img src="images/cartographie_vacance2.jpg" class="img-left">
+  <img src="images/cartographie_vacance3.jpg" class="img-middle">
+  <img src="images/cartographie_vacance1.jpg" class="img-right">
+</div>
+
+<div style="padding-left: 25px;">
+• **Deux documents annexes : un premier** qui propose une liste la plus exhaustive possible des outils et leviers existants pour lutter contre la vacance (repérage, outils opérationnels, coercitifs, financiers, procédures, outils programmatiques…). Un second document annexe présentant un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?). Ces deux derniers documents ne sont disponibles que pour les services de l’État.
+</div>
+
+<div style="border:1px solid; padding:5px;">
+<p style="text-align:center !important; color:#a87d2f; font-weight:bold;">Une étude qui cible la vacance de longue durée, dite structurelle : définitions</p>
+<p>
+La **vacance structurelle** correspond à une inoccupation qui se prolonge en raison d’obstacles à l’occupation ou à la remise sur le marché du logement. Ces obstacles peuvent tenir au bien lui-même — dégradation, travaux importants, caractéristiques inadaptées à la demande —, au contexte immobilier local — demande insuffisante notamment — ou à la situation du propriétaire : succession bloquée, difficultés financières, réticence à louer ou maintien volontaire du bien hors du marché. **Elle ne résulte donc pas seulement de la rotation ordinaire des occupants.** La notion de vacance strucurelle se rapproche de la notion de vacance de longue durée  (plus de deux ans) qui est une catégorie définie par la **durée d’inoccupation**, plutôt que directement par ses causes. Dans LOVAC, le seuil de **plus de deux ans** est retenu pour repérer les logements du parc privé présumés relever de la vacance structurelle, notamment pour orienter les actions de remise sur le marché.  
+
+**Ce seuil constitue une convention de repérage, pas une frontière absolue** : un logement vacant depuis moins de deux ans peut déjà présenter des blocages structurels ; inversement, dépasser deux ans ne suffit pas à déterminer la cause de la vacance. Il est à noter que, dans les fichiers fiscaux, la vacance de plus de deux ans correspond à un logement identifié comme vacant **à au moins trois 1er janvier consécutifs.** Cette observation ne garantit pas l’absence de toute occupation entre ces dates dans LOVAC.  
+
+La **vacance frictionnelle**, ou **vacance de rotation**, correspond à l’inoccupation temporaire d’un logement entre deux occupants : départ d’un ménage, recherche d’un nouveau locataire ou acquéreur, vente, délai d’installation et éventuelle remise en état. Généralement de courte durée — quelques jours à quelques mois —, elle accompagne le fonctionnement du marché et la mobilité résidentielle. Elle ne traduit pas nécessairement une difficulté durable à remettre le logement en occupation.
+</p>
+</div>
+
+<div class="triple-overlap" style="margin-top:10px;">
+  <img src="images/vacance_structurelle1.jpg" style="width:30%;">
+  <img src="images/vacance_structurelle2.jpg" style="width:30%;">
+  <img src="images/vacance_structurelle3.jpg" style="width:30%;">
+</div>
+:::
+
+
+## 2. L’évolution de la vacance globale des logements
+### 2.1 Précautions méthodologiques
+::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+  Deux sources complémentaires sont mobilisées dans cette étude : les données du recensement de la population de l’Insee pour analyser l’évolution de la vacance totale, et les données [**LOVAC**]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Voir annexes"} pour caractériser la vacance du parc privé à un millésime donné. Des travaux locaux peuvent compléter cette approche, notamment par le croisement de sources et la vérification des situations sur le terrain. Le recensement INSEE ne renseigne toutefois pas la durée d’inoccupation : il ne permet donc pas, à lui seul, de distinguer la vacance de rotation des situations durablement bloquées.  
+  
+**Les comparaisons brutes entre les millésimes LOVAC traversant les ruptures de série ne sont pas pertinentes pour mesurer l’évolution de la [vacance]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Les données LOVAC mettent en évidence l’ampleur de la vacance de longue durée dans le parc privé : le millésime 2024 identifie environ 1,15 million de logements vacants depuis plus de deux ans à l’échelle nationale, et le millésime 2025 environ 1,35 million. Ces dénombrements ne peuvent toutefois pas être interprétés directement comme une augmentation réelle de la vacance, en raison des ruptures de série liées au passage à GMBI puis aux modifications de traitement intervenues en 2025. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales. Les données permettent de caractériser un stock important de logements identifiés comme durablement vacants, mais leur comparaison brute ne permet pas d’en établir l’évolution (ni avec des millésimes antérieurs, 2023, 2022, 2021, 2020) pour des raisons de ruptures de méthode également."}**. Le passage aux déclarations d’occupation GMBI à partir du millésime 2024, puis les modifications de sélection des logements intervenues en 2025, affectent leur comparabilité. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales.  
+
+**Le recensement constitue ainsi la principale référence commune retenue ici pour l’analyse des tendances.** Ses résultats doivent néanmoins être interprétés en tenant compte des évolutions de la [**collecte**]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="En particulier, le protocole « boîte aux lettres », généralisé en 2022, a un effet sur la répartition entre résidences principales et logements vacants, progressivement intégré aux résultats. Les variations récentes ne peuvent donc pas être attribuées intégralement à des évolutions du marché du logement."}.
+
+**Évolution du nombre de logements par catégorie en historique pour la Nouvelle-Aquitaine**
+Catégorie de logement	1968	1975	1982	1990	1999	2006	2011	2016	2022
+Ensemble (Nouvelle-Aquitaine)	1 716 457	1 954 084	2 220 304	2 488 926	2 742 006	3 045 767	3 255 884	3 451 872	3 664 327
+Résidences principales	1 442 524	1 596 260	1 787 373	1 975 871	2 210 131	2 459 921	2 610 999	2 742 949	2 922 921
+Résidences secondaires et logements occasionnels	135 247	183 573	239 154	310 604	336 075	384 373	388 078	414 296	444 406
+Logements vacants	138 686	174 251	193 777	202 451	195 800	201 472	256 807	294 627	296 999
+Part des logements vacants dans l’ensemble du parc	8,08 %	8,92 %	8,73 %	8,13 %	7,14 %	6,61 %	7,89 %	8,54 %	8,11 %
+
 :::
