@@ -1,0 +1,53 @@
+---
+title: ""
+format: html
+editor: visual
+lang: fr
+lightbox: true
+toc: false
+---
+
+
+## ANNEXE 3 : Méthodologie de définition du zonage de la localisation des logements du parc privé vacants depuis plus de 2 ans en 3 zones  
+
+
+Définition de l’enveloppe urbaine : l’enveloppe urbaine est définie a partir de la BD TOPO 2019.  
+
+Les couches utilisées sont :  
+
+<div style="margin-left:25px;">
+– N_AERODROME_TOPO_02B.SHP  
+- N_BATIMENT_TOPO_02B.SHP  
+- N_CIMETIERE_TOPO_02B.SHP  
+- N_CONSTRUCTION_SURFACIQUE_TOPO_02B.SHP  
+- N_POSTE_DE_TRANSFORMATION_TOPO_02B.SHP  
+- N_RESERVOIR_TOPO_02B.SHP  
+- N_TERRAIN_DE_SPORT_TOPO_02B.SHP  
+- N_ZONE_D_ACTIVITE_OU_D_INTERET_TOPO_02B.SHP (sans les enceintes militaires et les
+champs de tir).  
+</div>  
+
+La règle de dilatation 40 m autour de chaque bâtiment puis de contraction 25 m sur les ensembles
+crées a été appliquée.  
+
+Il a été décide de ne pas combler les trous crées dans l’enveloppe urbaine (sans intérêt dans le
+cadre de cette étude car, de par sa définition, aucun logement vacant ne s’y trouve).
+Par contre, il a été décidé la suppression des éléments isoles de moins de 2 ha afin de créer une
+enveloppe urbaine la plus homogène possible.  
+
+**Définition des 3 zones : ** 
+
+L’objectif est de définir de façon automatique des secteurs urbains centraux (Zone 1), des zones
+péri-urbaines (Zone 2) et hors agglomération (Zone 3) pour chaque commune de la région. Sur un
+territoire aussi vaste, avec des communes aux caractéristiques potentiellement tellement
+différentes, il est certain que le résultat ne peut être parfait.
+Les points d’intérêt retenus comme caractérisant la centralité des communes sont les mairies, les
+lieux de cultes et les écoles primaires et maternelles. Les zones sont définies ainsi :
+
+<div style="margin-left:25px;">
+• Zone 1 : intersection de l’enveloppe urbaine et des disques de rayon de 500 m autour des
+points d’intérêt ;  
+• Zone 2 : intersection de l’enveloppe urbaine et des disques de rayon de 1000 m autour
+des points d’intérêt, hors de la zone 1 ;  
+• Zone 3 : le territoire autre que les zones 1 et 2.  
+</div>

@@ -14,9 +14,15 @@ website:
         icon: house
         text: Accueil
         
-      - text: Exploitation
-        href: evolution_regionale.qmd
-        icon: pencil
+      - text: Annexes
+        icon: folder
+        menu:
+          - href: annexe1.qmd
+            text: "Annexe 1 : LOVAC"
+          - href: annexe2.qmd
+            text: "Annexe 2 : liste des communes cartographiées (IRIS)"
+          - href: annexe3.qmd
+            text: "Annexe 3 : Définition du Zonage"
           
 
       - text: Cartographie des logements vacants

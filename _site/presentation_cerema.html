@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.38">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-b663525e4b92bb903b2199e2d401bf36.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6fbeded6f3ebf79cb24723fcc5290fa2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2e0eb873b2a66c41ffdc12b4316c2215.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -138,11 +138,27 @@ document.addEventListener("DOMContentLoaded", function() {
 </i> 
 <span class="menu-text">Accueil</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./evolution_regionale.html"> <i class="bi bi-pencil" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-annexes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-folder" role="img">
 </i> 
-<span class="menu-text">Exploitation</span></a>
+ <span class="menu-text">Annexes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-annexes">    
+        <li>
+    <a class="dropdown-item" href="./annexe1.html">
+ <span class="dropdown-text">Annexe 1 : LOVAC</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe2.html">
+ <span class="dropdown-text">Annexe 2 : liste des communes cartographiées (IRIS)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe3.html">
+ <span class="dropdown-text">Annexe 3 : Définition du Zonage</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cartographie-des-logements-vacants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-map" role="img">
@@ -338,7 +354,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

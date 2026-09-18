@@ -4,9 +4,9 @@ format: html
 editor: visual
 lang: fr
 lightbox: true
-toc: true
+toc: false
 ---
 
-## 4.2 Par Communes
+## Par Communes
 
 ![](images/communes.png){.lightbox}
