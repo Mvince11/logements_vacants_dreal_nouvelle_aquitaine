@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>communes</title>
+<title>annexe1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,9 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-2e0eb873b2a66c41ffdc12b4316c2215.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -228,9 +225,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-<section id="par-communes" class="level2">
-<h2 class="anchored" data-anchor-id="par-communes">Par Communes</h2>
-<p><a href="images/communes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/communes.png" class="img-fluid"></a></p>
+<section id="annexe-1-lovac" class="level2">
+<h2 class="anchored" data-anchor-id="annexe-1-lovac">ANNEXE 1 : LOVAC</h2>
+<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
+<p>Les données LOVAC sont les données les plus précises et les plus fiables dont disposent les collectivités pour lutter contre les logements vacants à ce jour. Ce sont des données opérationnelles produites chaque année par le Cerema (existent depuis la mise en œuvre du plan national de lutte contre les logements vacants).</p>
+<p>Les données LOVAC sont issues de sources fiscales <strong>(ces sources comme les méthodes ont varié selon les millésimes). Par exemple, le millésime 2025 de LOVAC (sur l’année 2024) est issu du croisement :</strong></p>
+<div style="padding-left: 25px;">
+<p>• des informations du <strong>fichier 1767BISCOM</strong>, produit par la DGFiP,<br>
+• enrichies par des informations des <strong>Fichiers fonciers</strong>, issues du fichier MAJIC, produit par la DGFiP.<br>
+• des informations de <strong>DV3F</strong>, issues du fichier Demande de Valeurs Foncières, produit par la DGFiP,<br>
+• complétées par la <strong>Base Adresse Nationale</strong> (BAN), référentiel produit par l’IGN et la DINUM.</p>
+</div>
+<p>Les données LOVAC 2023 à 2025 utilisent les déclaration des propriétaires via <strong>Gérer Mes Biens Immobiliers</strong> (GMBI) : les propriétaires remplissent le statut d’occupation de leurs biens dont la potentielle vacance.</p>
+<p>GMBI a été mis en place en 2021 et généralisé en 2023 (les 3/4 des propriétaires avaient rempli cette obligation en 2023, le taux s’améliore depuis). GMBI a été mis en place suite à la suppression de la taxe d’habitation (2023), entraînant la disparition des données fiscales collectées en vue de cette taxation qui étaient <strong>essentielles à l’identification de l’ensemble des statuts d’occupation du parc de logements</strong> (résidences principales, résidences secondaires et les logements vacants).</p>
+<p>Les donnés LOVAC sur les années antérieures à 2023 (taxe d’habitation) sont donc très différentes des données post 2024. La méthode de collecte LOVAC a également évolué : il n’est pas non plus pertinent de comparer les millésimes 2026, 2025 et 2024 sur les années 2025, 2024 et 2023.</p>
+</div>
 
 
 </section>
@@ -686,38 +695,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

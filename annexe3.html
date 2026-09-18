@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>communes</title>
+<title>annexe3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,9 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-2e0eb873b2a66c41ffdc12b4316c2215.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -228,9 +225,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-<section id="par-communes" class="level2">
-<h2 class="anchored" data-anchor-id="par-communes">Par Communes</h2>
-<p><a href="images/communes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/communes.png" class="img-fluid"></a></p>
+<section id="annexe-3-méthodologie-de-définition-du-zonage-de-la-localisation-des-logements-du-parc-privé-vacants-depuis-plus-de-2-ans-en-3-zones" class="level2">
+<h2 class="anchored" data-anchor-id="annexe-3-méthodologie-de-définition-du-zonage-de-la-localisation-des-logements-du-parc-privé-vacants-depuis-plus-de-2-ans-en-3-zones">ANNEXE 3 : Méthodologie de définition du zonage de la localisation des logements du parc privé vacants depuis plus de 2 ans en 3 zones</h2>
+<p>Définition de l’enveloppe urbaine : l’enveloppe urbaine est définie a partir de la BD TOPO 2019.</p>
+<p>Les couches utilisées sont :</p>
+<div style="margin-left:25px;">
+<p>– N_AERODROME_TOPO_02B.SHP<br>
+- N_BATIMENT_TOPO_02B.SHP<br>
+- N_CIMETIERE_TOPO_02B.SHP<br>
+- N_CONSTRUCTION_SURFACIQUE_TOPO_02B.SHP<br>
+- N_POSTE_DE_TRANSFORMATION_TOPO_02B.SHP<br>
+- N_RESERVOIR_TOPO_02B.SHP<br>
+- N_TERRAIN_DE_SPORT_TOPO_02B.SHP<br>
+- N_ZONE_D_ACTIVITE_OU_D_INTERET_TOPO_02B.SHP (sans les enceintes militaires et les champs de tir).</p>
+</div>
+<p>La règle de dilatation 40 m autour de chaque bâtiment puis de contraction 25 m sur les ensembles crées a été appliquée.</p>
+<p>Il a été décide de ne pas combler les trous crées dans l’enveloppe urbaine (sans intérêt dans le cadre de cette étude car, de par sa définition, aucun logement vacant ne s’y trouve). Par contre, il a été décidé la suppression des éléments isoles de moins de 2 ha afin de créer une enveloppe urbaine la plus homogène possible.</p>
+<p><strong>Définition des 3 zones : </strong></p>
+<p>L’objectif est de définir de façon automatique des secteurs urbains centraux (Zone 1), des zones péri-urbaines (Zone 2) et hors agglomération (Zone 3) pour chaque commune de la région. Sur un territoire aussi vaste, avec des communes aux caractéristiques potentiellement tellement différentes, il est certain que le résultat ne peut être parfait. Les points d’intérêt retenus comme caractérisant la centralité des communes sont les mairies, les lieux de cultes et les écoles primaires et maternelles. Les zones sont définies ainsi :</p>
+<div style="margin-left:25px;">
+<p>• Zone 1 : intersection de l’enveloppe urbaine et des disques de rayon de 500 m autour des points d’intérêt ;<br>
+• Zone 2 : intersection de l’enveloppe urbaine et des disques de rayon de 1000 m autour des points d’intérêt, hors de la zone 1 ;<br>
+• Zone 3 : le territoire autre que les zones 1 et 2.</p>
+</div>
 
 
 </section>
@@ -686,38 +703,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

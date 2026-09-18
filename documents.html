@@ -139,11 +139,27 @@ document.addEventListener("DOMContentLoaded", function() {
 </i> 
 <span class="menu-text">Accueil</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./evolution_regionale.html"> <i class="bi bi-pencil" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-annexes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-folder" role="img">
 </i> 
-<span class="menu-text">Exploitation</span></a>
+ <span class="menu-text">Annexes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-annexes">    
+        <li>
+    <a class="dropdown-item" href="./annexe1.html">
+ <span class="dropdown-text">Annexe 1 : LOVAC</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe2.html">
+ <span class="dropdown-text">Annexe 2 : liste des communes cartographiées (IRIS)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe3.html">
+ <span class="dropdown-text">Annexe 3 : Définition du Zonage</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cartographie-des-logements-vacants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-map" role="img">
