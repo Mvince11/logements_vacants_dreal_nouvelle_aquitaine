@@ -177,7 +177,7 @@ L’étude présente la situation régionale, les tendances générales et les �
 
 
 <div style="padding-left: 25px;">
-• **Une cartographie de la vacance pour 70 villes, à l’échelle des [quartiers]{style="cursor:pointer; color:#42429f;" data-bs-toggle="tooltip" title="liste des communes cartographiées dans la rubrique «Cartographie des logements vacants : IRIS» "}**
+• **Une cartographie de la vacance pour 70 villes, à l’échelle des [quartiers]{style="cursor:pointer; color:#42429f;" data-bs-toggle="tooltip" title="liste des communes cartographiées dans la rubrique «Annexes : liste des communes cartographiées (IRIS)» "}**
 </div>
 
 <div class="triple-overlap">
