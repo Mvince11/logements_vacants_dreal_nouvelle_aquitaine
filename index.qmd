@@ -7,6 +7,9 @@ format:
     fig-align: center
 editor: visual
 toc: true
+include-in-header:
+  text: |
+    <meta name="google-site-verification" content="4VibkrqqW94CzKIbts6aq3i-zk2yJctqi-xBemzZFOI" />
 ---
 
 ```{=html}
