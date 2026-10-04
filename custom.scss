@@ -130,6 +130,17 @@ $grid-body-width: 1000px !default;
 //$body-color: #292574;
 //$font-family-sans-serif: Calibri, Arial;
 
+/* Assure que la page prend toute la hauteur de l'écran */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Pousse le footer vers le bas en lui disant de prendre tout l'espace restant au-dessus */
+.nav-footer {
+  margin-top: auto !important; 
+}
 
 
 /*-- scss:rules --*/
@@ -288,6 +299,175 @@ div.quarto-about-trestles .about-entity{
   color: green !important;
 }
 
+
+/* Footer global */
+.footer {
+  width: 100%;;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+}
+
+/* ================================
+   FOOTER QUARTO
+   ================================ */
+
+.nav-footer {
+  width: 99.4vw;
+  min-height: 40px;
+  padding: 10px 25px !important;
+  font-family: Avenir,Arial,sans-serif;
+  font-size: 13px;
+  background-color: #f4f4f4 !important;
+  border-top: 1px solid #e5e7ef;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative !important;
+  left: 50% !important;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  overflow: hidden !important;
+}
+
+
+/* Les trois zones */
+.nav-footer-left,
+.nav-footer-center,
+.nav-footer-right {
+  display: flex !important;
+  align-items: center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  white-space: nowrap;
+}
+
+
+/* Gauche */
+.nav-footer-left {
+  justify-content: flex-start;
+  flex: 1;
+}
+
+
+/* Centre */
+.nav-footer-center {
+  justify-content: center;
+  flex: 1;
+
+  color: #293574;
+}
+
+
+/* Droite */
+.nav-footer-right {
+  justify-content: flex-end;
+  flex: 1;
+}
+
+
+/* Liens */
+.nav-footer a {
+  color: #293574 !important;
+  text-decoration: none !important;
+
+  transition: color 0.2s ease;
+}
+
+
+/* Hover */
+.nav-footer a:hover {
+  color: #ef7757 !important;
+}
+
+
+/* Icônes réseaux sociaux */
+.nav-footer-right a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  margin-left: 7px;
+
+  font-size: 1.15rem;
+
+  border-radius: 50%;
+}
+
+
+/* Effet au survol des icônes */
+.nav-footer-right a:hover {
+  background-color: #f7f8fb;
+}
+
+
+/* ================================
+   TABLETTE
+   ================================ */
+
+@media (max-width: 768px) {
+
+  .nav-footer {
+    padding: 8px 15px !important;
+    font-size: 12px;
+  }
+
+  .nav-footer-right a {
+    width: 27px;
+    height: 27px;
+    margin-left: 4px;
+    font-size: 1rem;
+  }
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 550px) {
+
+  .nav-footer {
+    flex-wrap: wrap;
+    justify-content: center !important;
+
+    gap: 5px 15px;
+
+    min-height: auto;
+    padding: 10px 15px !important;
+  }
+
+  .nav-footer-left,
+  .nav-footer-center,
+  .nav-footer-right {
+    flex: none;
+
+    width: auto;
+  }
+
+  .nav-footer-left {
+    order: 1;
+  }
+
+  .nav-footer-center {
+    order: 2;
+  }
+
+  .nav-footer-right {
+    order: 3;
+  }
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --footer-height:40px !important;
+  }
+}
 
 @media (max-width:1400px){
   .me-auto{
