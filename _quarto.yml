@@ -75,5 +75,6 @@ format:
     navbar-html: true
 
 editor: visual
-
+# metadata:
+#   keywords: [Logements vacants, DREAL Nouvelle-Aquitaine , Lovac, RPLS]
 
