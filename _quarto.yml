@@ -13,6 +13,20 @@ website:
         icon: house
         text: Accueil
         
+      - text: Exploitation
+        icon: database-fill-gear
+        menu:
+          - href: contexte.qmd
+            text: "1. Contexte et objet de l'étude"
+          - href: evolution.qmd
+            text: "2. Evolution de la vacance"
+          - href: etat_des_lieux.qmd
+            text: "3. Etat des lieux de la vacance"
+          - href: caracteristiques.qmd
+            text: "4. Caractéristiques des logements vacants"
+          - href: rpls.qmd
+            text: "5. Vacance résiduelle parc social"
+        
       - text: Annexes
         icon: folder
         menu:
