@@ -2,6 +2,9 @@
 title: ""
 lang: fr
 lightbox: true
+include-in-header:
+  text: |
+    <script src="assets/header.js"></script>
 ---
 
 ## Matrice 2024

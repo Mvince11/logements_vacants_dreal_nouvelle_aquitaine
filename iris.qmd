@@ -5,6 +5,9 @@ editor: visual
 lang: fr
 lightbox: true
 toc: true
+include-in-header:
+  text: |
+    <script src="assets/header.js"></script>
 ---
 
 ## Par Iris
