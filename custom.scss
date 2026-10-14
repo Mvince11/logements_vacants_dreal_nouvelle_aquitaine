@@ -573,3 +573,14 @@ div.quarto-about-trestles .about-entity{
     margin-bottom: 35px;
   }
 }
+
+@media (max-width: 564px){
+  #quarto-search{
+    display: none;
+  }
+  
+  .navbar-toggler{
+    left:20px !important;
+    right: inherit;
+  }
+}
