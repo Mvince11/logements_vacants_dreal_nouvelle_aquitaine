@@ -573,3 +573,27 @@ div.quarto-about-trestles .about-entity{
     margin-bottom: 35px;
   }
 }
+
+@media (min-width: 1198px) and (max-width: 1224px){
+  .navbar-nav.navbar-nav-scroll.me-auto .nav-link { 
+    font-size: 0.95em !important;
+  }
+  
+  .navbar-container{
+    width: auto !important;
+  }
+  
+  .me-auto {
+  margin-right: inherit !important;
+}
+}
+
+@media (min-width: 1224px) and (max-width: 1400px){
+  .me-auto {
+  margin-right: inherit !important;
+}
+
+.navbar-collapse{
+  width: auto !important;
+}
+}

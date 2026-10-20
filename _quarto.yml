@@ -7,13 +7,13 @@ website:
   navbar:
     logo: "images/logos/Panorama.png"
     logo-alt: "Dreal-NA-Logements-vacants"
-    collapse-below: xxl
+    collapse-below: xl
     left:
       - href: index.qmd
         icon: house
         text: Accueil
         
-      - text: Exploitation
+      - text: Etude et livrables
         icon: database-fill-gear
         menu:
           - href: contexte.qmd

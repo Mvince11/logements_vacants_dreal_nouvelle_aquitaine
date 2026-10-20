@@ -151,19 +151,15 @@ include-in-header:
 
 
 ::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-État des lieux 2025. L’objectif de ce volet est de produire une photographie actualisée du parc vacant à l’échelle régionale et infrarégionale. Les indicateurs retenus :
+Dans un contexte général de nécessité de produire des logements dans l'existant afin de garantir une meilleure gestion économe du foncier, la résorption de la vacance s'impose ainsi toujours comme un enjeu majeur. Malgré les politiques locales de lutte contre la vacance, le phénomène perdure et il n'est pas négligeable.  
 
-❖ nombre et part de logements vacants depuis plus de 2 ans,\
-❖ durée de vacance,\
-❖ typologie du parc (type de logement, année de construction)\
-❖ localisation\
-❖ qualité du bâti
+La présente étude élaborée conjointement entre le Cerema et la DREAL Nouvelle Aquitaine a vocation à présenter un état des lieux de la vacance sur la région Nouvelle-Aquitaine et les tendances d'évolution avec : 
 
-Les résultats seront agrégés aux niveaux géographiques suivants:
+❖ L'étude,\
+❖ Des données sur les caractéristiques des logements à l'échelle EPCI et communes (la matrice) avec les chiffres LOVAC de la vacance et les caractéristiques des logements vacants\
+❖ Une cartographie de la vacance pour 70 villes, à l'échelle des quartiers (liste des communes cartographiées en annexe 2)\
+❖ Un recueil proposant une liste la plus exhaustive possible des outils et leviers existants pour lutter contre la vacance (repérage, outils opérationnels, coercitifs, financiers...).\
+❖ un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?). 
 
-❖ Région Nouvelle-Aquitaine\
-❖ Départements,\
-❖ EPCI\
-❖ Communes\
-❖ Quartiers des principales villes de la région (IRIS)
+Une 2e phase de l'étude présentera une analyse croisée de la vacance et du marché, des fiches par EPCI sur la vacance ainsi que des fiches de retours d'expériences.portera sur les outils et leviers mobilisables pour remettre sur le marché les logements vacants.
 :::
