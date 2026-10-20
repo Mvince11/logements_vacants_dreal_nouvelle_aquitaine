@@ -73,46 +73,53 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const brand = document.querySelector(".navbar-brand");
 
-  if (brand) {
+  if (!brand) return;
 
-    brand.innerHTML = `
 
-      <div style="display:flex; align-items:center;" class="navbar-logo">
 
-        <div style="gap: 16px; display:flex;">
+  const offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+
+  const root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+
+
+
+  brand.innerHTML = `
+
+    <div style="display:flex; align-items:center;" class="navbar-logo">
+
+      <div style="gap:16px; display:flex;">
 
         <a href="https://www.cerema.fr/fr">
 
-          <img src="images/logos/logo_cerema.png" style="height:74px;">
+          <img src="${root}images/logos/logo_cerema.PNG" style="height:74px;">
 
         </a>
 
         <a href="https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/">
 
-          <img src="images/logos/DREAL_2023.jpg" style="height:80px;">
+          <img src="${root}images/logos/DREAL_2023.jpg" style="height:80px;">
 
         </a>
 
-       </div>
+      </div>
 
-          <div style="display:flex;flex-direction: column;line-height: 1.1;" class="dreal_texte">
+      <div style="display:flex; flex-direction:column; line-height:1.1;" class="dreal_texte">
 
-            <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
+        <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
 
-            <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
-
-          </div>  
+        <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
 
       </div>
 
-    `;
+    </div>
 
-  }
+  `;
 
 });
 
 </script>
 
+<script src="assets/header.js"></script>
 
 
 </head>
@@ -123,11 +130,6 @@ document.addEventListener("DOMContentLoaded", function() {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-xxl " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/Panorama.png" alt="Dreal-NA-Logements-vacants" class="navbar-logo">
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Recherche"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>

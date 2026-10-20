@@ -5,7 +5,7 @@ date: 2026-08-11
 lang: fr
 about:
   template: trestles
-  image: "images/logos/logo_cerema.png"
+  image: "images/logos/logo_cerema.PNG"
   links:
     - icon: link
       href: https://www.cerema.fr/fr

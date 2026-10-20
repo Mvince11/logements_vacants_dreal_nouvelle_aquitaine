@@ -73,46 +73,53 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const brand = document.querySelector(".navbar-brand");
 
-  if (brand) {
+  if (!brand) return;
 
-    brand.innerHTML = `
 
-      <div style="display:flex; align-items:center;" class="navbar-logo">
 
-        <div style="gap: 16px; display:flex;">
+  const offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+
+  const root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+
+
+
+  brand.innerHTML = `
+
+    <div style="display:flex; align-items:center;" class="navbar-logo">
+
+      <div style="gap:16px; display:flex;">
 
         <a href="https://www.cerema.fr/fr">
 
-          <img src="images/logos/logo_cerema.png" style="height:74px;">
+          <img src="${root}images/logos/logo_cerema.PNG" style="height:74px;">
 
         </a>
 
         <a href="https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/">
 
-          <img src="images/logos/DREAL_2023.jpg" style="height:80px;">
+          <img src="${root}images/logos/DREAL_2023.jpg" style="height:80px;">
 
         </a>
 
-       </div>
+      </div>
 
-          <div style="display:flex;flex-direction: column;line-height: 1.1;" class="dreal_texte">
+      <div style="display:flex; flex-direction:column; line-height:1.1;" class="dreal_texte">
 
-            <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
+        <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
 
-            <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
-
-          </div>  
+        <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
 
       </div>
 
-    `;
+    </div>
 
-  }
+  `;
 
 });
 
 </script>
 
+<script src="assets/header.js"></script>
 
 
 </head>
@@ -270,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <p>La règle de dilatation 40 m autour de chaque bâtiment puis de contraction 25 m sur les ensembles crées a été appliquée.</p>
 <p>Il a été décide de ne pas combler les trous crées dans l’enveloppe urbaine (sans intérêt dans le cadre de cette étude car, de par sa définition, aucun logement vacant ne s’y trouve). Par contre, il a été décidé la suppression des éléments isoles de moins de 2 ha afin de créer une enveloppe urbaine la plus homogène possible.</p>
-<p><strong>Définition des 3 zones : </strong></p>
+<p><strong>Définition des 3 zones :</strong></p>
 <p>L’objectif est de définir de façon automatique des secteurs urbains centraux (Zone 1), des zones péri-urbaines (Zone 2) et hors agglomération (Zone 3) pour chaque commune de la région. Sur un territoire aussi vaste, avec des communes aux caractéristiques potentiellement tellement différentes, il est certain que le résultat ne peut être parfait. Les points d’intérêt retenus comme caractérisant la centralité des communes sont les mairies, les lieux de cultes et les écoles primaires et maternelles. Les zones sont définies ainsi :</p>
 <div style="margin-left:25px;">
 <p>• Zone 1 : intersection de l’enveloppe urbaine et des disques de rayon de 500 m autour des points d’intérêt ;<br>
