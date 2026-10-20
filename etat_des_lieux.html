@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>etat_des_lieux</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-b663525e4b92bb903b2199e2d401bf36.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-b29737568d1dcf647219502c9cceec79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const brand = document.querySelector(".navbar-brand");
+
+  if (!brand) return;
+
+
+
+  const offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+
+  const root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+
+
+
+  brand.innerHTML = `
+
+    <div style="display:flex; align-items:center;" class="navbar-logo">
+
+      <div style="gap:16px; display:flex;">
+
+        <a href="https://www.cerema.fr/fr">
+
+          <img src="${root}images/logos/logo_cerema.PNG" style="height:74px;">
+
+        </a>
+
+        <a href="https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/">
+
+          <img src="${root}images/logos/DREAL_2023.jpg" style="height:80px;">
+
+        </a>
+
+      </div>
+
+      <div style="display:flex; flex-direction:column; line-height:1.1;" class="dreal_texte">
+
+        <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
+
+        <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
+
+      </div>
+
+    </div>
+
+  `;
+
+});
+
+</script>
+
+<meta name="google-site-verification" content="4VibkrqqW94CzKIbts6aq3i-zk2yJctqi-xBemzZFOI">
+
+
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-xxl " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logos/Panorama.png" alt="Dreal-NA-Logements-vacants" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exploitation" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database-fill-gear" role="img">
+</i> 
+ <span class="menu-text">Exploitation</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-exploitation">    
+        <li>
+    <a class="dropdown-item" href="./contexte.html">
+ <span class="dropdown-text">1. Contexte et objet de l’étude</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./evolution.html">
+ <span class="dropdown-text">2. Evolution de la vacance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./etat_des_lieux.html">
+ <span class="dropdown-text">3. Etat des lieux de la vacance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./caracteristiques.html">
+ <span class="dropdown-text">4. Caractéristiques des logements vacants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rpls.html">
+ <span class="dropdown-text">5. Vacance résiduelle parc social</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-annexes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-folder" role="img">
+</i> 
+ <span class="menu-text">Annexes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-annexes">    
+        <li>
+    <a class="dropdown-item" href="./annexe1.html">
+ <span class="dropdown-text">Annexe 1 : LOVAC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe2.html">
+ <span class="dropdown-text">Annexe 2 : liste des communes cartographiées (IRIS)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe3.html">
+ <span class="dropdown-text">Annexe 3 : Définition du Zonage</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cartographie-des-logements-vacants" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-map" role="img">
+</i> 
+ <span class="menu-text">Cartographie des logements vacants</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cartographie-des-logements-vacants">    
+        <li>
+    <a class="dropdown-item" href="./epci.html">
+ <span class="dropdown-text">EPCI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./communes.html">
+ <span class="dropdown-text">Communes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./iris.html">
+ <span class="dropdown-text">IRIS</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./documents.html"> <i class="bi bi-file-earmark-text" role="img">
+</i> 
+<span class="menu-text">Documents à télécharger</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-qui-sommes-nous-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people-fill" role="img">
+</i> 
+ <span class="menu-text">Qui Sommes nous ?</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-qui-sommes-nous-">    
+        <li>
+    <a class="dropdown-item" href="./presentation_dreal.html">
+ <span class="dropdown-text">DREAL Nouvelle-Aquitaine</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentation_cerema.html">
+ <span class="dropdown-text">Cerema</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenu</h2>
+   
+  <ul>
+  <li><a href="#etat-des-lieux-de-la-vacance-cartographie" id="toc-etat-des-lieux-de-la-vacance-cartographie" class="nav-link active" data-scroll-target="#etat-des-lieux-de-la-vacance-cartographie">3. Etat des lieux de la vacance : cartographie</a>
+  <ul class="collapse">
+  <li><a href="#la-vacance-par-epci" id="toc-la-vacance-par-epci" class="nav-link" data-scroll-target="#la-vacance-par-epci">3.1 La vacance par EPCI</a></li>
+  <li><a href="#la-vacance-par-commune" id="toc-la-vacance-par-commune" class="nav-link" data-scroll-target="#la-vacance-par-commune">3.2 La vacance par commune</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<style>
+  p {
+  text-align: inherit !important;
+  }
+
+.img-stack {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  aspect-ratio: 3 / 1; /* hauteur fluide */
+}
+
+/* Images superposées */
+.img-stack img {
+  position: absolute;
+  object-fit: contain;
+  max-width: 100%;
+  margin-top: -65px;
+}
+
+/* Image du dessus */
+.img-top {
+  width: 60%;
+  right: 2%;
+  top: 0;
+}
+
+/* Image du dessous */
+.img-bottom {
+  width: 40%;
+  right: 35%;
+  top: 15%;
+}
+
+/* --- Responsive fluide --- */
+@media (max-width: 900px) {
+  .img-top {
+    width: 65%;
+    right: 0;
+    top: 5%;
+  }
+  .img-bottom {
+    width: 45%;
+    right: 30%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-top {
+    width: 70%;
+    right: 0;
+    top: 10%;
+  }
+  .img-bottom {
+    width: 50%;
+    right: 25%;
+    top: 25%;
+  }
+}
+
+@media (max-width: 450px) {
+  .img-top {
+    width: 75%;
+    right: 0;
+    top: 15%;
+  }
+  .img-bottom {
+    width: 55%;
+    right: 20%;
+    top: 30%;
+  }
+}
+
+  
+  .triple-overlap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centre le groupe */
+    align-items: center;
+    text-align: center;
+  }
+
+  .triple-overlap img {
+    width: 36%; /* taille des images */
+  }
+
+  /* Image de gauche */
+  .img-left {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Image du milieu (au-dessus) */
+  .img-middle {
+    position: relative;
+    z-index: 3; /* passe au-dessus */
+    margin: 0 -6%; /* chevauchement horizontal */
+    margin-top: -4%; /* chevauchement vertical */
+  }
+
+  /* Image de droite */
+  .img-right {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .triple-overlap img {
+      width: 35%;
+    }
+    .img-middle {
+      margin: 0 -8%;
+      margin-top: -6%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .triple-overlap img {
+      width: 45%;
+    }
+    .img-middle {
+      margin: 0 -10%;
+      margin-top: -8%;
+    }
+  }
+</style>
+<section id="etat-des-lieux-de-la-vacance-cartographie" class="level2">
+<h2 class="anchored" data-anchor-id="etat-des-lieux-de-la-vacance-cartographie">3. Etat des lieux de la vacance : cartographie</h2>
+<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
+<p>Selon les données LOVAC, la vacance des logements en Nouvelle-Aquitaine est estimée à 9,5 %, soit environ 340 000 logements. Une partie de ces logements n’est inoccupée que temporairement, notamment entre deux occupants ou à l’occasion de travaux de remise en état. Cette vacance conjoncturelle accompagne la rotation des ménages et l’entretien du parc, contribuant ainsi à la fluidité des parcours résidentiels.</p>
+<p>La présente étude se concentre sur la vacance de longue durée, définie ici comme une inoccupation depuis au moins deux ans et retenue comme indicateur de la vacance structurelle. L’objectif est de repérer les logements durablement inoccupés pour lesquels les acteurs locaux peuvent engager des actions visant à favoriser leur remise sur le marché.</p>
+<p>En Nouvelle-Aquitaine, au 1er janvier 2024, <strong>cette vacance de longue durée concerne environ 154 505 logements, soit 4 % du parc de logements.</strong> Sa répartition départementale, établie à partir des bases de données <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="LOVAC : voir annexe">LOVAC</span> pour le parc privé et <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="RPLS : Le RPLS (Répertoire des logements locatifs des bailleurs sociaux) est une base statistique actualisée chaque année qui décrit, au 1er janvier, le parc locatif des bailleurs sociaux, notamment les caractéristiques des logements, leurs loyers et leur situation d’occupation ou de vacance.  ">RPLS</span> pour le parc social est présentée ci-après.</p>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution Nouvelle-Aquitaine 2020–2024</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f9f9f7; color: #1a1a18; padding: 2rem 1rem; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; }
+    input[type="text"] { flex: 1; min-width: 160px; padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; }
+    select { padding: 8px 12px; border: 0.5px solid #ccc; border-radius: 8px; font-size: 14px; background: #fff; cursor: pointer; }
+    .table-wrap { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+    thead tr { background: #f1efe8; }
+    th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 13px; color: #5f5e5a; border-bottom: 0.5px solid #e0dfd8; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { color: #1a1a18; }
+    td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; color: #1a1a18; }
+    tr:last-child td { border-bottom: none; }
+    tr.total-row td { font-weight: 500; background: #f1efe8; }
+    tr:hover:not(.total-row) td { background: #f9f9f7; }
+    .badge3 { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+    .badge3.pos { background: #ddffdd; color: #1a5c1a; }
+    .badge3.neg { background: #ffdddd; color: #7a1a1a; }
+    .bar-bg { width: 100%; height: 6px; background: #e0dfd8; border-radius: 4px; overflow: hidden; position: relative; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+    .metric { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+    .metric-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+    .metric-value { font-size: 20px; font-weight: 500; }
+    .metric-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+  </style>
+
+
+
+<div class="container4">
+  <h5 style="text-align:center;" class="anchored">Logements vacants (+2 ans) — Nouvelle-Aquitaine</h5>
+
+  <div class="metrics4" id="metrics4"></div>
+
+  <div class="controls4">
+    <input type="text" placeholder="Rechercher un département…" id="search4" oninput="render4()">
+    <select id="sort-col4" onchange="render4()">
+      <option value="dep">Département</option>
+      <option value="nb">Nb. vacants</option>
+      <option value="taux">Taux (%)</option>
+      <option value="part">Répartition (%)</option>
+    </select>
+    <select id="sort-dir4" onchange="render4()">
+      <option value="asc">↑ Croissant</option>
+      <option value="desc">↓ Décroissant</option>
+    </select>
+  </div>
+
+  <div class="table-wrap4">
+    
+<table class="table4 caption-top" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" onclick="sortBy4('dep')">Département</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy4('nb')">Nb. vacants</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy4('taux')">Taux</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th" onclick="sortBy4('part')">Répartition</th>
+<th data-quarto-table-cell-role="th" style="width: 30%">Evolution</th>
+</tr>
+</thead>
+<tbody id="tbody4">
+</tbody>
+</table>
+
+  </div>
+</div>
+
+<style>
+  .container4 { max-width: 900px; margin:20px 0 40px;}
+  .controls4 { display: flex; gap: 12px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .table-wrap4 { overflow-x: auto; border: 0.5px solid #e0dfd8; border-radius: 12px; background: #fff; }
+  .table4 { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .table4 th, .table4 td { padding: 9px 14px; border-bottom: 0.5px solid #e0dfd8; }
+  .table4 th { background: #f1efe8; cursor: pointer; }
+  .table4 tr.total-row4 td { font-weight: 600; background: #f1efe8; }
+  .table4 tr:hover:not(.total-row4) td { background: #f9f9f7; }
+
+  .metrics4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 1rem; }
+  .metric4 { background: #f1efe8; border-radius: 8px; padding: 0.75rem 1rem; }
+  .metric4-label { font-size: 12px; color: #5f5e5a; margin-bottom: 4px; }
+  .metric4-value { font-size: 20px; font-weight: 500; }
+  .metric4-sub { font-size: 11px; color: #888780; margin-top: 2px; }
+
+  .badge4 { padding: 2px 8px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+  .badge4.pos { background:#ddffdd; color:#1a5c1a; }
+  .badge4.neg { background:#ffdddd; color:#7a1a1a; }
+
+  .bar-bg4 { width:100%; height:6px; background:#e0dfd8; border-radius:4px; position:relative; overflow:hidden; }
+  .bar4 { height:100%; background:#2d8a4e; border-radius:4px; }
+</style>
+
+<script>
+// --- Données du tableau 4 ---
+const raw4 = [
+  {dep:"Charente", nb:10956, taux:5.20, part:7.09},
+  {dep:"Charente-Maritime", nb:14491, taux:3.00, part:9.38},
+  {dep:"Corrèze", nb:11373, taux:6.90, part:7.36},
+  {dep:"Creuse", nb:9401, taux:10.00, part:6.08},
+  {dep:"Dordogne", nb:15702, taux:5.60, part:10.16},
+  {dep:"Gironde", nb:24268, taux:2.50, part:15.71},
+  {dep:"Landes", nb:9574, taux:3.30, part:6.20},
+  {dep:"Lot-et-Garonne", nb:12535, taux:6.40, part:8.11},
+  {dep:"Pyrénées-Atlantiques", nb:13701, taux:3.90, part:8.86},
+  {dep:"Deux-Sèvres", nb:7894, taux:3.80, part:5.11},
+  {dep:"Vienne", nb:11430, taux:4.50, part:7.40},
+  {dep:"Haute-Vienne", nb:13180, taux:5.60, part:8.53},
+];
+
+const total4 = { dep:"Nouvelle-Aquitaine", nb:154505, taux:4.00, part:100.00 };
+
+let currentSort4 = "dep";
+let currentDir4 = "asc";
+
+function sortBy4(col) {
+  if (currentSort4 === col) currentDir4 = currentDir4 === "asc" ? "desc" : "asc";
+  else { currentSort4 = col; currentDir4 = "asc"; }
+  document.getElementById("sort-col4").value = col;
+  document.getElementById("sort-dir4").value = currentDir4;
+  render4();
+}
+
+function render4() {
+  const q   = document.getElementById("search4").value.toLowerCase();
+  const col = document.getElementById("sort-col4").value;
+  const dir = document.getElementById("sort-dir4").value;
+
+  let rows = raw4.filter(r => r.dep.toLowerCase().includes(q));
+
+  rows.sort((a,b) => {
+    if (col === "dep") return dir === "asc"
+      ? a.dep.localeCompare(b.dep, "fr")
+      : b.dep.localeCompare(a.dep, "fr");
+    return dir === "asc" ? a[col] - b[col] : b[col] - a[col];
+  });
+
+  const maxPart = Math.max(...rows.map(r => r.part));
+
+  const tbody = document.getElementById("tbody4");
+  tbody.innerHTML = rows.map(r => `
+    <tr>
+      <td>${r.dep}</td>
+      <td style="text-align:right">${r.nb.toLocaleString("fr-FR")}</td>
+      <td style="text-align:right">${r.taux.toFixed(2)}%</td>
+      <td style="text-align:right">
+        <span class="badge4 pos">${r.part.toFixed(2)}%</span>
+      </td>
+      <td>
+        <div class="bar-bg4">
+          <div class="bar4" style="width:${(r.part/maxPart)*100}%"></div>
+        </div>
+      </td>
+    </tr>
+  `).join("");
+
+  // TOTAL
+  tbody.innerHTML += `
+    <tr class="total-row4">
+      <td>${total4.dep}</td>
+      <td style="text-align:right">${total4.nb.toLocaleString("fr-FR")}</td>
+      <td style="text-align:right">${total4.taux.toFixed(2)}%</td>
+      <td style="text-align:right"><span class="badge4 pos">100.00%</span></td>
+      <td></td>
+    </tr>
+  `;
+
+  renderMetrics4(rows);
+}
+
+function renderMetrics4(rows) {
+  const maxVac = [...rows].sort((a,b)=>b.nb-a.nb)[0];
+  const maxTaux = [...rows].sort((a,b)=>b.taux-a.taux)[0];
+  const maxPart = [...rows].sort((a,b)=>b.part-a.part)[0];
+
+  document.getElementById("metrics4").innerHTML = `
+    <div class="metric4">
+      <div class="metric4-label">Total logements vacants</div>
+      <div class="metric4-value">${total4.nb.toLocaleString("fr-FR")}</div>
+      <div class="metric4-sub">${total4.dep}</div>
+    </div>
+
+    <div class="metric4">
+      <div class="metric4-label">Plus grand nombre</div>
+      <div class="metric4-value">${maxVac.nb.toLocaleString("fr-FR")}</div>
+      <div class="metric4-sub">${maxVac.dep}</div>
+    </div>
+
+    <div class="metric4">
+      <div class="metric4-label">Taux le plus élevé</div>
+      <div class="metric4-value">${maxTaux.taux.toFixed(2)}%</div>
+      <div class="metric4-sub">${maxTaux.dep}</div>
+    </div>
+
+    <div class="metric4">
+      <div class="metric4-label">Plus forte répartition</div>
+      <div class="metric4-value">${maxPart.part.toFixed(2)}%</div>
+      <div class="metric4-sub">${maxPart.dep}</div>
+    </div>
+  `;
+}
+
+render4();
+</script>
+<p style="text-align: center !important;">
+<a href="images/logements_vacants_NA.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/logements_vacants_NA.png" class="img-fluid" style="width:62%;"></a>
+</p>
+<p>Cette ne mesure pas l’évolution de la vacance <strong>mais confirme clairement la tendance à une vacance installée qui plus importante dans les départements de l’Est (+ de 5 % de logements vacants -longue durée-), et a contrario plus faible sur le littoral. La carte suivante de la vacance par EPCI confirme cette une vacance plus importante sur les EPCI de l’Est de la région.</strong></p>
+</div>
+<section id="la-vacance-par-epci" class="level3">
+<h3 class="anchored" data-anchor-id="la-vacance-par-epci">3.1 La vacance par EPCI</h3>
+<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
+<p style="text-align: center !important;">
+<a href="images/epci.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/epci.png" class="img-fluid" style="width:62%;"></a>
+</p>
+<div style="border: 1px solid; padding:5px;">
+<p>La carte met en évidence un <strong>contraste ouest–est marqué</strong> de la vacance de plus de deux ans. Les taux sont généralement plus faibles sur le littoral et dans les intercommunalités des principaux pôles urbains, où ils se situent souvent entre <strong>1 et 4 %.</strong></p>
+<p>À l’inverse, les niveaux les plus élevés, compris entre <strong>9 et 14 %</strong>, se concentrent surtout dans le nord-est et l’est de la région, notamment dans la Creuse et l’est de la Corrèze. De nombreux territoires intérieurs présentent également des taux élevés, entre <strong>6 et 9 %.</strong></p>
+<p>Cette répartition reste toutefois contrastée : les intercommunalités de Limoges, de Périgueux ou d’Angoulême affichent des taux plus faibles que plusieurs des territoires qui les entourent.</p>
+</div>
+</div>
+</section>
+<section id="la-vacance-par-commune" class="level3">
+<h3 class="anchored" data-anchor-id="la-vacance-par-commune">3.2 La vacance par commune</h3>
+<div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
+<p style="text-align: center !important;">
+<a href="images/communes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/communes.png" class="img-fluid" style="width:62%;"></a>
+</p>
+<div style="border:1px solid; padding:5px;">
+<p>À l’échelle communale, la carte confirme des <strong>taux de vacance de plus de deux ans généralement plus faibles sur le littoral et autour des principaux pôles urbains</strong>, souvent inférieurs à <strong>4,7 %</strong>. Les taux supérieurs à <strong>9,8 %</strong> se concentrent davantage dans le nord-est et certains territoires intérieurs, mais des poches de vacance élevée apparaissent également dans le centre et le sud de la région.</p>
+</div>
+<p>Certaines communes relèvent ainsi de la classe la plus élevée, comprise entre <strong>14,5 et 37,2 %.</strong> Cette représentation révèle surtout une <strong>forte hétérogénéité entre communes voisines</strong>, que les moyennes intercommunales atténuent, et souligne l’intérêt d’une analyse locale pour préciser les secteurs les plus concernés.</p>
+<p><strong>Les données ayant permis de réaliser cette carte, disponible dans la matrice</strong>, mettent en évidence plusieurs situations de vacance particulièrement marquées. Certaines villes moyennes cumulent des taux élevés et des volumes importants de logements durablement vacants, comme Aubusson ou Tulle.</p>
+<p>Dans plusieurs de ces territoires, une part importante de cette vacance est ancienne, avec des taux de vacance de plus de cinq ans atteignant des taux important.</p>
+<p>Quelques petites communes affichent des niveaux extrêmement élevés — par exemple Bousses : 37,2 %, Saint-Antoine-du-Queyret : 29,2 %, Saint-Georges : 27,9 % ou Saint-Pierre-le-Bost : 26 % — mais ces taux portent parfois sur seulement quelques dizaines de logements. Ils signalent néanmoins une vacance très profondément installée, particulièrement lorsque le taux à plus de cinq ans reste lui aussi élevé : 34,9 % à Bousses, 25,6 % à Saint-Georges, 21,1 % à Saint-Pierre-le-Bost.</p>
+<p>À l’inverse, les principaux pôles urbains peuvent présenter des stocks importants en valeur absolue, mais des taux nettement plus faibles. Cette distinction entre volume et taux est essentielle pour identifier les territoires où la vacance constitue un phénomène réellement structurel. Bordeaux compte <strong>4 740 logements vacants depuis plus de deux ans</strong>, mais ceux-ci ne représentent que <strong>2,6 % du parc</strong> ; Limoges en compte <strong>3 206</strong>, soit <strong>3,7 %</strong> ; Pau <strong>1 768</strong>, soit <strong>3,2 %</strong> ; Poitiers <strong>1 502</strong>, soit <strong>2,6 %.</strong> Cela montre que le nombre brut de logements vacants ne suffit pas à qualifier la gravité d’une situation.</p>
+<p>→ <strong>Une cartographie de 70 communes (métropole, agglomérations et petites villes) est disponible dans <a href="iris.html">cet onglet</a></strong>. Elle présente la vacance par quartier IRIS et les variations au sein d’une même commune (nombre et % de logements vacants).</p>
+<div style="border:1px solid; padding:10px; display:flex; gap:20px; align-items:flex-start;" class="vacance_maison">
+  <div style="flex:1;">
+    <p><strong>Des situations particulièrement marquées :</strong></p>
+    <p>
+      L'analyse communale fait apparaître plusieurs situations de vacance structurelle conséquente.
+      En ne retenant que les communes comptant au moins 100 logements vacants depuis plus de deux ans,
+      une vingtaine de territoires présentent des taux supérieurs à 10 %. Certaines communes cumulent
+      un taux élevé et un stock conséquent, notamment Aubusson (494 logements ; 15,6 %),
+      Bort-les-Orgues (362 ; 16,2 %), Tulle (1 139 ; 11,1 %) ou Fumel (319 ; 10,4 %).
+      La durée de vacance constitue un indicateur supplémentaire de fragilité : dans plusieurs communes,
+      plus de 60 % des logements vacants depuis deux ans le sont déjà depuis plus de cinq ans.
+      Ces situations traduisent une vacance profondément installée, qui dépasse largement les phénomènes
+      de rotation du marché.
+    </p>
+    <p>Voir tableau suivant, extrait de la matrice réalisée par le CEREMA.</p>
+  </div>
+  <div style="flex:0 0 250px;">
+    <img src="images/vacance_communes_maison.jpg" style="width:100%; height:auto; border:1px solid #ccc;">
+  </div>
+</div>
+
+<style>
+@media (max-width:1100px){
+  .vacance_maison{
+  display:block !important;
+  }
+}
+</style>
+<br>
+<div style="text-align: center !important;">
+<p><strong>communes présentant les situations de vacance longue les plus marquées</strong><br>
+Sélection : au moins 100 logements vacants depuis plus de 2 ans – LOVAC 2024</p>
+</div>
+<style>
+  table.vacance-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  /* Ligne d’en‑tête gris foncé */
+  table.vacance-table thead tr {
+    background: #444;
+    color: white;
+  }
+
+  table.vacance-table th,
+  table.vacance-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Autoriser le retour à la ligne dans les en-têtes */
+  table.vacance-table th {
+    white-space: normal;
+    word-break: break-word;
+    vertical-align:middle;
+  }
+  
+  /* Option : élargir légèrement la colonne problématique */
+  table.vacance-table th:nth-child(6) {
+    min-width: 160px;
+  }
+
+
+  /* Alternance gris clair / blanc */
+  table.vacance-table tbody tr:nth-child(odd) {
+    background: #f7f7f7;   /* gris très clair */
+  }
+
+  table.vacance-table tbody tr:nth-child(even) {
+    background: #ffffff;   /* blanc */
+  }
+</style>
+
+
+<table class="vacance-table caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Commune</th>
+<th data-quarto-table-cell-role="th">Vacants +2 ans</th>
+<th data-quarto-table-cell-role="th">Taux +2 ans</th>
+<th data-quarto-table-cell-role="th">Vacants +5 ans</th>
+<th data-quarto-table-cell-role="th">Taux +5 ans</th>
+<th data-quarto-table-cell-role="th">Part des +5 ans parmi les +2 ans</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Saint-Émilion</td>
+<td>218</td>
+<td>17,1 %</td>
+<td>149</td>
+<td>11,7 %</td>
+<td>68 %</td>
+</tr>
+<tr class="even">
+<td>Bort-les-Orgues</td>
+<td>362</td>
+<td>16,2 %</td>
+<td>173</td>
+<td>7,7 %</td>
+<td>48 %</td>
+</tr>
+<tr class="odd">
+<td>Aubusson</td>
+<td>494</td>
+<td>15,6 %</td>
+<td>278</td>
+<td>8,8 %</td>
+<td>56 %</td>
+</tr>
+<tr class="even">
+<td>Auzances</td>
+<td>125</td>
+<td>14,0 %</td>
+<td>80</td>
+<td>9,0 %</td>
+<td>64 %</td>
+</tr>
+<tr class="odd">
+<td>Bourganeuf</td>
+<td>237</td>
+<td>13,5 %</td>
+<td>161</td>
+<td>9,1 %</td>
+<td>68 %</td>
+</tr>
+<tr class="even">
+<td>Eymoutiers</td>
+<td>202</td>
+<td>12,6 %</td>
+<td>141</td>
+<td>8,8 %</td>
+<td>70 %</td>
+</tr>
+<tr class="odd">
+<td>Montagne</td>
+<td>116</td>
+<td>12,4 %</td>
+<td>79</td>
+<td>8,4 %</td>
+<td>68 %</td>
+</tr>
+<tr class="even">
+<td>Châlus</td>
+<td>155</td>
+<td>12,2 %</td>
+<td>114</td>
+<td>9,0 %</td>
+<td>74 %</td>
+</tr>
+<tr class="odd">
+<td>Boussac</td>
+<td>117</td>
+<td>12,0 %</td>
+<td>78</td>
+<td>8,0 %</td>
+<td>67 %</td>
+</tr>
+<tr class="even">
+<td>Lathus-Saint-Rémy</td>
+<td>117</td>
+<td>12,0 %</td>
+<td>76</td>
+<td>7,8 %</td>
+<td>65 %</td>
+</tr>
+<tr class="odd">
+<td>Sainte-Foy-la-Grande</td>
+<td>226</td>
+<td>11,9 %</td>
+<td>116</td>
+<td>6,1 %</td>
+<td>51 %</td>
+</tr>
+<tr class="even">
+<td>Saint-Laurent-sur-Gorre</td>
+<td>113</td>
+<td>11,9 %</td>
+<td>52</td>
+<td>5,5 %</td>
+<td>46 %</td>
+</tr>
+<tr class="odd">
+<td>Bussière-Poitevine</td>
+<td>198</td>
+<td>11,8 %</td>
+<td>127</td>
+<td>7,6 %</td>
+<td>64 %</td>
+</tr>
+<tr class="even">
+<td>Mézin</td>
+<td>118</td>
+<td>11,8 %</td>
+<td>63</td>
+<td>6,3 %</td>
+<td>53 %</td>
+</tr>
+<tr class="odd">
+<td>Uzerche</td>
+<td>210</td>
+<td>11,6 %</td>
+<td>132</td>
+<td>7,3 %</td>
+<td>63 %</td>
+</tr>
+<tr class="even">
+<td>Chalais</td>
+<td>147</td>
+<td>11,6 %</td>
+<td>93</td>
+<td>7,4 %</td>
+<td>63 %</td>
+</tr>
+<tr class="odd">
+<td>Corrèze</td>
+<td>102</td>
+<td>11,3 %</td>
+<td>65</td>
+<td>7,2 %</td>
+<td>64 %</td>
+</tr>
+<tr class="even">
+<td>Tulle</td>
+<td>1 139</td>
+<td>11,1 %</td>
+<td>691</td>
+<td>6,7 %</td>
+<td>61 %</td>
+</tr>
+<tr class="odd">
+<td>Le Dorat</td>
+<td>132</td>
+<td>11,1 %</td>
+<td>70</td>
+<td>5,9 %</td>
+<td>53 %</td>
+</tr>
+<tr class="even">
+<td>Lubersac</td>
+<td>166</td>
+<td>10,6 %</td>
+<td>105</td>
+<td>6,7 %</td>
+<td>63 %</td>
+</tr>
+<tr class="odd">
+<td>Fumel</td>
+<td>319</td>
+<td>10,4 %</td>
+<td>184</td>
+<td>6,0 %</td>
+<td>58 %</td>
+</tr>
+</tbody>
+</table>
+
+
+<div style="font-size:0.8em; color:gray;">
+Lecture : la dernière colonne mesure la proportion des logements vacants depuis plus de 5 ans parmi ceux vacants depuis plus de 2 ans.
+</div>
+</div>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Retour au sommet</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copié");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copié");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Site créé avec <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>©CEREMA</p>
+</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://fr.linkedin.com/company/cerema">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/ceremacom">
+      <i class="bi bi-twitter-x" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@cerema3139">
+      <i class="bi bi-youtube" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

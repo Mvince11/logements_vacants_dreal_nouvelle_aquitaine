@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-b663525e4b92bb903b2199e2d401bf36.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2e0eb873b2a66c41ffdc12b4316c2215.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b29737568d1dcf647219502c9cceec79.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,41 +72,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const brand = document.querySelector(".navbar-brand");
 
-  if (brand) {
+  if (!brand) return;
 
-    brand.innerHTML = `
 
-      <div style="display:flex; align-items:center;" class="navbar-logo">
 
-        <div style="gap: 16px; display:flex;">
+  const offsetMeta = document.querySelector('meta[name="quarto:offset"]');
+
+  const root = offsetMeta ? offsetMeta.getAttribute("content") : "./";
+
+
+
+  brand.innerHTML = `
+
+    <div style="display:flex; align-items:center;" class="navbar-logo">
+
+      <div style="gap:16px; display:flex;">
 
         <a href="https://www.cerema.fr/fr">
 
-          <img src="images/logos/logo_cerema.png" style="height:74px;">
+          <img src="${root}images/logos/logo_cerema.PNG" style="height:74px;">
 
         </a>
 
         <a href="https://www.nouvelle-aquitaine.developpement-durable.gouv.fr/">
 
-          <img src="images/logos/DREAL_2023.jpg" style="height:80px;">
+          <img src="${root}images/logos/DREAL_2023.jpg" style="height:80px;">
 
         </a>
 
-       </div>
+      </div>
 
-          <div style="display:flex;flex-direction: column;line-height: 1.1;" class="dreal_texte">
+      <div style="display:flex; flex-direction:column; line-height:1.1;" class="dreal_texte">
 
-            <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
+        <span style="font-size:18px; font-weight:600;">DREAL Nouvelle-Aquitaine</span>
 
-            <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
-
-          </div>  
+        <span style="font-size:14px; font-weight:400;" class="brand-subtitle">Direction régionale de l'environnement, de l'aménagement et du logement</span>
 
       </div>
 
-    `;
+    </div>
 
-  }
+  `;
 
 });
 
@@ -122,11 +128,6 @@ document.addEventListener("DOMContentLoaded", function() {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-xxl " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logos/Panorama.png" alt="Dreal-NA-Logements-vacants" class="navbar-logo">
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Recherche"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -138,6 +139,35 @@ document.addEventListener("DOMContentLoaded", function() {
 </i> 
 <span class="menu-text">Accueil</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-exploitation" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-database-fill-gear" role="img">
+</i> 
+ <span class="menu-text">Exploitation</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-exploitation">    
+        <li>
+    <a class="dropdown-item" href="./contexte.html">
+ <span class="dropdown-text">1. Contexte et objet de l’étude</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./evolution.html">
+ <span class="dropdown-text">2. Evolution de la vacance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./etat_des_lieux.html">
+ <span class="dropdown-text">3. Etat des lieux de la vacance</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./caracteristiques.html">
+ <span class="dropdown-text">4. Caractéristiques des logements vacants</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./rpls.html">
+ <span class="dropdown-text">5. Vacance résiduelle parc social</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-annexes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-folder" role="img">
@@ -217,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- main -->
 <div class="quarto-about-trestles">
   <div class="about-entity">
-    <img src="images/logos/logo_cerema.png" class="about-image
+    <img src="images/logos/logo_cerema.PNG" class="about-image
   rounded " style="width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -354,7 +384,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
