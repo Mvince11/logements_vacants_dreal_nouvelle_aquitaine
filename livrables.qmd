@@ -1,0 +1,44 @@
+---
+title: ""
+format: html
+editor: visual
+lang: fr
+lightbox: true
+toc: false
+include-in-header:
+  text: |
+    <script src="assets/header.js"></script>
+---
+
+## Livrables
+
+
+::: {.callout-warning collapse="false" icon="false"}
+# Etude - télécharger au format pdf
+
+[Etude sur la vacance](Data/etude_vacanc_part1_v6.9.pdf){target="_blank"}\
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+# Quartier Iris - télécharger au format pdf
+
+[Etude sur la vacance partie Quartier Iris](Data/etude_vacanc_partQUARTIRIS_v2.pdf){target="_blank"}\
+:::
+
+::: {.callout-tip collapse="true" icon="false"}
+# Matrice complète logements vacants 2024 - télécharger au format xlsx
+
+[Matrice complète](Data/Matrice_complete_et_croisements_version_DREAL.xlsx){target="_blank"}\
+:::
+
+::: {.callout-important collapse="true" icon="false"}
+# Les outils et dispositifs de lutte contre la vacance - télécharger au format pdf
+
+[Les outils et dispositifs](Data/outils_dispositifs_lute_contr_vacance_v5.6.pdf){target="_blank"}\
+:::
+
+::: {.callout-caution collapse="true" icon="false"}
+# La vacance dans le logement - télécharger au format pdf
+
+[La vacance dans le logement](Data/synthese_guide_coll_vacance_logementV5.pdf){target="_blank"}\
+:::

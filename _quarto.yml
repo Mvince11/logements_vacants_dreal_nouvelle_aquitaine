@@ -28,7 +28,9 @@ website:
             text: "4. Caractéristiques des logements vacants"
           - href: rpls.qmd
             text: "5. Vacance résiduelle parc social"
-        
+          - href: livrables.qmd
+            text: "Livrables"
+            
       - text: Annexes
         icon: folder
         menu:
