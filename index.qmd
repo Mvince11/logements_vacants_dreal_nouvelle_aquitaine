@@ -159,7 +159,7 @@ La présente étude élaborée conjointement entre le Cerema et la DREAL Nouvell
 ❖ Des données sur les caractéristiques des logements à l'échelle EPCI et communes (la matrice) avec les chiffres LOVAC de la vacance et les caractéristiques des logements vacants\
 ❖ Une cartographie de la vacance pour 70 villes, à l'échelle des quartiers (liste des communes cartographiées en annexe 2)\
 ❖ Un recueil proposant une liste la plus exhaustive possible des outils et leviers existants pour lutter contre la vacance (repérage, outils opérationnels, coercitifs, financiers...).\
-❖ un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?). 
+❖ Un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?). 
 
 Une 2e phase de l'étude présentera une analyse croisée de la vacance et du marché, des fiches par EPCI sur la vacance ainsi que des fiches de retours d'expériences.portera sur les outils et leviers mobilisables pour remettre sur le marché les logements vacants.
 :::
