@@ -38,6 +38,8 @@ website:
             text: "Annexe 2 : liste des communes cartographiées (IRIS)"
           - href: annexe3.qmd
             text: "Annexe 3 : Définition du Zonage"
+          - href: annexe4.qmd
+            text: "Annexe 4 : Chiffres issus de la plateforme ZLV"
           
 
       - text: Cartographie des logements vacants
