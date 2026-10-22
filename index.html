@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3aa3ca0d8d5cb2b289fb1f5a5a916486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4be340abf00b52314ba7adfc58580fd4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -172,6 +172,10 @@ document.addEventListener("DOMContentLoaded", function() {
     <a class="dropdown-item" href="./rpls.html">
  <span class="dropdown-text">5. Vacance résiduelle parc social</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./livrables.html">
+ <span class="dropdown-text">Livrables</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -192,6 +196,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <li>
     <a class="dropdown-item" href="./annexe3.html">
  <span class="dropdown-text">Annexe 3 : Définition du Zonage</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe4.html">
+ <span class="dropdown-text">Annexe 4 : Chiffres issus de la plateforme ZLV</span></a>
   </li>  
     </ul>
   </li>
@@ -216,11 +224,6 @@ document.addEventListener("DOMContentLoaded", function() {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./documents.html"> <i class="bi bi-file-earmark-text" role="img">
-</i> 
-<span class="menu-text">Documents à télécharger</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-qui-sommes-nous-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-people-fill" role="img">
@@ -387,8 +390,8 @@ document.addEventListener("DOMContentLoaded", function() {
 ❖ Des données sur les caractéristiques des logements à l’échelle EPCI et communes (la matrice) avec les chiffres LOVAC de la vacance et les caractéristiques des logements vacants<br>
 ❖ Une cartographie de la vacance pour 70 villes, à l’échelle des quartiers (liste des communes cartographiées en annexe 2)<br>
 ❖ Un recueil proposant une liste la plus exhaustive possible des outils et leviers existants pour lutter contre la vacance (repérage, outils opérationnels, coercitifs, financiers…).<br>
-❖ un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?).</p>
-<p>Une 2e phase de l’étude présentera une analyse croisée de la vacance et du marché, des fiches par EPCI sur la vacance ainsi que des fiches de retours d’expériences.portera sur les outils et leviers mobilisables pour remettre sur le marché les logements vacants.</p>
+❖ Un court guide court à destination des DDTM dans leur dialogue à destination des élus (pourquoi lutter contre la vacance, quel type de vacance, quels outils et quelle démarche engager ?).</p>
+<p>Une 2e phase de l’étude présentera une analyse croisée de la vacance et du marché, des fiches par EPCI sur la vacance ainsi que des fiches de retours d’expériences.Elle portera sur les outils et leviers mobilisables pour remettre sur le marché les logements vacants.</p>
 </div>
 
 
@@ -478,7 +481,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

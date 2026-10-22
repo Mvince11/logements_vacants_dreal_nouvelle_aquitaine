@@ -39,7 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3aa3ca0d8d5cb2b289fb1f5a5a916486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4be340abf00b52314ba7adfc58580fd4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -173,6 +176,10 @@ document.addEventListener("DOMContentLoaded", function() {
     <a class="dropdown-item" href="./rpls.html">
  <span class="dropdown-text">5. Vacance résiduelle parc social</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./livrables.html">
+ <span class="dropdown-text">Livrables</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -193,6 +200,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <li>
     <a class="dropdown-item" href="./annexe3.html">
  <span class="dropdown-text">Annexe 3 : Définition du Zonage</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe4.html">
+ <span class="dropdown-text">Annexe 4 : Chiffres issus de la plateforme ZLV</span></a>
   </li>  
     </ul>
   </li>
@@ -217,11 +228,6 @@ document.addEventListener("DOMContentLoaded", function() {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./documents.html"> <i class="bi bi-file-earmark-text" role="img">
-</i> 
-<span class="menu-text">Documents à télécharger</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-qui-sommes-nous-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-people-fill" role="img">
@@ -403,94 +409,107 @@ document.addEventListener("DOMContentLoaded", function() {
 <div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
 <p>La vacance sur le parc social de plus de deux ans, extrêmement marginale, ne concerne que 948 logements selon LOVAC et sur toute la région, en 2024. Il s’agit en écrasante majorité de logements construits dans les années 50 à 70, petits ou moyens (T1 à T3), quasiment toujours des appartements à une exception près (sur La Rochelle : 28 maisons vacantes).</p>
 <p>Dans certains cas, il peut s’agir de logements vacants dans l’attente d’une restructuration ou d’une démolition mais qualifiés comme vacants dans RPLS.</p>
-<p>Il y a 9 communes sur lesquelles il y a de 19 à 108 logements vacants représentant ainsi un potentiel (très modéré) de logements t à remettre sur le marché s’il ne s’agit pas de logements en restructuration : Limoges avec 108 LLS vacants, Poitiers avec une soixantaine d’appartements, Niort et La Rochelle avec une quarantaine de logements HLM vacants, Angoulème avec 25 logements, et de quelques plus petites communes : Saint-Junien, Saint-Jean-d’Angely, Blanquefort et Aubusson (ces deux dernières communes comptant presque 50 logements vacants. C’est un stock relativement notable pour des petites communes. Ces cas de figure ne méritent pas une étude approfondie mais peuvent être relevés. 40 % des logements vacants depuis plus de deux ans de la région sont situés sur ces 9 communes citées.</p>
+<p>9 communes ont une vacance comprise entre 19 et 108 logements vacants représentant ainsi un potentiel (très modéré) de logements à remettre sur le marché s’il ne s’agit pas de logements en restructuration : Limoges avec 108 LLS vacants, Poitiers avec une soixantaine d’appartements, Niort et La Rochelle avec une quarantaine de logements HLM vacants, Angoulème avec 25 logements, et de quelques plus petites communes : Saint-Junien, Saint-Jean-d’Angely, Blanquefort et Aubusson (ces deux dernières communes comptant presque 50 logements vacants.</p>
+<p>C’est un stock relativement notable pour des petites communes. Ces cas de figure ne méritent pas une étude approfondie mais peuvent être relevés. 67,8 % des logements vacants depuis plus de deux ans de la région sont situés sur ces 9 communes citées.</p>
 <table class="vacance-table caption-top table" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th">communes</th>
-<th data-quarto-table-cell-role="th">Nb de lgts vacants +2 ans du parc social</th>
+<th data-quarto-table-cell-role="th">Communes</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Département</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Nb de lgts vacants +2 ans du parc social</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>LIMOGES</td>
-<td>108</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">108</td>
 </tr>
 <tr class="even">
 <td>POITIERS</td>
-<td>60</td>
+<td style="text-align: center;">86</td>
+<td style="text-align: center;">60</td>
 </tr>
 <tr class="odd">
 <td>BLANQUEFORT</td>
-<td>48</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">48</td>
 </tr>
 <tr class="even">
 <td>AUBUSSON</td>
-<td>47</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">47</td>
 </tr>
 <tr class="odd">
 <td>NIORT</td>
-<td>42</td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">42</td>
 </tr>
 <tr class="even">
 <td>LA ROCHELLE</td>
-<td>38</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">38</td>
 </tr>
 <tr class="odd">
 <td>ANGOULEME</td>
-<td>25</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">25</td>
 </tr>
 <tr class="even">
 <td>SAINT-JUNIEN</td>
-<td>22</td>
+<td style="text-align: center;">87</td>
+<td style="text-align: center;">22</td>
 </tr>
 <tr class="odd">
 <td>SAINT-JEAN-D'ANGELY</td>
-<td>19</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">19</td>
 </tr>
-</tbody>
-</table>
-
-
-Autres chiffres de comparaison (6 communes suivantes)
-
-<table class="vacance-table caption-top table" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">communes</th>
-<th data-quarto-table-cell-role="th">Nb de lgts vacants +2 ans du parc social</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<tr class="even">
 <td>LAVAVEIX-LES-MINES</td>
-<td>12</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">12</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>BORDEAUX</td>
-<td>10</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">10</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>CROCQ</td>
-<td>9</td>
-</tr>
-<tr class="even">
-<td>COULOUNIEIX-CHAMIERS</td>
-<td>9</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">9</td>
 </tr>
 <tr class="odd">
-<td>ROCHEFORT</td>
-<td>8</td>
+<td>COULOUNIEIX-CHAMIERS</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">9</td>
 </tr>
 <tr class="even">
+<td>ROCHEFORT</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="odd">
 <td>CREYSSE</td>
-<td>8</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">8</td>
 </tr>
 </tbody>
 </table>
 
 
-
+<p><strong>Vacance et tension de la demande en logement social :</strong></p>
+<p>Le croisement entre le taux de vacance et la tension de la demande en logement social met en évidence des situations territoriales contrastées. Les secteurs où la demande HLM est la plus tendue se concentrent principalement sur le littoral, autour de Bordeaux et dans plusieurs territoires de l’ouest et du sud de la région.</p>
+<p><strong>Une tension élevée n’exclut toutefois pas la présence d’une vacance importante</strong> : plusieurs EPCI cumulent une forte demande en logement social et des taux de vacance élevés.</p>
+<p>Ce constat souligne qu’un stock de logements vacants ne constitue pas nécessairement une offre immédiatement mobilisable pour répondre aux besoins sociaux, notamment en raison de sa localisation, de son état, de ses caractéristiques ou de son statut de propriété.</p>
+<p>À l’inverse, dans certains territoires peu tendus, une vacance élevée peut davantage traduire une faiblesse générale de la demande en logements.</p>
+<p style="text-align:center !important;display:flex; justify-content:center !important;">
+</p><p><a href="images/vacance_tension_hlm.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/vacance_tension_hlm.png" class="img-fluid" style="width:62%;"></a></p>
+<p></p>
+</div>
+<div class="page-nav">
+<p><a href="./caracteristiques.html" class="page-nav-prev">← 4. Caractéristiques des logements vacants</a> <a href="./livrables.html" class="page-nav-next">Livrables →</a></p>
 </div>
 
 
@@ -587,7 +606,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -947,6 +966,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

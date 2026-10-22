@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3aa3ca0d8d5cb2b289fb1f5a5a916486.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4be340abf00b52314ba7adfc58580fd4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -176,6 +176,10 @@ document.addEventListener("DOMContentLoaded", function() {
     <a class="dropdown-item" href="./rpls.html">
  <span class="dropdown-text">5. Vacance résiduelle parc social</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./livrables.html">
+ <span class="dropdown-text">Livrables</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -196,6 +200,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <li>
     <a class="dropdown-item" href="./annexe3.html">
  <span class="dropdown-text">Annexe 3 : Définition du Zonage</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./annexe4.html">
+ <span class="dropdown-text">Annexe 4 : Chiffres issus de la plateforme ZLV</span></a>
   </li>  
     </ul>
   </li>
@@ -220,11 +228,6 @@ document.addEventListener("DOMContentLoaded", function() {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./documents.html"> <i class="bi bi-file-earmark-text" role="img">
-</i> 
-<span class="menu-text">Documents à télécharger</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-qui-sommes-nous-" role="link" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-people-fill" role="img">
@@ -408,9 +411,12 @@ document.addEventListener("DOMContentLoaded", function() {
 <section id="etat-des-lieux-de-la-vacance-cartographie" class="level2">
 <h2 class="anchored" data-anchor-id="etat-des-lieux-de-la-vacance-cartographie">3. Etat des lieux de la vacance : cartographie</h2>
 <div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
-<p>Selon les données LOVAC, la vacance des logements en Nouvelle-Aquitaine est estimée à 9,5 %, soit environ 340 000 logements. Une partie de ces logements n’est inoccupée que temporairement, notamment entre deux occupants ou à l’occasion de travaux de remise en état. Cette vacance conjoncturelle accompagne la rotation des ménages et l’entretien du parc, contribuant ainsi à la fluidité des parcours résidentiels.</p>
-<p>La présente étude se concentre sur la vacance de longue durée, définie ici comme une inoccupation depuis au moins deux ans et retenue comme indicateur de la vacance structurelle. L’objectif est de repérer les logements durablement inoccupés pour lesquels les acteurs locaux peuvent engager des actions visant à favoriser leur remise sur le marché.</p>
-<p>En Nouvelle-Aquitaine, au 1er janvier 2024, <strong>cette vacance de longue durée concerne environ 154 505 logements, soit 4 % du parc de logements.</strong> Sa répartition départementale, établie à partir des bases de données <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="LOVAC : voir annexe">LOVAC</span> pour le parc privé et <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="RPLS : Le RPLS (Répertoire des logements locatifs des bailleurs sociaux) est une base statistique actualisée chaque année qui décrit, au 1er janvier, le parc locatif des bailleurs sociaux, notamment les caractéristiques des logements, leurs loyers et leur situation d’occupation ou de vacance.  ">RPLS</span> pour le parc social est présentée ci-après.</p>
+<p>Selon les données LOVAC, la vacance des logements en Nouvelle-Aquitaine est estimée à 9,5 %, soit environ 340 000 logements. Une partie de ces logements n’est inoccupée que temporairement, notamment entre deux occupants ou à l’occasion de travaux de remise en état.</p>
+<p>Cette vacance conjoncturelle accompagne la rotation des ménages et l’entretien du parc, contribuant ainsi à la fluidité des parcours résidentiels.</p>
+<p>La présente étude se concentre sur la vacance de longue durée, définie ici comme une inoccupation depuis au moins deux ans et retenue comme indicateur de la vacance structurelle.</p>
+<p>L’objectif est de repérer les logements durablement inoccupés pour lesquels les acteurs locaux peuvent engager des actions visant à favoriser leur remise sur le marché.</p>
+<p>En Nouvelle-Aquitaine, au 1er janvier 2024, <strong>cette vacance de longue durée concerne environ 154 505 logements, soit 4 % du parc de logements.</strong></p>
+<p>Sa répartition départementale, établie à partir des bases de données <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="LOVAC : voir annexe">LOVAC</span> pour le parc privé et <span style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="RPLS : Le RPLS (Répertoire des logements locatifs des bailleurs sociaux) est une base statistique actualisée chaque année qui décrit, au 1er janvier, le parc locatif des bailleurs sociaux, notamment les caractéristiques des logements, leurs loyers et leur situation d’occupation ou de vacance.  ">RPLS</span> pour le parc social est présentée ci-après.</p>
 
 
 
@@ -618,17 +624,17 @@ function renderMetrics4(rows) {
 
 render4();
 </script>
-<p style="text-align: center !important;">
-<a href="images/logements_vacants_NA.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/logements_vacants_NA.png" class="img-fluid" style="width:62%;"></a>
-</p>
+<div style="text-align: center !important;">
+<p><a href="images/logements_vacants_NA.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/logements_vacants_NA.png" class="img-fluid" style="width:62%;"></a></p>
+</div>
 <p>Cette ne mesure pas l’évolution de la vacance <strong>mais confirme clairement la tendance à une vacance installée qui plus importante dans les départements de l’Est (+ de 5 % de logements vacants -longue durée-), et a contrario plus faible sur le littoral. La carte suivante de la vacance par EPCI confirme cette une vacance plus importante sur les EPCI de l’Est de la région.</strong></p>
 </div>
 <section id="la-vacance-par-epci" class="level3">
 <h3 class="anchored" data-anchor-id="la-vacance-par-epci">3.1 La vacance par EPCI</h3>
 <div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
-<p style="text-align: center !important;">
-<a href="images/epci.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/epci.png" class="img-fluid" style="width:62%;"></a>
-</p>
+<div style="text-align: center !important;">
+<p><a href="images/epci.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/epci.png" class="img-fluid" style="width:62%;"></a></p>
+</div>
 <div style="border: 1px solid; padding:5px;">
 <p>La carte met en évidence un <strong>contraste ouest–est marqué</strong> de la vacance de plus de deux ans. Les taux sont généralement plus faibles sur le littoral et dans les intercommunalités des principaux pôles urbains, où ils se situent souvent entre <strong>1 et 4 %.</strong></p>
 <p>À l’inverse, les niveaux les plus élevés, compris entre <strong>9 et 14 %</strong>, se concentrent surtout dans le nord-est et l’est de la région, notamment dans la Creuse et l’est de la Corrèze. De nombreux territoires intérieurs présentent également des taux élevés, entre <strong>6 et 9 %.</strong></p>
@@ -639,10 +645,10 @@ render4();
 <section id="la-vacance-par-commune" class="level3">
 <h3 class="anchored" data-anchor-id="la-vacance-par-commune">3.2 La vacance par commune</h3>
 <div style="font-family: YACkoD1yZN0-0;font-size:1.1em;">
-<p style="text-align: center !important;">
-<a href="images/communes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/communes.png" class="img-fluid" style="width:62%;"></a>
-</p>
-<div style="border:1px solid; padding:5px;">
+<div style="text-align: center !important;">
+<p><a href="images/communes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/communes.png" class="img-fluid" style="width:62%;"></a></p>
+</div>
+<div style="border:1px solid; padding:5px;margin-bottom:10px;">
 <p>À l’échelle communale, la carte confirme des <strong>taux de vacance de plus de deux ans généralement plus faibles sur le littoral et autour des principaux pôles urbains</strong>, souvent inférieurs à <strong>4,7 %</strong>. Les taux supérieurs à <strong>9,8 %</strong> se concentrent davantage dans le nord-est et certains territoires intérieurs, mais des poches de vacance élevée apparaissent également dans le centre et le sud de la région.</p>
 </div>
 <p>Certaines communes relèvent ainsi de la classe la plus élevée, comprise entre <strong>14,5 et 37,2 %.</strong> Cette représentation révèle surtout une <strong>forte hétérogénéité entre communes voisines</strong>, que les moyennes intercommunales atténuent, et souligne l’intérêt d’une analyse locale pour préciser les secteurs les plus concernés.</p>
@@ -650,7 +656,7 @@ render4();
 <p>Dans plusieurs de ces territoires, une part importante de cette vacance est ancienne, avec des taux de vacance de plus de cinq ans atteignant des taux important.</p>
 <p>Quelques petites communes affichent des niveaux extrêmement élevés — par exemple Bousses : 37,2 %, Saint-Antoine-du-Queyret : 29,2 %, Saint-Georges : 27,9 % ou Saint-Pierre-le-Bost : 26 % — mais ces taux portent parfois sur seulement quelques dizaines de logements. Ils signalent néanmoins une vacance très profondément installée, particulièrement lorsque le taux à plus de cinq ans reste lui aussi élevé : 34,9 % à Bousses, 25,6 % à Saint-Georges, 21,1 % à Saint-Pierre-le-Bost.</p>
 <p>À l’inverse, les principaux pôles urbains peuvent présenter des stocks importants en valeur absolue, mais des taux nettement plus faibles. Cette distinction entre volume et taux est essentielle pour identifier les territoires où la vacance constitue un phénomène réellement structurel. Bordeaux compte <strong>4 740 logements vacants depuis plus de deux ans</strong>, mais ceux-ci ne représentent que <strong>2,6 % du parc</strong> ; Limoges en compte <strong>3 206</strong>, soit <strong>3,7 %</strong> ; Pau <strong>1 768</strong>, soit <strong>3,2 %</strong> ; Poitiers <strong>1 502</strong>, soit <strong>2,6 %.</strong> Cela montre que le nombre brut de logements vacants ne suffit pas à qualifier la gravité d’une situation.</p>
-<p>→ <strong>Une cartographie de 70 communes (métropole, agglomérations et petites villes) est disponible dans <a href="iris.html">cet onglet</a></strong>. Elle présente la vacance par quartier IRIS et les variations au sein d’une même commune (nombre et % de logements vacants).</p>
+<p>→ <strong>Une cartographie de 70 communes (métropole, agglomérations et petites villes) est disponible dans</strong> <a href="iris.html">cet onglet</a>. Elle présente la vacance par quartier IRIS et les variations au sein d’une même commune (nombre et % de logements vacants).</p>
 <div style="border:1px solid; padding:10px; display:flex; gap:20px; align-items:flex-start;" class="vacance_maison">
   <div style="flex:1;">
     <p><strong>Des situations particulièrement marquées :</strong></p>
@@ -916,6 +922,9 @@ Sélection : au moins 100 logements vacants depuis plus de 2 ans – LOVAC 2024<
 Lecture : la dernière colonne mesure la proportion des logements vacants depuis plus de 5 ans parmi ceux vacants depuis plus de 2 ans.
 </div>
 </div>
+<div class="page-nav">
+<p><a href="./evolution.html" class="page-nav-prev">← 2. Evolution de la vacance</a> <a href="./caracteristiques.html" class="page-nav-next">4. Caractéristiques des logements vacants →</a></p>
+</div>
 
 
 </section>
@@ -1012,7 +1021,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/Mvince11\.github\.io\/logements_vacants_dreal_nouvelle_aquitaine\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
