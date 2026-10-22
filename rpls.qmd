@@ -196,11 +196,11 @@ Ce constat souligne qu’un stock de logements vacants ne constitue pas nécessa
 
 À l’inverse, dans certains territoires peu tendus, une vacance élevée peut davantage traduire une faiblesse générale de la demande en logements.
 
-<p style="text-align:center !important;display:flex; justify-content:center !important;">
+<div style="text-align:center !important;display:flex; justify-content:center !important;">
 
 ![](images/vacance_tension_hlm.png){.lightbox style="width:62%;"}
 
-</p>
+</div>
 :::
 
 {{< include _nav/rpls.md >}}
