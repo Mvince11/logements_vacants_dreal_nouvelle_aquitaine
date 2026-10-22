@@ -394,3 +394,5 @@ A contrario, le littoral présente des taux d’évolution négatifs (soit une d
 
 Il y a quelques cas particuliers expliqués précédemment : Bordeaux, dont l’augmentation de la vacance affichée sur la carte est trompeuse et surtout caractérisée par une vacance frictionnelle, ou d’autres territoires dont certaines résidences secondaires, importantes en nombre, ont pu être assimilées à des logements vacants.
 :::
+
+{{< include _nav/evolution.md >}}

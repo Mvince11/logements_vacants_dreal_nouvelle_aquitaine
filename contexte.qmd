@@ -207,3 +207,5 @@ La **vacance frictionnelle**, ou **vacance de rotation**, correspond à l’inoc
 <img src="images/vacance_structurelle1.jpg" style="width:30%;"/> <img src="images/vacance_structurelle2.jpg" style="width:30%;"/> <img src="images/vacance_structurelle3.jpg" style="width:30%;"/>
 :::
 :::::::::::
+
+{{< include _nav/contexte.md >}}

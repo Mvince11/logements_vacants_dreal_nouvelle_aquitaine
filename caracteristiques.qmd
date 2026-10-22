@@ -960,3 +960,5 @@ Ces résultats montrent qu’une part importante de la vacance longue se situe d
 
 - Le classement énergétique des logements vacants concerne encore trop de logements dont la catégorie est inconnue pour permettre d’en déduire une analyse des logements vacants sur leur qualité énergétique. Parmi les logements vacants dont le classement est connu, il semble y avoir une sur-représentation de logements très énergivores mais une part également importante de logements relativement corrects (C ou D).
 :::
+
+{{< include _nav/caracteristiques.md >}}

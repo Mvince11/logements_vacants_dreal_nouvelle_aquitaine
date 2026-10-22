@@ -12,7 +12,6 @@ include-in-header:
 
 ## Livrables
 
-
 ::: {.callout-warning collapse="false" icon="false"}
 # Etude - télécharger au format pdf
 
@@ -42,3 +41,5 @@ include-in-header:
 
 [La vacance dans le logement](Data/synthese_guide_coll_vacance_logementV5.pdf){target="_blank"}\
 :::
+
+{{< include _nav/rpls.md >}}

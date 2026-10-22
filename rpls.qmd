@@ -145,13 +145,13 @@ include-in-header:
 ```
 
 ## 5. La vacance résiduelle du parc social (source RPLS)
+
 ::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+La vacance sur le parc social de plus de deux ans, extrêmement marginale, ne concerne que 948 logements selon LOVAC et sur toute la région, en 2024. Il s’agit en écrasante majorité de logements construits dans les années 50 à 70, petits ou moyens (T1 à T3), quasiment toujours des appartements à une exception près (sur La Rochelle : 28 maisons vacantes).
 
-La vacance sur le parc social de plus de deux ans, extrêmement marginale, ne concerne que 948 logements selon LOVAC et sur toute la région, en 2024. Il s’agit en écrasante majorité de logements construits dans les années 50 à 70, petits ou moyens (T1 à T3), quasiment toujours des appartements à une exception près (sur La Rochelle : 28 maisons vacantes).  
+Dans certains cas, il peut s’agir de logements vacants dans l’attente d’une restructuration ou d’une démolition mais qualifiés comme vacants dans RPLS.
 
-Dans certains cas, il peut s’agir de logements vacants dans l’attente d’une restructuration ou d’une démolition mais qualifiés comme vacants dans RPLS.  
-
-9 communes ont une vacance comprise entre 19 et 108 logements vacants représentant ainsi un potentiel (très modéré) de logements à remettre sur le marché s’il ne s’agit pas de logements en restructuration : Limoges avec 108 LLS vacants, Poitiers avec une soixantaine d’appartements, Niort et La Rochelle avec une quarantaine de logements HLM vacants, Angoulème avec 25 logements, et de quelques plus petites communes : Saint-Junien, Saint-Jean-d’Angely, Blanquefort et Aubusson (ces deux dernières communes comptant presque 50 logements vacants.  
+9 communes ont une vacance comprise entre 19 et 108 logements vacants représentant ainsi un potentiel (très modéré) de logements à remettre sur le marché s’il ne s’agit pas de logements en restructuration : Limoges avec 108 LLS vacants, Poitiers avec une soixantaine d’appartements, Niort et La Rochelle avec une quarantaine de logements HLM vacants, Angoulème avec 25 logements, et de quelques plus petites communes : Saint-Junien, Saint-Jean-d’Angely, Blanquefort et Aubusson (ces deux dernières communes comptant presque 50 logements vacants.
 
 C’est un stock relativement notable pour des petites communes. Ces cas de figure ne méritent pas une étude approfondie mais peuvent être relevés. 67,8 % des logements vacants depuis plus de deux ans de la région sont situés sur ces 9 communes citées.
 
@@ -184,20 +184,23 @@ C’est un stock relativement notable pour des petites communes. Ces cas de figu
   </tbody>
 </table>
 
-
 ```
 
-**Vacance et tension de la demande en logement social :**  
+**Vacance et tension de la demande en logement social :**
 
-Le croisement entre le taux de vacance et la tension de la demande en logement social met en évidence des situations territoriales contrastées. Les secteurs où la demande HLM est la plus tendue se concentrent principalement sur le littoral, autour de Bordeaux et dans plusieurs territoires de l’ouest et du sud de la région.  
+Le croisement entre le taux de vacance et la tension de la demande en logement social met en évidence des situations territoriales contrastées. Les secteurs où la demande HLM est la plus tendue se concentrent principalement sur le littoral, autour de Bordeaux et dans plusieurs territoires de l’ouest et du sud de la région.
 
-**Une tension élevée n’exclut toutefois pas la présence d’une vacance importante** : plusieurs EPCI cumulent une forte demande en logement social et des taux de vacance élevés.  
+**Une tension élevée n’exclut toutefois pas la présence d’une vacance importante** : plusieurs EPCI cumulent une forte demande en logement social et des taux de vacance élevés.
 
-Ce constat souligne qu’un stock de logements vacants ne constitue pas nécessairement une offre immédiatement mobilisable pour répondre aux besoins sociaux, notamment en raison de sa localisation, de son état, de ses caractéristiques ou de son statut de propriété.  
+Ce constat souligne qu’un stock de logements vacants ne constitue pas nécessairement une offre immédiatement mobilisable pour répondre aux besoins sociaux, notamment en raison de sa localisation, de son état, de ses caractéristiques ou de son statut de propriété.
 
 À l’inverse, dans certains territoires peu tendus, une vacance élevée peut davantage traduire une faiblesse générale de la demande en logements.
 
 <p style="text-align:center !important;display:flex; justify-content:center !important;">
+
 ![](images/vacance_tension_hlm.png){.lightbox style="width:62%;"}
+
 </p>
 :::
+
+{{< include _nav/rpls.md >}}

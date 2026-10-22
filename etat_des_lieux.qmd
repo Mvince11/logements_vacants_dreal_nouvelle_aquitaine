@@ -541,3 +541,5 @@ Lecture : la dernière colonne mesure la proportion des logements vacants depuis
 </div>
 ```
 :::::
+
+{{< include _nav/etat_des_lieux.md >}}
