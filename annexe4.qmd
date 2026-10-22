@@ -170,4 +170,5 @@ flextable(tab_loc) %>%
   width(j = "domiciliation", width = 3.6) %>%
   width(j = c("nb", "pct"), width = 1.4)
 ```
+
 Les chiffres issus de ZLV varie de ceux présentés dans l’étude (- 10 000 logements), la période d’extraction est différente.

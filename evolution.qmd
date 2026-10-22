@@ -145,27 +145,29 @@ include-in-header:
 ```
 
 ## 2. L’évolution de la vacance globale des logements
+
 ### 2.1 Précautions méthodologiques
+
 ::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-  Deux sources complémentaires sont mobilisées dans cette étude : les données du recensement de la population de l’Insee pour analyser l’évolution de la vacance totale, et les données [**LOVAC**]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Voir annexes"} pour caractériser la vacance du parc privé à un millésime donné. Des travaux locaux peuvent compléter cette approche, notamment par le croisement de sources et la vérification des situations sur le terrain. Le recensement INSEE ne renseigne toutefois pas la durée d’inoccupation : il ne permet donc pas, à lui seul, de distinguer la vacance de rotation des situations durablement bloquées.  
-  
-**Les comparaisons brutes entre les millésimes LOVAC traversant les ruptures de série ne sont pas pertinentes pour mesurer l’évolution de la [vacance]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Les données LOVAC mettent en évidence l’ampleur de la vacance de longue durée dans le parc privé : le millésime 2024 identifie environ 1,15 million de logements vacants depuis plus de deux ans à l’échelle nationale, et le millésime 2025 environ 1,35 million. Ces dénombrements ne peuvent toutefois pas être interprétés directement comme une augmentation réelle de la vacance, en raison des ruptures de série liées au passage à GMBI puis aux modifications de traitement intervenues en 2025. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales. Les données permettent de caractériser un stock important de logements identifiés comme durablement vacants, mais leur comparaison brute ne permet pas d’en établir l’évolution (ni avec des millésimes antérieurs, 2023, 2022, 2021, 2020) pour des raisons de ruptures de méthode également."}**. Le passage aux déclarations d’occupation GMBI à partir du millésime 2024, puis les modifications de sélection des logements intervenues en 2025, affectent leur comparabilité. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales.  
+Deux sources complémentaires sont mobilisées dans cette étude : les données du recensement de la population de l’Insee pour analyser l’évolution de la vacance totale, et les données [**LOVAC**]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Voir annexes"} pour caractériser la vacance du parc privé à un millésime donné. Des travaux locaux peuvent compléter cette approche, notamment par le croisement de sources et la vérification des situations sur le terrain. Le recensement INSEE ne renseigne toutefois pas la durée d’inoccupation : il ne permet donc pas, à lui seul, de distinguer la vacance de rotation des situations durablement bloquées.
+
+**Les comparaisons brutes entre les millésimes LOVAC traversant les ruptures de série ne sont pas pertinentes pour mesurer l’évolution de la [vacance]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Les données LOVAC mettent en évidence l’ampleur de la vacance de longue durée dans le parc privé : le millésime 2024 identifie environ 1,15 million de logements vacants depuis plus de deux ans à l’échelle nationale, et le millésime 2025 environ 1,35 million. Ces dénombrements ne peuvent toutefois pas être interprétés directement comme une augmentation réelle de la vacance, en raison des ruptures de série liées au passage à GMBI puis aux modifications de traitement intervenues en 2025. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales. Les données permettent de caractériser un stock important de logements identifiés comme durablement vacants, mais leur comparaison brute ne permet pas d’en établir l’évolution (ni avec des millésimes antérieurs, 2023, 2022, 2021, 2020) pour des raisons de ruptures de méthode également."}**. Le passage aux déclarations d’occupation GMBI à partir du millésime 2024, puis les modifications de sélection des logements intervenues en 2025, affectent leur comparabilité. Cette réserve concerne aussi bien l’échelle nationale que les échelles locales.
 
 **Le recensement constitue ainsi la principale référence commune retenue ici pour l’analyse des tendances.** Ses résultats doivent néanmoins être interprétés en tenant compte des évolutions de la [**collecte**]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="En particulier, le protocole « boîte aux lettres », généralisé en 2022, a un effet sur la répartition entre résidences principales et logements vacants, progressivement intégré aux résultats. Les variations récentes ne peuvent donc pas être attribuées intégralement à des évolutions du marché du logement."}.
 :::
 
 ### 2.2 En Nouvelle-Aquitaine : une forte hausse de la vacance entre 2006 et 2016, suivie d’une quasi-stabilisation de 2016 à 2022
 
-::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-D’après les données du recensement, le nombre de logements vacants en Nouvelle-Aquitaine fluctue autour de 200 000 entre 1982 et 2006. Leur part dans l’ensemble du parc diminue sur cette période, passant de **8,73 % à 6,61 %.** Entre **2006 et 2016**, leur nombre augmente fortement, de **201 472 à 294 627**, et leur part atteint **8,54 %.**  
+:::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+D’après les données du recensement, le nombre de logements vacants en Nouvelle-Aquitaine fluctue autour de 200 000 entre 1982 et 2006. Leur part dans l’ensemble du parc diminue sur cette période, passant de **8,73 % à 6,61 %.** Entre **2006 et 2016**, leur nombre augmente fortement, de **201 472 à 294 627**, et leur part atteint **8,54 %.**
 
-Entre **2016 et 2022**, le nombre de logements vacants se stabilise presque : il augmente de **0,8 %**, pour atteindre **296 999 logements**, alors que l’ensemble du parc progresse de **6,2 %**. Le taux de vacance mesuré diminue donc de **0,43 point**, à **8,11 %.** Sur l’ensemble de la période **2006–2022**, les effectifs restent cependant en hausse de **47,4 %**, et le taux supérieur d’environ **1,5 point** à son niveau de 2006.  
+Entre **2016 et 2022**, le nombre de logements vacants se stabilise presque : il augmente de **0,8 %**, pour atteindre **296 999 logements**, alors que l’ensemble du parc progresse de **6,2 %**. Le taux de vacance mesuré diminue donc de **0,43 point**, à **8,11 %.** Sur l’ensemble de la période **2006–2022**, les effectifs restent cependant en hausse de **47,4 %**, et le taux supérieur d’environ **1,5 point** à son niveau de 2006.
 
 La tendance régionale se traduit donc par une hausse importante au cours de la décennie 2006–2016 puis une quasi-stabilisation des effectifs et un recul de leur part entre 2016 et 2022.
 
-<div style="text-align:center; font-weight:bold;">
+::: {style="text-align:center; font-weight:bold;"}
 Évolution du nombre de logements par catégorie en historique pour la Nouvelle-Aquitaine
-</div>
+:::
 
 ```{=html}
 <style>
@@ -316,17 +318,17 @@ Détail du tableau, logements vacants en Nouvelle-Aquitaine :
 <br>
 ```
 
-Ce constat ne permet pas de conclure à une stabilisation dans chaque territoire ni à une diminution de la seule vacance de longue durée.
-A titre de comparaison, les estimations annuelles du parc de logements de l’[INSEE]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Insee Focus n° 359, Parc de logements au 1er janvier 2025, publié le 17 septembre 2025"} et du [SDES]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Dans Besoins en logements à horizon 2030, 2040 et 2050 (SDES) publié le 12 juin 2025, le rapport entre logements vacants depuis moins d’un an et résidences principales passe de 4,1 % en 2001 à 5,0 % en 2011, puis 5,4 % en 2021, à partir de données Filocom."} montrent également une hausse passée suivie d’un recul du taux à l’échelle de la France hors Mayotte : **6,2 % en 2005, 8,1 % en 2019 et 7,7 % en 2025.**
-:::
+Ce constat ne permet pas de conclure à une stabilisation dans chaque territoire ni à une diminution de la seule vacance de longue durée. A titre de comparaison, les estimations annuelles du parc de logements de l’[INSEE]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Insee Focus n° 359, Parc de logements au 1er janvier 2025, publié le 17 septembre 2025"} et du [SDES]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Dans Besoins en logements à horizon 2030, 2040 et 2050 (SDES) publié le 12 juin 2025, le rapport entre logements vacants depuis moins d’un an et résidences principales passe de 4,1 % en 2001 à 5,0 % en 2011, puis 5,4 % en 2021, à partir de données Filocom."} montrent également une hausse passée suivie d’un recul du taux à l’échelle de la France hors Mayotte : **6,2 % en 2005, 8,1 % en 2019 et 7,7 % en 2025.**
+::::
 
 ### 2.3 Une hausse de la vacance totale ne signifie pas nécessairement une hausse de la vacance durable
-:::{style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-La durée d’inoccupation est déterminante pour interpréter les évolutions. La vacance courte peut notamment correspondre à une rotation entre occupants, à une vente, à une première mise en service ou à des travaux. Elle ne peut pas être assimilée systématiquement à une vacance sans difficulté, pas plus que le seuil de deux ans ne permet, à lui seul, d’identifier toutes les causes de vacance structurelle.  
 
-Le SDES documente une progression de la vacance de moins d’un an en France métropolitaine : rapportée au nombre de résidences principales, elle passe de **4,1 % en 2001 à 5,0 % en 2011 et 5,4 % en 2021**, selon Filocom. Ce résultat concerne la France métropolitaine dans son ensemble ; il ne mesure pas spécifiquement la tendance des marchés tendus ni sa contribution à la hausse régionale observée dans le recensement INSEE.  
+::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+La durée d’inoccupation est déterminante pour interpréter les évolutions. La vacance courte peut notamment correspondre à une rotation entre occupants, à une vente, à une première mise en service ou à des travaux. Elle ne peut pas être assimilée systématiquement à une vacance sans difficulté, pas plus que le seuil de deux ans ne permet, à lui seul, d’identifier toutes les causes de vacance structurelle.
 
-Par exemple, l’étude de l’[a-urba]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="A-urba, La vacance de longue durée des logements — Bordeaux Métropole, juin 2021"} sur le parc privé de Bordeaux Métropole apporte un éclairage local : entre **2013 et 2019**, le nombre total de logements vacants passe d’environ **24 400 à 27 400 (25 620 en 2022)**, cette hausse portant essentiellement sur la vacance de moins d’un an. À l’inverse, les logements vacants depuis au moins deux ans diminuent de **5 583 à 5 186** (soit **−7 %**).  
+Le SDES documente une progression de la vacance de moins d’un an en France métropolitaine : rapportée au nombre de résidences principales, elle passe de **4,1 % en 2001 à 5,0 % en 2011 et 5,4 % en 2021**, selon Filocom. Ce résultat concerne la France métropolitaine dans son ensemble ; il ne mesure pas spécifiquement la tendance des marchés tendus ni sa contribution à la hausse régionale observée dans le recensement INSEE.
+
+Par exemple, l’étude de l’[a-urba]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="A-urba, La vacance de longue durée des logements — Bordeaux Métropole, juin 2021"} sur le parc privé de Bordeaux Métropole apporte un éclairage local : entre **2013 et 2019**, le nombre total de logements vacants passe d’environ **24 400 à 27 400 (25 620 en 2022)**, cette hausse portant essentiellement sur la vacance de moins d’un an. À l’inverse, les logements vacants depuis au moins deux ans diminuent de **5 583 à 5 186** (soit **−7 %**).
 
 L’exemple montre qu’une progression de la vacance totale peut coexister avec une diminution de la vacance longue, sans préjuger des évolutions après 2019.
 
@@ -368,25 +370,27 @@ Vacance selon les chiffres INSEE pour Bordeaux métropole
 <br>
 ```
 
-La hausse de la vacance s’inscrit également, comme sur Bordeaux et les autres territoires tendus, un contexte de croissance du parc (constructions neuves). La croissance du parc peut s’accompagner d’une augmentation du nombre de logements temporairement vacants. Une augmentation de la vacance de rotation peut être liée à des changements d’occupants plus nombreux, à un allongement des périodes d’inoccupation ou à une modification de la composition du parc.  
+La hausse de la vacance s’inscrit également, comme sur Bordeaux et les autres territoires tendus, un contexte de croissance du parc (constructions neuves). La croissance du parc peut s’accompagner d’une augmentation du nombre de logements temporairement vacants. Une augmentation de la vacance de rotation peut être liée à des changements d’occupants plus nombreux, à un allongement des périodes d’inoccupation ou à une modification de la composition du parc.
 
 Le poids du parc locatif privé, davantage soumis à la rotation, constitue notamment un facteur déterminant et tous ces mécanismes doivent être vérifiés localement.
 :::
 
-
 ### 2.4 Une augmentation de la vacance dans certaines types de territoires depuis 2016
-:::{style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-Si dans les territoires les plus tendus (métropole bordelaise, littoral,  la vacance totale stagne ou diminue, avec une baisse de la vacance de longue durée et une hausse de la vacance frictionnelle, ce constat ne peut pas être généralisés à toutes les catégories de territoires.  
 
-La progression de la vacance totale est plus forte depuis 2016 jusqu’à aujourd’hui dans les territoires en déprise démographique et dans les centres-villes des agglomérations moyennes, hors [littoral]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Insee Première n° 1979, 1,2 million de logements vacants supplémentaires en France depuis 1990, surtout dans les zones en déprise démographique, 16 janvier 2024."} : voir carte ci-dessous  
+::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+Si dans les territoires les plus tendus (métropole bordelaise, littoral, la vacance totale stagne ou diminue, avec une baisse de la vacance de longue durée et une hausse de la vacance frictionnelle, ce constat ne peut pas être généralisés à toutes les catégories de territoires.
 
-<p style="text-align:center !important;display:flex; justify-content:center !important;">
+La progression de la vacance totale est plus forte depuis 2016 jusqu’à aujourd’hui dans les territoires en déprise démographique et dans les centres-villes des agglomérations moyennes, hors [littoral]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="Insee Première n° 1979, 1,2 million de logements vacants supplémentaires en France depuis 1990, surtout dans les zones en déprise démographique, 16 janvier 2024."} : voir carte ci-dessous
+
+<div style="text-align:center !important;display:flex; justify-content:center !important;">
+
 ![](images/carte_region_dreal.jpg){.lightbox style="width:62%;"}
-</p>
 
-La carte présentée fait en effet état d’une augmentation de la vacance totale beaucoup plus prononcée à l’Est de la région, dans les secteurs ruraux, des agglomérations comme Poitiers ou Pau.  
+</div>
 
-A contrario, le littoral présente des taux d’évolution négatifs (soit une diminution de la vacance ou faibles -La Rochelle par exemple-.  
+La carte présentée fait en effet état d’une augmentation de la vacance totale beaucoup plus prononcée à l’Est de la région, dans les secteurs ruraux, des agglomérations comme Poitiers ou Pau.
+
+A contrario, le littoral présente des taux d’évolution négatifs (soit une diminution de la vacance ou faibles -La Rochelle par exemple-.
 
 Il y a quelques cas particuliers expliqués précédemment : Bordeaux, dont l’augmentation de la vacance affichée sur la carte est trompeuse et surtout caractérisée par une vacance frictionnelle, ou d’autres territoires dont certaines résidences secondaires, importantes en nombre, ont pu être assimilées à des logements vacants.
 :::

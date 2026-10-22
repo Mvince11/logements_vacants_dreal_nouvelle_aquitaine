@@ -145,18 +145,19 @@ include-in-header:
 ```
 
 ## 3. Etat des lieux de la vacance : cartographie
+
 ::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-Selon les données LOVAC, la vacance des logements en Nouvelle-Aquitaine est estimée à 9,5 %, soit environ 340 000 logements. Une partie de ces logements n’est inoccupée que temporairement, notamment entre deux occupants ou à l’occasion de travaux de remise en état.  
+Selon les données LOVAC, la vacance des logements en Nouvelle-Aquitaine est estimée à 9,5 %, soit environ 340 000 logements. Une partie de ces logements n’est inoccupée que temporairement, notamment entre deux occupants ou à l’occasion de travaux de remise en état.
 
-Cette vacance conjoncturelle accompagne la rotation des ménages et l’entretien du parc, contribuant ainsi à la fluidité des parcours résidentiels.  
+Cette vacance conjoncturelle accompagne la rotation des ménages et l’entretien du parc, contribuant ainsi à la fluidité des parcours résidentiels.
 
-La présente étude se concentre sur la vacance de longue durée, définie ici comme une inoccupation depuis au moins deux ans et retenue comme indicateur de la vacance structurelle.  
+La présente étude se concentre sur la vacance de longue durée, définie ici comme une inoccupation depuis au moins deux ans et retenue comme indicateur de la vacance structurelle.
 
-L’objectif est de repérer les logements durablement inoccupés pour lesquels les acteurs locaux peuvent engager des actions visant à favoriser leur remise sur le marché.  
+L’objectif est de repérer les logements durablement inoccupés pour lesquels les acteurs locaux peuvent engager des actions visant à favoriser leur remise sur le marché.
 
-En Nouvelle-Aquitaine, au 1er janvier 2024, **cette vacance de longue durée concerne environ 154 505 logements, soit 4 % du parc de logements.**  
+En Nouvelle-Aquitaine, au 1er janvier 2024, **cette vacance de longue durée concerne environ 154 505 logements, soit 4 % du parc de logements.**
 
-Sa répartition départementale, établie à partir des bases de données [LOVAC]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="LOVAC : voir annexe"} pour le parc privé et [RPLS]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="RPLS : Le RPLS (Répertoire des logements locatifs des bailleurs sociaux) est une base statistique actualisée chaque année qui décrit, au 1er janvier, le parc locatif des bailleurs sociaux, notamment les caractéristiques des logements, leurs loyers et leur situation d’occupation ou de vacance.  "} pour le parc social est présentée ci-après. 
+Sa répartition départementale, établie à partir des bases de données [LOVAC]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="LOVAC : voir annexe"} pour le parc privé et [RPLS]{style="cursor:pointer; color: #42429f;" data-bs-toggle="tooltip" title="RPLS : Le RPLS (Répertoire des logements locatifs des bailleurs sociaux) est une base statistique actualisée chaque année qui décrit, au 1er janvier, le parc locatif des bailleurs sociaux, notamment les caractéristiques des logements, leurs loyers et leur situation d’occupation ou de vacance.  "} pour le parc social est présentée ci-après.
 
 ```{=html}
 <!DOCTYPE html>
@@ -365,50 +366,57 @@ render4();
 </script>
 ```
 
-<p style="text-align: center !important;">
+<div style="text-align: center !important;">
+
 ![](images/logements_vacants_NA.png){.lightbox style="width:62%;"}
-</p>
+
+</div>
 
 Cette ne mesure pas l’évolution de la vacance **mais confirme clairement la tendance à une vacance installée qui plus importante dans les départements de l’Est (+ de 5 % de logements vacants -longue durée-), et a contrario plus faible sur le littoral. La carte suivante de la vacance par EPCI confirme cette une vacance plus importante sur les EPCI de l’Est de la région.**
 :::
 
 ### 3.1 La vacance par EPCI
-::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-<p style="text-align: center !important;">
+
+:::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+<div style="text-align: center !important;">
+
 ![](images/epci.png){.lightbox style="width:62%;"}
-</p>
 
-<div style="border: 1px solid; padding:5px;">
-La carte met en évidence un **contraste ouest–est marqué** de la vacance de plus de deux ans. Les taux sont généralement plus faibles sur le littoral et dans les intercommunalités des principaux pôles urbains, où ils se situent souvent entre **1 et 4 %.**  
+</div>
 
-À l’inverse, les niveaux les plus élevés, compris entre **9 et 14 %**, se concentrent surtout dans le nord-est et l’est de la région, notamment dans la Creuse et l’est de la Corrèze. De nombreux territoires intérieurs présentent également des taux élevés, entre **6 et 9 %.**  
+::: {style="border: 1px solid; padding:5px;"}
+La carte met en évidence un **contraste ouest–est marqué** de la vacance de plus de deux ans. Les taux sont généralement plus faibles sur le littoral et dans les intercommunalités des principaux pôles urbains, où ils se situent souvent entre **1 et 4 %.**
+
+À l’inverse, les niveaux les plus élevés, compris entre **9 et 14 %**, se concentrent surtout dans le nord-est et l’est de la région, notamment dans la Creuse et l’est de la Corrèze. De nombreux territoires intérieurs présentent également des taux élevés, entre **6 et 9 %.**
 
 Cette répartition reste toutefois contrastée : les intercommunalités de Limoges, de Périgueux ou d’Angoulême affichent des taux plus faibles que plusieurs des territoires qui les entourent.
-</div>
 :::
+::::
 
 ### 3.2 La vacance par commune
-::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
-<p style="text-align: center !important;">
+
+::::: {style="font-family: YACkoD1yZN0-0;font-size:1.1em;"}
+<div style="text-align: center !important;">
+
 ![](images/communes.png){.lightbox style="width:62%;"}
-</p>
 
-<div style="border:1px solid; padding:5px;margin-bottom:10px;">
+</div>
+
+::: {style="border:1px solid; padding:5px;margin-bottom:10px;"}
 À l’échelle communale, la carte confirme des **taux de vacance de plus de deux ans généralement plus faibles sur le littoral et autour des principaux pôles urbains**, souvent inférieurs à **4,7 %**. Les taux supérieurs à **9,8 %** se concentrent davantage dans le nord-est et certains territoires intérieurs, mais des poches de vacance élevée apparaissent également dans le centre et le sud de la région.
-</div>  
+:::
 
-Certaines communes relèvent ainsi de la classe la plus élevée, comprise entre **14,5 et 37,2 %.** Cette représentation révèle surtout une **forte hétérogénéité entre communes voisines**, que les moyennes intercommunales atténuent, et souligne l’intérêt d’une analyse locale pour préciser les secteurs les plus concernés.  
+Certaines communes relèvent ainsi de la classe la plus élevée, comprise entre **14,5 et 37,2 %.** Cette représentation révèle surtout une **forte hétérogénéité entre communes voisines**, que les moyennes intercommunales atténuent, et souligne l’intérêt d’une analyse locale pour préciser les secteurs les plus concernés.
 
-**Les données ayant permis de réaliser cette carte, disponible dans la matrice**, mettent en évidence plusieurs situations de vacance particulièrement marquées. Certaines villes moyennes cumulent des taux élevés et des volumes importants de logements durablement vacants, comme Aubusson ou Tulle.  
+**Les données ayant permis de réaliser cette carte, disponible dans la matrice**, mettent en évidence plusieurs situations de vacance particulièrement marquées. Certaines villes moyennes cumulent des taux élevés et des volumes importants de logements durablement vacants, comme Aubusson ou Tulle.
 
 Dans plusieurs de ces territoires, une part importante de cette vacance est ancienne, avec des taux de vacance de plus de cinq ans atteignant des taux important.
 
-Quelques petites communes affichent des niveaux extrêmement élevés — par exemple Bousses : 37,2 %, Saint-Antoine-du-Queyret : 29,2 %, Saint-Georges : 27,9 % ou Saint-Pierre-le-Bost : 26 % — mais ces taux portent parfois sur seulement quelques dizaines de logements. Ils signalent néanmoins une vacance très profondément installée, particulièrement lorsque le taux à plus de cinq ans reste lui aussi élevé : 34,9 % à Bousses, 25,6 % à Saint-Georges, 21,1 % à Saint-Pierre-le-Bost.  
+Quelques petites communes affichent des niveaux extrêmement élevés — par exemple Bousses : 37,2 %, Saint-Antoine-du-Queyret : 29,2 %, Saint-Georges : 27,9 % ou Saint-Pierre-le-Bost : 26 % — mais ces taux portent parfois sur seulement quelques dizaines de logements. Ils signalent néanmoins une vacance très profondément installée, particulièrement lorsque le taux à plus de cinq ans reste lui aussi élevé : 34,9 % à Bousses, 25,6 % à Saint-Georges, 21,1 % à Saint-Pierre-le-Bost.
 
-À l’inverse, les principaux pôles urbains peuvent présenter des stocks importants en valeur absolue, mais des taux nettement plus faibles. Cette distinction entre volume et taux est essentielle pour identifier les territoires où la vacance constitue un phénomène réellement structurel.
-Bordeaux compte **4 740 logements vacants depuis plus de deux ans**, mais ceux-ci ne représentent que **2,6 % du parc** ; Limoges en compte **3 206**, soit **3,7 %** ; Pau **1 768**, soit **3,2 %** ; Poitiers **1 502**, soit **2,6 %.** Cela montre que le nombre brut de logements vacants ne suffit pas à qualifier la gravité d’une situation.
+À l’inverse, les principaux pôles urbains peuvent présenter des stocks importants en valeur absolue, mais des taux nettement plus faibles. Cette distinction entre volume et taux est essentielle pour identifier les territoires où la vacance constitue un phénomène réellement structurel. Bordeaux compte **4 740 logements vacants depuis plus de deux ans**, mais ceux-ci ne représentent que **2,6 % du parc** ; Limoges en compte **3 206**, soit **3,7 %** ; Pau **1 768**, soit **3,2 %** ; Poitiers **1 502**, soit **2,6 %.** Cela montre que le nombre brut de logements vacants ne suffit pas à qualifier la gravité d’une situation.
 
-→ **Une cartographie de 70 communes (métropole, agglomérations et petites villes) est disponible dans <a href="iris.html">cet onglet</a>**. Elle présente la vacance par quartier IRIS et les variations au sein d’une même commune (nombre et % de logements vacants).
+→ **Une cartographie de 70 communes (métropole, agglomérations et petites villes) est disponible dans** <a href="iris.html">cet onglet</a>. Elle présente la vacance par quartier IRIS et les variations au sein d’une même commune (nombre et % de logements vacants).
 
 ```{=html}
 <div style="border:1px solid; padding:10px; display:flex; gap:20px; align-items:flex-start;" class="vacance_maison">
@@ -442,10 +450,10 @@ Bordeaux compte **4 740 logements vacants depuis plus de deux ans**, mais ceux-c
 <br>
 ```
 
-<div style="text-align: center !important;">
-**communes présentant les situations de vacance longue les plus marquées**  
+::: {style="text-align: center !important;"}
+**communes présentant les situations de vacance longue les plus marquées**\
 Sélection : au moins 100 logements vacants depuis plus de 2 ans – LOVAC 2024
-</div>
+:::
 
 ```{=html}
 <style>
@@ -532,4 +540,4 @@ Sélection : au moins 100 logements vacants depuis plus de 2 ans – LOVAC 2024
 Lecture : la dernière colonne mesure la proportion des logements vacants depuis plus de 5 ans parmi ceux vacants depuis plus de 2 ans.
 </div>
 ```
-:::
+:::::

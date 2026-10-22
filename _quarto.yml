@@ -54,9 +54,9 @@ website:
           - href: iris.qmd
             text: IRIS
             
-      - icon: file-earmark-text
-        href: documents.qmd
-        text: Documents à télécharger
+      # - icon: file-earmark-text
+      #   href: documents.qmd
+      #   text: Documents à télécharger
 
       - text: Qui Sommes nous ?
         icon: people-fill
